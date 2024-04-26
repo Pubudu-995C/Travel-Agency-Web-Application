@@ -20,7 +20,7 @@ export default function Navbar() {
         <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
           <a href="/" className="flex items-center">
             <img
-              src="/tuktukmango.png"
+              src="/travelmango.png"
               className="xl:h-[50px] mr-3 h-9"
               alt="tuktukmango Logo"
             />

@@ -12,7 +12,7 @@ export default function Footer() {
               <h4 className="pb-4 text-3xl">
                 <a href="/" className="flex items-center">
                   <img
-                    src="/tuktukmango.png"
+                    src="/travelmango.png"
                     className="w-[200px] h-full"
                     alt=""
                   />
