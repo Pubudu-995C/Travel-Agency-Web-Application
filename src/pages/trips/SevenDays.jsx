@@ -9,10 +9,10 @@ export default function SevenDays() {
   const dateList = [
     {
       day: `Day 01`,
-      topic: `Arrival and Booking into a Hotel in Negombo`,
+      topic: `Negombo to Sigiriya`,
       img: `./trips/pinnawala.jpg`,
       detail: `Pinnawala Elephant Orphanage`,
-      accommodation: `Please Request Us`,
+      accommodation: `Arrival and Booking into a Hotel in Negombo`,
       activities: `Milk Feeding`,
     },
     {
@@ -196,6 +196,11 @@ export default function SevenDays() {
                       <span className="font-bold">Activities:</span>{" "}
                       {date.activities}
                     </p>
+                  </div>
+                  <div className="flex justify-end items-end h-full">
+                    <button className="bg-[#54B435] px-8 py-2 rounded mx-5 text-base font-bold text-white">
+                      See More
+                    </button>
                   </div>
                 </div>
               </div>
