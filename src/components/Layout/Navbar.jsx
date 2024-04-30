@@ -21,7 +21,7 @@ export default function Navbar() {
           <a href="/" className="flex items-center">
             <img
               src="/travelmango.png"
-              className="xl:h-[50px] mr-3 h-9"
+              className="xl:h-[50px] md:mr-3 h-9"
               alt="tuktukmango Logo"
             />
           </a>
@@ -31,7 +31,7 @@ export default function Navbar() {
             </div>
             <a
               href="/"
-              className="text-black hover:text-white bg-[#F0FF42] transition-colors duration-300 hover:bg-[#54B435] font-bold rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0"
+              className="text-black hover:text-white bg-[#F0FF42] transition-colors duration-300 hover:bg-[#54B435] font-bold md:rounded-lg rounded-md text-sm px-2 md:px-5 py-1 md:py-2.5 sm:mr-2 lg:mr-0"
             >
               PLAN YOUR TRIP
             </a>

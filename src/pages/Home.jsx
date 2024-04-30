@@ -122,7 +122,7 @@ export default function Home() {
             into uncovering these treasures to provide you with an exclusive
             experience.
           </p>
-          <button className="bg-[#F0FF42] hover:bg-white transition-colors duration-300 mt-5 xl:py-2 xl:px-10 py-1 px-8 text-xl rounded-lg font-bold text-black hover:text-[#54B435] border-[1px] border-[#54B435]">
+          <button className="bg-black hover:bg-[#54B435] transition-colors duration-300 mt-5 xl:py-2 xl:px-10 py-1 px-8 text-xl rounded-lg font-bold text-white hover:text-white">
             See More
           </button>
         </div>
