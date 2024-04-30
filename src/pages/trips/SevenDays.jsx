@@ -197,8 +197,8 @@ export default function SevenDays() {
                       {date.activities}
                     </p>
                   </div>
-                  <div className="flex justify-end items-end h-full">
-                    <button className="bg-[#54B435] px-8 py-2 rounded mx-5 text-base font-bold text-white">
+                  <div className="flex md:justify-end justify-center md:mt-0 mt-5">
+                    <button className="bg-[#54B435] md:px-8 md:py-2 px-5 py-1 rounded mx-5 text-base font-bold text-white">
                       See More
                     </button>
                   </div>
