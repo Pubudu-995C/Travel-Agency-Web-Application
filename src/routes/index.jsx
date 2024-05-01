@@ -9,6 +9,8 @@ import Footer from "../components/Layout/Footer";
 import SevenDays from "../pages/trips/SevenDays";
 // =================Pages=================
 import Home from "../pages/Home";
+// =================Contact Form=================
+import ContactForm from "../pages/Contact-Form";
 
 const RouteList = () => {
   return (
@@ -18,6 +20,8 @@ const RouteList = () => {
       <Route path="/footer" element={<Footer />} />
       {/* ===============Trips================== */}
       <Route path="/SevenDays" element={<SevenDays />} />
+      {/* ===============Contact Form================== */}
+      <Route path="/contactForm" element={<ContactForm />} />
     </Routes>
   );
 };

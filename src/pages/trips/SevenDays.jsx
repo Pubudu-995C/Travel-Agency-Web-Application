@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../../components/Layout/Navbar";
 import Footer from "../../components/Layout/Footer";
 import Sigiriya from "../../images/wallpapers/sigiriya.jpg";
+import ContactForm from "../Contact-Form";
 
 export default function SevenDays() {
   const [activeTab, setActiveTab] = useState("trips");
@@ -205,6 +206,7 @@ export default function SevenDays() {
                 </div>
               </div>
             ))}
+            <ContactForm />
           </div>
         )}
         {activeTab === "gallery" && (
@@ -232,6 +234,9 @@ export default function SevenDays() {
                   ))}
                 </div>
               </div>
+            </div>
+            <div className="2xl:px-40 xl:px-24 lg:px-20 px-5 py-5">
+              <ContactForm />
             </div>
           </div>
         )}
