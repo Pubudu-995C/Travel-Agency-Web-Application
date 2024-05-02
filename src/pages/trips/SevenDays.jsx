@@ -119,6 +119,21 @@ export default function SevenDays() {
       topic: `Whale watching`,
       town: `Mirissa`,
     },
+    {
+      image: `./trips/mirissa-bay.jpg`,
+      topic: `Mirissa Bay`,
+      town: `Mirissa`,
+    },
+    {
+      image: `./trips/Gregory_Lake.jpg`,
+      topic: `Gregory Lake`,
+      town: `Nuwara Eliya`,
+    },
+    {
+      image: `./trips/Little_Adam.jpg`,
+      topic: `Little Adam's Peak`,
+      town: `Ella`,
+    },
   ];
 
   return (
@@ -165,77 +180,83 @@ export default function SevenDays() {
           </button>
         </div>
         {activeTab === "trips" && (
-          <div className="grid grid-cols-1 gap-y-10 my-10 2xl:px-40 xl:px-24 lg:px-20 px-5">
-            {dateList.map((date, index) => (
-              <div class="flex flex-col items-center bg-white border border-gray-300 rounded-lg shadow md:flex-row hover:bg-gray-100 w-full">
-                <img
-                  class="object-cover xl:w-[400px] lg:w-[300px] md:w-[200px] w-full h-full rounded-t-lg md:rounded-none md:rounded-s-lg"
-                  src={date.img}
-                  alt=""
-                />
-                <div class="flex flex-col justify-center p-4 leading-normal w-full h-full">
-                  <div className="md:flex items-baseline gap-x-20">
-                    <p class="mb-2 lg:text-2xl text-lg font-bold tracking-tight text-gray-900">
-                      {date.day}
-                    </p>
-                    <p class="mb-3 lg:text-base text-sm font-medium text-gray-700 italic">
-                      {date.topic}
-                    </p>
-                  </div>
-                  <p
-                    class="font-normal text-gray-700 lg:text-base text-sm"
-                    dangerouslySetInnerHTML={{ __html: date.detail }}
-                  ></p>
+          <div>
+            <div className="grid grid-cols-1 gap-y-10 my-10 2xl:px-40 xl:px-24 lg:px-20 px-5">
+              {dateList.map((date, index) => (
+                <div class="flex flex-col items-center bg-white border border-gray-300 rounded-lg shadow md:flex-row hover:bg-gray-100 w-full">
+                  <img
+                    class="object-cover xl:w-[400px] lg:w-[300px] md:w-[200px] w-full h-full rounded-t-lg md:rounded-none md:rounded-s-lg"
+                    src={date.img}
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-center p-4 leading-normal w-full h-full">
+                    <div className="md:flex items-baseline gap-x-20">
+                      <p class="mb-2 lg:text-2xl text-lg font-bold tracking-tight text-gray-900">
+                        {date.day}
+                      </p>
+                      <p class="mb-3 lg:text-base text-sm font-medium text-gray-700 italic">
+                        {date.topic}
+                      </p>
+                    </div>
+                    <p
+                      class="font-normal text-gray-700 lg:text-base text-sm"
+                      dangerouslySetInnerHTML={{ __html: date.detail }}
+                    ></p>
 
-                  <div className="flex flex-col mt-5 lg:text-base text-sm">
-                    <p class="font-normal text-gray-700">
-                      <span className="font-bold">Accommodation: </span>{" "}
-                      {date.accommodation}
-                    </p>
-                    <p class="font-normal text-gray-700">
-                      {" "}
-                      <span className="font-bold">Activities:</span>{" "}
-                      {date.activities}
-                    </p>
-                  </div>
-                  <div className="flex md:justify-end justify-center md:mt-0 mt-5">
-                    <button className="bg-[#54B435] md:px-8 md:py-2 px-5 py-1 rounded mx-5 text-base font-bold text-white">
-                      See More
-                    </button>
+                    <div className="flex flex-col mt-5 lg:text-base text-sm">
+                      <p class="font-normal text-gray-700">
+                        <span className="font-bold">Accommodation: </span>{" "}
+                        {date.accommodation}
+                      </p>
+                      <p class="font-normal text-gray-700">
+                        {" "}
+                        <span className="font-bold">Activities:</span>{" "}
+                        {date.activities}
+                      </p>
+                    </div>
+                    <div className="flex md:justify-end justify-center md:mt-0 mt-5">
+                      <button className="bg-[#54B435] md:px-8 md:py-2 px-5 py-1 rounded mx-5 text-base font-bold text-white">
+                        See More
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-            <ContactForm />
+              ))}
+            </div>
+            <div className="2xl:px-40 xl:px-24 lg:px-20">
+              <ContactForm />
+            </div>
           </div>
         )}
         {activeTab === "gallery" && (
-          <div class="px-5">
-            <div class="flex items-center justify-center min-h-screen py-12">
-              <div class="">
-                <div class="grid xl:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-6">
-                  {galleryImages.map((i, index) => (
-                    <figure class="col-span-2 relative group overflow-hidden">
-                      <img
-                        key={index}
-                        src={i.image}
-                        alt=""
-                        class="w-full lg:h-[300px] h-[200px] object-cover group-hover:scale-105 group transition-all duration-200"
-                      />
-                      <figcaption class="flex w-full p-3 absolute -bottom-20 left-0 bg-slate-900/60 text-white justify-between items-center invisible group-hover:bottom-0 group-hover:visible transition-all duration-200">
-                        <div class="flex flex-col gap-y-2">
-                          <p class="text-lg font-semibold">{i.topic}</p>
-                          <p class="flex justify-between text-sm">
-                            <span>{i.town}</span>
-                          </p>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  ))}
+          <div>
+            <div class="px-5">
+              <div class="flex items-center justify-center min-h-screen py-12">
+                <div class="">
+                  <div class="grid xl:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-6">
+                    {galleryImages.map((i, index) => (
+                      <figure class="col-span-2 relative group overflow-hidden">
+                        <img
+                          key={index}
+                          src={i.image}
+                          alt=""
+                          class="w-full lg:h-[300px] h-[200px] object-cover group-hover:scale-105 group transition-all duration-200"
+                        />
+                        <figcaption class="flex w-full p-3 absolute -bottom-20 left-0 bg-slate-900/60 text-white justify-between items-center invisible group-hover:bottom-0 group-hover:visible transition-all duration-200">
+                          <div class="flex flex-col gap-y-2">
+                            <p class="text-lg font-semibold">{i.topic}</p>
+                            <p class="flex justify-between text-sm">
+                              <span>{i.town}</span>
+                            </p>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="2xl:px-40 xl:px-24 lg:px-20 px-5 py-5">
+            <div className="2xl:px-40 xl:px-24 lg:px-20 py-5">
               <ContactForm />
             </div>
           </div>
