@@ -35,7 +35,7 @@ export default function NineDays() {
     {
       day: `Day 04`,
       topic: `Kandy to Nuwara Eliya `,
-      img: `./trips/Gregory_lake.jpg`,
+      img: `./trips/Gregory_Lake.jpg`,
       detail: `Nestled in the lush landscapes of Sri Lanka lies a tapestry of wonders waiting to be explored. Ramboda Falls cascades gracefully, its waters a symphony of nature's beauty. The Damro Labookellie Tea Centre offers a sensory journey through the aroma and taste of exquisite Ceylon tea. Reflective tranquility envelops Gregory Lake, inviting serene contemplation amidst its serene shores. The quaint charm of Nuwara Eliya Post Office echoes the town's colonial heritage, a picturesque reminder of days gone by. Nearby, Nanu Oya Railway Station stands as a gateway to adventure, its vintage allure beckoning travelers to embark on scenic rail journeys through breathtaking vistas.`,
       accommodation: `Please Request Us`,
       activities: `Ramboda Falls - Damro Labookellie Tea Centre - Gregory Lake - Nuwara Eliya Post Office - Nanu oya Railway Station`,
