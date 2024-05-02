@@ -7,6 +7,7 @@ import Navbar from "../components/Layout/Navbar";
 import Footer from "../components/Layout/Footer";
 // ===============Trips==================
 import SevenDays from "../pages/trips/SevenDays";
+import NIneDays from "../pages/trips/NineDays";
 // =================Pages=================
 import Home from "../pages/Home";
 // =================Contact Form=================
@@ -20,6 +21,7 @@ const RouteList = () => {
       <Route path="/footer" element={<Footer />} />
       {/* ===============Trips================== */}
       <Route path="/SevenDays" element={<SevenDays />} />
+      <Route path="/NineDays" element={<NIneDays />} />
       {/* ===============Contact Form================== */}
       <Route path="/contactForm" element={<ContactForm />} />
     </Routes>

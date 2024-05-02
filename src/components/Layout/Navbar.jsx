@@ -73,7 +73,7 @@ export default function Navbar() {
             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
               <li>
                 <Link
-                  to="/Trip"
+                  to="/"
                   onClick={scrollToTop}
                   className={`${
                     isActivePage("/Trip") ? "text-[#F0FF42]" : "text-gray-300"
@@ -84,7 +84,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  to="/HowWork"
+                  to="/"
                   onClick={scrollToTop}
                   className={`${
                     isActivePage("/HowWork")
@@ -97,7 +97,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  to="/Gallery"
+                  to="/"
                   onClick={scrollToTop}
                   className={`${
                     isActivePage("/Gallery")
@@ -110,7 +110,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  to="/faq"
+                  to="/"
                   onClick={scrollToTop}
                   className={`${
                     isActivePage("/faq") ? "text-[#F0FF42]" : "text-gray-300"
@@ -121,7 +121,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  to="/jobs"
+                  to="/"
                   onClick={scrollToTop}
                   className={`${
                     isActivePage("/jobs") ? "text-[#F0FF42]" : "text-gray-300"
@@ -132,7 +132,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  to="/ContactUs"
+                  to="/"
                   onClick={scrollToTop}
                   className={`${
                     isActivePage("/ContactUs")

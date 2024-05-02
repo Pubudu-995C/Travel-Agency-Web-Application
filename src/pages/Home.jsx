@@ -8,15 +8,19 @@ export default function Home() {
       img: `/wallpapers/wallpaper10.jpg`,
       topic: `Sri Lanka Tour 07 Days Package`,
       day: `(07 Days 06 Nights)`,
-      town: `Sigiriya, Kandy, Nuwara Eliya, Ella, Yala, Mirissa, Bentota, Collombo`,
+      town: `Negombo, Sigiriya, Kandy, Nuwara Eliya, Ella, Yala, Galle, Mirissa, Bentota, Collombo`,
       detail: `Experience the essence of Sri Lanka through the Classic Sri Lanka Tour, where you'll encounter a captivating blend of ancient cities, picturesque tea-covered hills, vibrant wildlife parks, breathtaking beaches, and luxurious accommodations.`,
+      price: `1200`,
       seeMore: `/SevenDays`,
     },
     {
       img: `/wallpapers/wallpaper9.jpg`,
-      topic: `Barrier-Free Sri Lanka Tour 14 Days Package`,
-      town: ` Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.`,
-      seeMore: ``,
+      topic: `Sri Lanka Tour 10 Days Package`,
+      day: `(10 Days 09 Nights)`,
+      town: `Negombo, Sigiriya, Kandy, Nuwara Eliya, Ella, Yala, Galle, Tangalle, Mirissa, Bentota, Collombo`,
+      detail: `Experience the essence of Sri Lanka through the Classic Sri Lanka Tour, where you'll encounter a captivating blend of ancient cities, picturesque tea-covered hills, vibrant wildlife parks, breathtaking beaches, and luxurious accommodations.`,
+      price: `1600`,
+      seeMore: `/Ninedays`,
     },
     {
       img: `/wallpapers/wallpaper.jpg`,
@@ -133,7 +137,7 @@ export default function Home() {
           {tripList.map((trip, index) => (
             <div
               key={index}
-              class=" bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 duration-500 ease-in-out h-[650px]"
+              class=" bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 duration-500 ease-in-out h-[670px]"
             >
               <a href={trip.seeMore ? trip.seeMore.toLowerCase() : "#"}>
                 <img
@@ -151,13 +155,20 @@ export default function Home() {
                 <p class="mb-3 font-medium text-gray-700">{trip.day}</p>
                 <p class="mb-3 font-normal text-gray-700 italic">{trip.town}</p>
                 <p className="mb-3 font-medium">{trip.detail}</p>
-                <a
-                  href={trip.seeMore ? trip.seeMore.toLowerCase() : "#"}
-                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#54B435] hover:text-white border-2 border-[#54B435] transition-colors duration-300 bg-white  rounded-lg hover:bg-[#54B435]"
-                >
-                  Read more
-                  <i class="fa-solid fa-arrow-right pl-3"></i>
-                </a>
+                <div className="flex justify-between items-center">
+                  <a
+                    href={trip.seeMore ? trip.seeMore.toLowerCase() : "#"}
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#54B435] hover:text-white border-2 border-[#54B435] transition-colors duration-300 bg-white  rounded-lg hover:bg-[#54B435]"
+                  >
+                    Read more
+                    <i class="fa-solid fa-arrow-right pl-3"></i>
+                  </a>
+                  <div className="text-red-600 font-bold leading-3">
+                    <span className="text-sm">Starting From</span>{" "}
+                    <span className="flex text-xl">USD {trip.price}</span>
+                    <span className="text-sm">per person</span>
+                  </div>
+                </div>
               </div>
             </div>
           ))}
