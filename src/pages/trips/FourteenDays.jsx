@@ -1,84 +1,76 @@
 import React, { useState } from "react";
 import Navbar from "../../components/Layout/Navbar";
 import Footer from "../../components/Layout/Footer";
-import Ella from "../../images/wallpapers/Ella.jpg";
+import NuwaraEliya from "../../images/wallpapers/Nuwara_Eliya.jpg";
 import ContactForm from "../Contact-Form";
 
-export default function NineDays() {
+export default function FourteenDays() {
   const [activeTab, setActiveTab] = useState("trips");
 
   const dateList = [
     {
       day: `Day 01`,
-      topic: `Airport to negombo`,
-      img: `./trips/airplane_landing.jpg`,
-      detail: `When you land, our chauffeur guide, fluent in English, and the airport team will be there to greet you and help you with anything you need. Once you reach your hotel, take the rest of the day to relax and unwind after your long flight. It's your time to enjoy at your own pace.`,
+      topic: `Airport to Negombo`,
+      img: `./trips/Negombo_Beach.jpg`,
+      detail: `Embark on an unforgettable journey as you explore Negombo's treasures. Witness the serene beauty of Negombo Lagoon, where tranquility meets nature's splendor. Dive into the vibrant atmosphere of the Fish Market, where the local culture comes alive. After a day of discovery, unwind in comfort with an overnight stay at a charming hotel, immersing yourself in Negombo's allure.`,
       accommodation: `Please Request Us`,
-      activities: ``,
+      activities: `Pickup at the Airport - Visit Negombo Lagoon - Visit Fish Market - Overnight Stay in a Hotel at Negombo`,
     },
     {
-      day: `Day 02`,
-      topic: `Negombo to sigiriya`,
+      day: `Day 02 and 03`,
+      topic: `Negombo to Sigiriya`,
       img: `./trips/sigiriya.jpg`,
-      detail: `Visit the Pinnawala Elephant Orphanage to witness gentle giants in their sanctuary, then journey to Sigiriya Rock Fortress, a majestic ancient marvel rising dramatically, offering breathtaking views and a glimpse into Sri Lanka's rich history.`,
+      detail: `Embark on an unforgettable journey through Sri Lanka's cultural marvels. Begin with the heartwarming experience of Pinnawala Elephant Orphanage, witnessing majestic creatures in their natural habitat. Then, venture towards Sigiriya, where history and nature converge. Ascend the iconic Sigiriya Rock Fortress, marveling at its ancient splendor and panoramic vistas. Nearby, explore Pidurangala Rock, offering a unique perspective of Sigiriya. Immerse yourself in Sigiriya Village, discovering local customs and traditions. Continue the expedition with a captivating tour of Polonnaruwa City, delving into its rich heritage. Conclude the day's adventures with a peaceful overnight stay in a cozy hotel nestled in the enchanting surroundings of Sigiriya.`,
       accommodation: `Please Request Us`,
-      activities: `Pinnawala Elephant Orphanage - Sigiriya Rock Fortress (Lion Rock)`,
+      activities: `Pinnawala Elephant Orphanage - Proceed to Sigiriya - Sigiriya Rock Fortress (Lion Rock) - Visit Pidurangala Rock - Sigiriya Village Tour - Polonnaruwa City Tour - Overnight Stay in a Hotel at Sigiriya`,
     },
     {
-      day: `Day 03`,
-      topic: `Sigiriya to kandy`,
+      day: `Day 04 and 05`,
+      topic: `Sigiriya to Kandy`,
       img: `./trips/templeTooth.jpg`,
       detail: `Nestled in the heart of Sri Lanka, the Dambulla Royal Cave Temple and Golden Temple stand as timeless marvels, their ancient sanctuaries echoing with spiritual resonance. Nearby, the Spice Garden captivates with its aromatic allure, a sensory journey through the rich tapestry of Sri Lankan flavors. Further afield, the Matale Muthumariamman Temple beckons with its ornate architecture and devout ambiance. In Kandy, the revered Temple of the Tooth Relic holds the essence of Buddhist faith, a sacred repository of veneration. And amidst the cultural vibrancy, the Kandy Cultural Dance Show unfolds, a mesmerizing spectacle of rhythm and tradition, showcasing the island's artistic heritage in captivating splendor.`,
       accommodation: `Please Request Us`,
-      activities: `Dambulla Royal Cave Temple and Golden Temple - Spice Garden - Matale Muthumariamman Temple - Temple of Tooth Relic - Kandy Cultural Dance Show`,
+      activities: `Dambulla Royal Cave Temple and Golden Temple - Spice Garden - Matale Muthumariamman Temple - Temple of Tooth Relic - Kandy Cultural Dance Show - Overnight Stay in a Hotel at Kandy`,
     },
     {
-      day: `Day 04`,
+      day: `Day 06 and 07`,
       topic: `Kandy to Nuwara Eliya `,
       img: `./trips/Gregory_Lake.jpg`,
-      detail: `Nestled in the lush landscapes of Sri Lanka lies a tapestry of wonders waiting to be explored. Ramboda Falls cascades gracefully, its waters a symphony of nature's beauty. The Damro Labookellie Tea Centre offers a sensory journey through the aroma and taste of exquisite Ceylon tea. Reflective tranquility envelops Gregory Lake, inviting serene contemplation amidst its serene shores. The quaint charm of Nuwara Eliya Post Office echoes the town's colonial heritage, a picturesque reminder of days gone by. Nearby, Nanu Oya Railway Station stands as a gateway to adventure, its vintage allure beckoning travelers to embark on scenic rail journeys through breathtaking vistas.`,
+      detail: `Embark on an enchanting journey to Nuwara Eliya, where you'll ascend the majestic Ambuluwawa Tower, immerse yourself in the aromatic bliss of Damro Labookellie Tea Centre, and witness nature's grandeur at the cascading Ramboda Waterfalls. Explore the lush tea plantations and factories, bask in the tranquil beauty of Gregory Lake, and marvel at the architectural splendor of Nuwara Eliya Post Office. Pay reverence at the sacred Seetha Eliya Temple, trek to the breathtaking Bomburu Ella, and soak in panoramic vistas from Lipton's Seat, before retreating to a cozy hotel for an overnight stay in this hill country paradise.`,
       accommodation: `Please Request Us`,
-      activities: `Ramboda Falls - Damro Labookellie Tea Centre - Gregory Lake - Nuwara Eliya Post Office - Nanu oya Railway Station`,
+      activities: `Proceed to Nuwara Eliya - Ambuluwawa Tower - Ramboda Waterfalls - Damro Labookellie Tea Centre - Gregory Lake - Nuwara Eliya Post Office - Seetha Eliya Temple - Bomburu Ella - Lipton Seat - Overnight Stay in a Hotel at Nuwara Eliya`,
     },
     {
-      day: `Day 05`,
+      day: `Day 08 and 09`,
       topic: `Nuwara Eliya to Ella`,
       img: `./trips/Little_Adam.jpg`,
-      detail: `Nestled in the lush landscape of Sri Lanka lies the enchanting trio of wonders: Little Adam's Peak, a majestic summit offering panoramic vistas; the iconic Nine Arches Bridge, a marvel of colonial engineering spanning verdant valleys; and the cascading beauty of Ravana Falls, its crystalline waters descending gracefully amidst the emerald greenery, captivating all who behold their splendor.`,
+      detail: `Embark on a picturesque journey by train to Ella, where nature's wonders await. Marvel at the majestic Ravana Falls, cascading gracefully amidst lush greenery. Explore the iconic Nine Arch Bridge, a marvel of architecture nestled in the verdant landscape. Hike up to Little Adam's Peak for breathtaking panoramic views that stretch to the horizon. Don't miss the enchanting Ellawella Waterfalls, where tranquility reigns supreme. After a day of exploration, unwind in comfort with an overnight stay at a cozy hotel in Ella, surrounded by the serene beauty of the Sri Lankan countryside.`,
       accommodation: `Please Request Us`,
-      activities: `Little adam's peak - Nine Arches Bridge - Ravana Falls`,
+      activities: `Little adam's peak - Ellawella Waterfalls - Nine Arches Bridge - Ravana Falls - Overnight Stay in a Hotel at Ella`,
     },
     {
-      day: `Day 06`,
+      day: `Day 10 and 11`,
       topic: `Ella to Yala`,
       img: `./trips/yala.jpg`,
-      detail: `Yala National Park, a biodiversity hotspot in Sri Lanka, boasts diverse ecosystems and abundant wildlife. Buduruwagala Temple nearby showcases remarkable ancient Buddhist sculptures, reflecting the rich cultural heritage of the region amidst stunning natural surroundings.`,
+      detail: `Embark on an exhilarating journey through Sri Lanka's scenic wonders with a visit to the awe-inspiring Diyaluma Waterfalls, where cascading waters create a mesmerizing spectacle. Explore the ancient marvels of Buduruwagala Temple, steeped in history and spiritual significance. Continue your adventure with a thrilling Yala or Udawalawe Evening Jeep Safari, immersing yourself in the untamed beauty of nature as you encounter diverse wildlife in their natural habitat. Conclude your day with a serene overnight stay at a hotel nestled amidst the wilderness of Yala or Udawalawe, offering comfort and tranquility amidst the captivating surroundings.`,
       accommodation: `Please Request Us`,
-      activities: `Yala National Park - Buduruwagala Temple`,
+      activities: `Diyaluma Waterfalls - Proceed to Yala / Udawalawe Jeep Safari - Buduruwagala Temple - Overnight Stay in a Hotel at Yala/ Udawalawe`,
     },
     {
-      day: `Day 07`,
-      topic: `Yala to Tangalle`,
-      img: `./trips/Hiriketiya-Beach.jpg`,
-      detail: `Discover a coastal paradise along Sri Lanka's southern shores, where azure waters meet golden sands. Tangalle Beach entices with its serene beauty, offering a tranquil escape for sun-seekers. Nearby, Hiriketiya Beach beckons with its crescent-shaped bay, perfect for surfing or simply soaking up the sun. Further along, Rekawa Beach invites you to witness mesmerizing turtle hatchings, a remarkable natural spectacle. Finally, find solace at Silent Beach, a secluded haven for those seeking peace amidst breathtaking scenery.`,
-      accommodation: `Please Request Us`,
-      activities: `Tangalle Beach - Hiriketiya Beach - Rekawa Beach - Silent Beach`,
-    },
-    {
-      day: `Day 08`,
-      topic: `Tangalle to Mirissa`,
+      day: `Day 12 and 13`,
+      topic: `Yala to Mirissa`,
       img: `./trips/coconut_tree_hill.jpg`,
-      detail: `Perched atop the picturesque Coconut Tree Hill overlooking Mirissa Bay, visitors can soak in breathtaking vistas of the azure waters below. Nearby, the vibrant Fish Market bustles with the day's fresh catch, offering a glimpse into the local fishing culture. Adventure seekers flock to Mirissa for exhilarating experiences like whale watching and dolphin spotting, where the vast ocean becomes a playground for marine marvels, leaving unforgettable memories etched in the minds of all who venture there.`,
+      detail: `Embark on an enchanting journey along the southern coast of Sri Lanka, beginning at the picturesque Coconut Tree Hill, offering panoramic views of Mirissa Bay's azure waters. Delve into the vibrant culture at the local fish market, brimming with the day's fresh catch. Venture into the vast expanse of the ocean for an unforgettable experience of whale and dolphin watching. Then, unwind on the pristine shores of Unawatuna Beach, where golden sands meet the gentle lapping waves. Conclude your day with an idyllic overnight stay in the charming town of Mirissa, where tranquility and beauty converge for an unforgettable coastal retreat.`,
       accommodation: `Please Request Us`,
-      activities: `Coconut Tree Hill - Mirissa Bay - Fish Market - Whale watching - Dolphin Watching`,
+      activities: `Coconut Tree Hill - Mirissa Bay - Fish Market - Whale watching - Dolphin Watching - Unawatuna Beach - Overnight Stay at Mirissa`,
     },
     {
-      day: `Day 09`,
-      topic: `Mirissa to Bentota`,
-      img: `./trips/Galle_Fort.jpg`,
-      detail: `Explore the vibrant tapestry of Sri Lanka's southwest coast with its captivating attractions. Begin your journey at the historic Galle Dutch Fort, a UNESCO World Heritage Site showcasing colonial charm. Venture to the Bentota Turtle Hatchery, where conservation meets wonder, as you witness the nurturing of these magnificent creatures. Glide through the enchanting Madu River Safari, immersed in the lush mangroves and diverse wildlife. Find tranquility amidst the botanical marvels of Brief Garden, a sanctuary of artistry and nature. Finally, unwind at Bentota Beach, where golden sands meet azure waters, offering serenity and adventure in equal measure.`,
+      day: `Day 14`,
+      topic: `Mirissa to Airport`,
+      img: `./trips/Gangaramaya_Temple.jpg`,
+      detail: `Embark on a captivating journey through Colombo's cultural tapestry. Start at the Colombo Red Mosque, a stunning architectural marvel echoing centuries of Islamic heritage. Then, ascend the Lotus Tower, an emblem of modernity offering panoramic views of the city's skyline. Immerse yourself in spiritual tranquility at Gangarama Temple, adorned with intricate carvings and serene ponds. For a serene escape, unwind at Mount Lavinia Beach, where golden sands meet azure waters. Finally, bid farewell to this enchanting city, cherishing memories as you depart from the airport, carrying with you the essence of Colombo's rich diversity and timeless allure.`,
       accommodation: `Please Request Us`,
-      activities: `Galle Dutch Fort - Bentota Turtle Hatchery - Madu River Safari - Brief Garden - Bentota Beach`,
+      activities: `Colombo Red Mosque - Lotus Tower - Gangarama Temple - Mount Lavinia Beach - Leave at the Airport`,
     },
   ];
 
@@ -159,26 +151,27 @@ export default function NineDays() {
       town: `Ella`,
     },
   ];
+
   return (
     <div>
       <Navbar />
       <div>
         <div className="xl:h-[550px] lg:h-[400px] h-[300px]">
           <img
-            src={Ella}
+            src={NuwaraEliya}
             className="object-cover w-full h-full"
             alt="Wallpaper"
           />
         </div>
         <div className="p-3 w-full md:flex justify-between bg-[#54B435] 2xl:px-40 xl:px-24 lg:px-20 px-5">
           <p className="xl:text-2xl lg:text-xl md:text-base text-sm font-semibold text-white">
-            Sri Lanka Tour 10 Days Package{" "}
+            Sri Lanka Tour 14 Days Package{" "}
             <span className="lg:text-lg text-sm lg:font-bold text-[#F0FF42]">
-              (10 Days 09 Nights)
+              (14 Days 13 Nights)
             </span>
           </p>
           <p className="xl:text-2xl lg:text-lg md:text-base text-sm font-medium text-white md:mt-0 mt-2">
-            Starting from <span className="font-bold"> USD 1600</span> per
+            Starting from <span className="font-bold"> USD 2000</span> per
             person
           </p>
         </div>

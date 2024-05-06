@@ -1,84 +1,107 @@
 import React, { useState } from "react";
 import Navbar from "../../components/Layout/Navbar";
 import Footer from "../../components/Layout/Footer";
-import Ella from "../../images/wallpapers/Ella.jpg";
+import NilaveliBeach from "../../images/wallpapers/Nilaveli_Beach.jpg";
 import ContactForm from "../Contact-Form";
 
-export default function NineDays() {
+export default function ThirtyDays() {
   const [activeTab, setActiveTab] = useState("trips");
 
   const dateList = [
     {
-      day: `Day 01`,
-      topic: `Airport to negombo`,
-      img: `./trips/airplane_landing.jpg`,
-      detail: `When you land, our chauffeur guide, fluent in English, and the airport team will be there to greet you and help you with anything you need. Once you reach your hotel, take the rest of the day to relax and unwind after your long flight. It's your time to enjoy at your own pace.`,
+      day: `2 Nights in Colombo`,
+      topic: `Airport to Colombo or Negombo`,
+      img: `./trips/Negombo_Beach.jpg`,
+      detail: ``,
       accommodation: `Please Request Us`,
       activities: ``,
     },
     {
-      day: `Day 02`,
-      topic: `Negombo to sigiriya`,
+      day: `2 Nights in Anuradhapura`,
+      topic: `Colombo to Anuradhapura`,
       img: `./trips/sigiriya.jpg`,
-      detail: `Visit the Pinnawala Elephant Orphanage to witness gentle giants in their sanctuary, then journey to Sigiriya Rock Fortress, a majestic ancient marvel rising dramatically, offering breathtaking views and a glimpse into Sri Lanka's rich history.`,
+      detail: ``,
       accommodation: `Please Request Us`,
-      activities: `Pinnawala Elephant Orphanage - Sigiriya Rock Fortress (Lion Rock)`,
+      activities: ``,
     },
     {
-      day: `Day 03`,
-      topic: `Sigiriya to kandy`,
+      day: `2 Nights in Nilaveli`,
+      topic: `Anuradhapura to Nilaveli`,
       img: `./trips/templeTooth.jpg`,
-      detail: `Nestled in the heart of Sri Lanka, the Dambulla Royal Cave Temple and Golden Temple stand as timeless marvels, their ancient sanctuaries echoing with spiritual resonance. Nearby, the Spice Garden captivates with its aromatic allure, a sensory journey through the rich tapestry of Sri Lankan flavors. Further afield, the Matale Muthumariamman Temple beckons with its ornate architecture and devout ambiance. In Kandy, the revered Temple of the Tooth Relic holds the essence of Buddhist faith, a sacred repository of veneration. And amidst the cultural vibrancy, the Kandy Cultural Dance Show unfolds, a mesmerizing spectacle of rhythm and tradition, showcasing the island's artistic heritage in captivating splendor.`,
+      detail: ``,
       accommodation: `Please Request Us`,
-      activities: `Dambulla Royal Cave Temple and Golden Temple - Spice Garden - Matale Muthumariamman Temple - Temple of Tooth Relic - Kandy Cultural Dance Show`,
+      activities: ``,
     },
     {
-      day: `Day 04`,
-      topic: `Kandy to Nuwara Eliya `,
+      day: `2 Nights in Sigiriya`,
+      topic: `Nilaveli to Sigiriya`,
       img: `./trips/Gregory_Lake.jpg`,
-      detail: `Nestled in the lush landscapes of Sri Lanka lies a tapestry of wonders waiting to be explored. Ramboda Falls cascades gracefully, its waters a symphony of nature's beauty. The Damro Labookellie Tea Centre offers a sensory journey through the aroma and taste of exquisite Ceylon tea. Reflective tranquility envelops Gregory Lake, inviting serene contemplation amidst its serene shores. The quaint charm of Nuwara Eliya Post Office echoes the town's colonial heritage, a picturesque reminder of days gone by. Nearby, Nanu Oya Railway Station stands as a gateway to adventure, its vintage allure beckoning travelers to embark on scenic rail journeys through breathtaking vistas.`,
+      detail: ``,
       accommodation: `Please Request Us`,
-      activities: `Ramboda Falls - Damro Labookellie Tea Centre - Gregory Lake - Nuwara Eliya Post Office - Nanu oya Railway Station`,
+      activities: ``,
     },
     {
-      day: `Day 05`,
-      topic: `Nuwara Eliya to Ella`,
+      day: `1 Night in Dambulla`,
+      topic: `Sigiriya to Dambulla`,
       img: `./trips/Little_Adam.jpg`,
-      detail: `Nestled in the lush landscape of Sri Lanka lies the enchanting trio of wonders: Little Adam's Peak, a majestic summit offering panoramic vistas; the iconic Nine Arches Bridge, a marvel of colonial engineering spanning verdant valleys; and the cascading beauty of Ravana Falls, its crystalline waters descending gracefully amidst the emerald greenery, captivating all who behold their splendor.`,
-      accommodation: `Please Request Us`,
-      activities: `Little adam's peak - Nine Arches Bridge - Ravana Falls`,
+      detail: ``,
+      activities: ``,
     },
     {
-      day: `Day 06`,
-      topic: `Ella to Yala`,
+      day: `2 Nights in Kandy`,
+      topic: `Dambulla to Kandy`,
       img: `./trips/yala.jpg`,
-      detail: `Yala National Park, a biodiversity hotspot in Sri Lanka, boasts diverse ecosystems and abundant wildlife. Buduruwagala Temple nearby showcases remarkable ancient Buddhist sculptures, reflecting the rich cultural heritage of the region amidst stunning natural surroundings.`,
+      detail: ``,
       accommodation: `Please Request Us`,
-      activities: `Yala National Park - Buduruwagala Temple`,
+      activities: ``,
     },
     {
-      day: `Day 07`,
-      topic: `Yala to Tangalle`,
-      img: `./trips/Hiriketiya-Beach.jpg`,
-      detail: `Discover a coastal paradise along Sri Lanka's southern shores, where azure waters meet golden sands. Tangalle Beach entices with its serene beauty, offering a tranquil escape for sun-seekers. Nearby, Hiriketiya Beach beckons with its crescent-shaped bay, perfect for surfing or simply soaking up the sun. Further along, Rekawa Beach invites you to witness mesmerizing turtle hatchings, a remarkable natural spectacle. Finally, find solace at Silent Beach, a secluded haven for those seeking peace amidst breathtaking scenery.`,
-      accommodation: `Please Request Us`,
-      activities: `Tangalle Beach - Hiriketiya Beach - Rekawa Beach - Silent Beach`,
-    },
-    {
-      day: `Day 08`,
-      topic: `Tangalle to Mirissa`,
+      day: `1 Night in Nuwara Eliya`,
+      topic: `Kandy to Nuwara Eliya`,
       img: `./trips/coconut_tree_hill.jpg`,
-      detail: `Perched atop the picturesque Coconut Tree Hill overlooking Mirissa Bay, visitors can soak in breathtaking vistas of the azure waters below. Nearby, the vibrant Fish Market bustles with the day's fresh catch, offering a glimpse into the local fishing culture. Adventure seekers flock to Mirissa for exhilarating experiences like whale watching and dolphin spotting, where the vast ocean becomes a playground for marine marvels, leaving unforgettable memories etched in the minds of all who venture there.`,
+      detail: ``,
       accommodation: `Please Request Us`,
-      activities: `Coconut Tree Hill - Mirissa Bay - Fish Market - Whale watching - Dolphin Watching`,
+      activities: ``,
     },
     {
-      day: `Day 09`,
-      topic: `Mirissa to Bentota`,
-      img: `./trips/Galle_Fort.jpg`,
-      detail: `Explore the vibrant tapestry of Sri Lanka's southwest coast with its captivating attractions. Begin your journey at the historic Galle Dutch Fort, a UNESCO World Heritage Site showcasing colonial charm. Venture to the Bentota Turtle Hatchery, where conservation meets wonder, as you witness the nurturing of these magnificent creatures. Glide through the enchanting Madu River Safari, immersed in the lush mangroves and diverse wildlife. Find tranquility amidst the botanical marvels of Brief Garden, a sanctuary of artistry and nature. Finally, unwind at Bentota Beach, where golden sands meet azure waters, offering serenity and adventure in equal measure.`,
+      day: `4 Nights in Ella`,
+      topic: `Nuwara Eliya to Ella`,
+      img: `./trips/Gangaramaya_Temple.jpg`,
+      detail: ``,
       accommodation: `Please Request Us`,
-      activities: `Galle Dutch Fort - Bentota Turtle Hatchery - Madu River Safari - Brief Garden - Bentota Beach`,
+      activities: ``,
+    },
+    {
+      day: `6 Nights in Arugam Bay`,
+      topic: `Ella to Arugam Bay`,
+      img: `./trips/Gangaramaya_Temple.jpg`,
+      detail: ``,
+      accommodation: `Please Request Us`,
+      activities: ``,
+    },
+    {
+      day: `3 Nights in Mirissa`,
+      topic: `Arugam Bay to Mirissa`,
+      img: `./trips/Gangaramaya_Temple.jpg`,
+      detail: ``,
+      accommodation: `Please Request Us`,
+      activities: ``,
+    },
+    {
+      day: `3 Nights in Galle`,
+      topic: `Mirissa to Galle`,
+      img: `./trips/Gangaramaya_Temple.jpg`,
+      detail: ``,
+      accommodation: `Please Request Us`,
+      activities: ``,
+    },
+    {
+      day: `Day 30`,
+      topic: `Galle to Negombo`,
+      img: `./trips/Gangaramaya_Temple.jpg`,
+      detail: ``,
+      accommodation: `Please Request Us`,
+      activities: ``,
     },
   ];
 
@@ -165,20 +188,20 @@ export default function NineDays() {
       <div>
         <div className="xl:h-[550px] lg:h-[400px] h-[300px]">
           <img
-            src={Ella}
+            src={NilaveliBeach}
             className="object-cover w-full h-full"
             alt="Wallpaper"
           />
         </div>
         <div className="p-3 w-full md:flex justify-between bg-[#54B435] 2xl:px-40 xl:px-24 lg:px-20 px-5">
           <p className="xl:text-2xl lg:text-xl md:text-base text-sm font-semibold text-white">
-            Sri Lanka Tour 10 Days Package{" "}
+            Sri Lanka Tour 30 Days Package{" "}
             <span className="lg:text-lg text-sm lg:font-bold text-[#F0FF42]">
-              (10 Days 09 Nights)
+              (30 Days 29 Nights)
             </span>
           </p>
           <p className="xl:text-2xl lg:text-lg md:text-base text-sm font-medium text-white md:mt-0 mt-2">
-            Starting from <span className="font-bold"> USD 1600</span> per
+            Starting from <span className="font-bold"> USD 4000</span> per
             person
           </p>
         </div>
@@ -286,7 +309,6 @@ export default function NineDays() {
           </div>
         )}
       </div>
-      <Footer />
     </div>
   );
 }

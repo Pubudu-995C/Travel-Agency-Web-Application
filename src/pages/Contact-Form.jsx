@@ -64,17 +64,17 @@ export default function ContactForm() {
         </div>
         <div className="grid grid-cols-1">
           <label
-            htmlFor="national"
+            htmlFor="country"
             className="lg:text-lg md:text-base text-sm font-bold md:mt-0 mt-3"
           >
-            Select Nationality
+            Select Country
           </label>
           <ReactFlagsSelect
             selected={selected}
             onSelect={(code) => setSelected(code)}
-            placeholder="Select Nationality"
+            placeholder="Select Country "
             searchable
-            searchPlaceholder="Search Nationalities"
+            searchPlaceholder="Search Country "
             id="national"
             className="mt-1 h-11 w-full rounded bg-white border border-[#54B435]"
           />
@@ -129,6 +129,10 @@ export default function ContactForm() {
             <option value="">2</option>
             <option value="">3</option>
             <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
           </select>
         </div>
         <div className="grid grid-cols-1">
@@ -149,6 +153,10 @@ export default function ContactForm() {
             <option value="">2</option>
             <option value="">3</option>
             <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
           </select>
         </div>
         <div className="grid grid-cols-1">

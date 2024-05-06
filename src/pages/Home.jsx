@@ -24,15 +24,21 @@ export default function Home() {
     },
     {
       img: `/wallpapers/wallpaper.jpg`,
-      topic: `Barrier-Free Sri Lanka Tour 21 Days Package`,
-      town: ` Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.`,
-      seeMore: ``,
+      topic: `Sri Lanka Tour 14 Days Package`,
+      day: `(14 Days 13 Nights)`,
+      town: ` Negombo, Sigiriya, Kandy, Nuwara Eliya, Ella, Yala, Galle, Mirissa, Bentota, Collombo`,
+      detail: `Experience the essence of Sri Lanka through the Classic Sri Lanka Tour, where you'll encounter a captivating blend of ancient cities, picturesque tea-covered hills, vibrant wildlife parks, breathtaking beaches, and luxurious accommodations.`,
+      price: `2000`,
+      seeMore: `/FourteenDays`,
     },
     {
       img: `/wallpapers/wallpaper5.jpg`,
-      topic: `Barrier-Free Sri Lanka Tour 30 Days Package`,
-      town: ` Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.`,
-      seeMore: ``,
+      topic: `Sri Lanka Tour 30 Days Package`,
+      day: `(30 Days 29 Nights)`,
+      town: `Negombo, Sigiriya, Kandy, Nuwara Eliya, Ella, Yala, Galle, Mirissa, Galle, Nilaveli, Arugam Bay Collombo`,
+      detail: `Experience the essence of Sri Lanka through the Classic Sri Lanka Tour, where you'll encounter a captivating blend of ancient cities, picturesque tea-covered hills, vibrant wildlife parks, breathtaking beaches, and luxurious accommodations.`,
+      price: `4000`,
+      seeMore: `/ThirtyDays`,
     },
     {
       img: `/wallpapers/kandy1.jpg`,
@@ -137,7 +143,7 @@ export default function Home() {
           {tripList.map((trip, index) => (
             <div
               key={index}
-              class=" bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 duration-500 ease-in-out h-[670px]"
+              class=" bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 duration-500 ease-in-out h-full"
             >
               <a href={trip.seeMore ? trip.seeMore.toLowerCase() : "#"}>
                 <img
@@ -148,13 +154,19 @@ export default function Home() {
               </a>
               <div class="p-5">
                 <a href={trip.seeMore ? trip.seeMore.toLowerCase() : "#"}>
-                  <h5 class=" text-2xl font-bold tracking-tight text-gray-900">
+                  <h5 class="font-bold tracking-tight text-gray-900 text-xl lg:text-2xl ">
                     {trip.topic}
                   </h5>
                 </a>
-                <p class="mb-3 font-medium text-gray-700">{trip.day}</p>
-                <p class="mb-3 font-normal text-gray-700 italic">{trip.town}</p>
-                <p className="mb-3 font-medium">{trip.detail}</p>
+                <p class="mb-3 font-medium text-gray-700 md:text-base text-sm">
+                  {trip.day}
+                </p>
+                <p class="mb-3 font-normal text-gray-700 italic md:text-base text-sm">
+                  {trip.town}
+                </p>
+                <p className="mb-3 font-medium md:text-base text-sm">
+                  {trip.detail}
+                </p>
                 <div className="flex justify-between items-center">
                   <a
                     href={trip.seeMore ? trip.seeMore.toLowerCase() : "#"}
@@ -163,10 +175,14 @@ export default function Home() {
                     Read more
                     <i class="fa-solid fa-arrow-right pl-3"></i>
                   </a>
-                  <div className="text-red-600 font-bold leading-3">
-                    <span className="text-sm">Starting From</span>{" "}
-                    <span className="flex text-xl">USD {trip.price}</span>
-                    <span className="text-sm">per person</span>
+                  <div className="leading-3">
+                    <span className="text-red-600 font-bold text-sm flex justify-end">
+                      Starting From
+                    </span>
+                    <span className="text-red-600 font-bold text-xl flex justify-end">
+                      USD {trip.price}
+                    </span>
+                    <span className="text-sm font-medium flex justify-end">per person</span>
                   </div>
                 </div>
               </div>
