@@ -204,14 +204,16 @@ export default function SevenDays() {
                     ></p>
 
                     <div className="flex flex-col mt-5 lg:text-base text-sm">
-                      <p class="font-normal text-gray-700">
+                      <p class="font-normal text-gray-700 space-x-5">
                         <span className="font-bold">Accommodation: </span>{" "}
-                        {date.accommodation}
+                        <span>{date.accommodation}</span>
                       </p>
-                      <p class="font-normal text-gray-700">
+                      <p class="font-normal text-gray-700 space-x-5">
                         {" "}
-                        <span className="font-bold">Activities:</span>{" "}
-                        {date.activities}
+                        <span className="font-bold">Activities:</span>
+                        <span className="italic font-medium">
+                          {date.activities}
+                        </span>
                       </p>
                     </div>
                     <div className="flex md:justify-end justify-center md:mt-0 mt-5">
