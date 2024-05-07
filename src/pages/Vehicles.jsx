@@ -2,8 +2,19 @@ import React from "react";
 import Navbar from "../components/Layout/Navbar";
 import Footer from "../components/Layout/Footer";
 import Car from "../images/wallpapers/premio.jpg";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Vehicles() {
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToScroll: 1,
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 4000,
+  };
+
   return (
     <div>
       <Navbar />
@@ -95,7 +106,51 @@ export default function Vehicles() {
           </p>
         </div>
         <div className="mb-10">
-          <div className="2xl:px-40 xl:px-24 lg:px-20 md:px-5"></div>
+          <div className="2xl:px-40 xl:px-24 lg:px-20 md:px-10 px-5">
+            <div className="lg:grid grid-cols-2 mt-10 bg-slate-200 items-center shadow-md">
+              <div className="">
+                <Slider {...settings}>
+                  <img
+                    src="./vehicles/rav4/rav4-5.jpg"
+                    className="xl:h-[300px] w-full lg:h-[400px] h-[300px] object-cover"
+                    alt=""
+                  />
+                  <img
+                    src="./vehicles/rav4/rav4-2.jpg"
+                    className="xl:h-[300px] w-full lg:h-[400px] h-[300px] object-cover"
+                    alt=""
+                  />
+                  <img
+                    src="./vehicles/rav4/rav4-3.jpg"
+                    className="xl:h-[300px] w-full lg:h-[400px] h-[300px] object-cover"
+                    alt=""
+                  />
+                  <img
+                    src="./vehicles/rav4/rav4-4.jpg"
+                    className="xl:h-[300px] w-full lg:h-[400px] h-[300px] object-cover"
+                    alt=""
+                  />
+                </Slider>
+              </div>
+              <div className="p-5">
+                <p className="font-bold md:text-xl text-lg">TOYOTA RAV4</p>
+                <p className="mt-4 text-justify md:text-base text-sm">
+                  The Toyota RAV4 is a compact crossover SUV known for its
+                  reliability, versatility, and efficiency. Introduced in 1994,
+                  it has since evolved through multiple generations, offering
+                  spacious interiors, advanced safety features, and impressive
+                  off-road capabilities. With various trim levels including
+                  hybrid options, the RAV4 appeals to a wide range of drivers,
+                  from urban commuters to outdoor enthusiasts. Its reputation
+                  for durability and resale value makes it a popular choice in
+                  its segment. Equipped with Toyota's latest technology,
+                  including Toyota Safety Sense, it prioritizes safety without
+                  compromising on performance or style, solidifying its position
+                  as a top-selling SUV globally.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />

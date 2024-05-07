@@ -5,7 +5,7 @@ import Wallpaper from "../images/wallpapers/wallpaper10.jpg";
 export default function Home() {
   const tripList = [
     {
-      img: `/wallpapers/wallpaper10.jpg`,
+      img: `/trips/nuwara_eliya_post_office.jpg`,
       topic: `Sri Lanka Tour 07 Days Package`,
       day: `(07 Days 06 Nights)`,
       town: `Negombo, Sigiriya, Kandy, Nuwara Eliya, Ella, Yala, Galle, Mirissa, Bentota, Collombo`,
@@ -14,7 +14,7 @@ export default function Home() {
       seeMore: `/SevenDays`,
     },
     {
-      img: `/wallpapers/wallpaper9.jpg`,
+      img: `/trips/coconut_tree_hill.jpg`,
       topic: `Sri Lanka Tour 10 Days Package`,
       day: `(10 Days 09 Nights)`,
       town: `Negombo, Sigiriya, Kandy, Nuwara Eliya, Ella, Yala, Galle, Tangalle, Mirissa, Bentota, Collombo`,
