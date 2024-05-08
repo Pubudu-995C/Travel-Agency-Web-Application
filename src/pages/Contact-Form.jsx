@@ -13,6 +13,11 @@ export default function ContactForm() {
 
   return (
     <div>
+      <div className="flex justify-center pb-10">
+        <p className="font-bold text-center xl:text-4xl lg:text-3xl md:text-2xl text-xl">
+          Plan Your Trip With Us
+        </p>
+      </div>
       <form action="">
         <div className="md:grid md:grid-cols-2 px-5 py-10 bg-slate-100 md:gap-x-5 md:gap-y-3">
           <div className="grid grid-cols-1">

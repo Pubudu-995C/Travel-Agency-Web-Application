@@ -1,6 +1,7 @@
 import Navbar from "../components/Layout/Navbar";
 import Footer from "../components/Layout/Footer";
 import Wallpaper from "../images/wallpapers/wallpaper10.jpg";
+import "./home.css";
 
 export default function Home() {
   const tripList = [
@@ -53,6 +54,25 @@ export default function Home() {
       seeMore: ``,
     },
   ];
+
+  const galleryImages = [
+    process.env.PUBLIC_URL + `./trips/coconut_tree_hill.jpg`,
+    process.env.PUBLIC_URL + `./trips/Galle_Fort.jpg`,
+    process.env.PUBLIC_URL + `./trips/nineArch.jpg`,
+    process.env.PUBLIC_URL + `./trips/pinnawala.jpg`,
+    process.env.PUBLIC_URL + `./trips/damro.jpg`,
+    process.env.PUBLIC_URL + `./trips/templeTooth.jpg`,
+    process.env.PUBLIC_URL + `./trips/Dambulla_Cave_Temple.jpg`,
+    process.env.PUBLIC_URL + `./trips/Kandy_Cultural_Dance.jpg`,
+    process.env.PUBLIC_URL + `./trips/nuwara_eliya_post_office.jpg`,
+    process.env.PUBLIC_URL + `./trips/yala.jpg`,
+    process.env.PUBLIC_URL + `./trips/Madu-River.jpg`,
+    process.env.PUBLIC_URL + `./trips/whale-watching.jpg`,
+    process.env.PUBLIC_URL + `./trips/mirissa-bay.jpg`,
+    process.env.PUBLIC_URL + `./trips/Gregory_Lake.jpg`,
+    process.env.PUBLIC_URL + `./trips/Little_Adam.jpg`,
+  ];
+
   return (
     <div>
       <Navbar />
@@ -138,7 +158,27 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="2xl:px-40 xl:px-24 lg:px-20 px-5 my-20">
+      <div className="2xl:px-40 xl:px-24 lg:px-20 px-5 lg:my-20 my-10">
+        <div className="justify-center mb-10">
+          <p className="font-bold text-center xl:text-4xl lg:text-3xl md:text-2xl text-xl">
+            Check out our top picks for Sri Lanka travel plans!
+          </p>
+          <p className="mt-5 text-center lg:text-lg md:text-base text-sm">
+            Explore Travel Mango's diverse selection of Sri Lanka tours,
+            offering an array of options to suit your preferences on this
+            stunning island getaway. Whether you're craving a traditional island
+            experience, seeking adventure amidst wildlife and nature, planning a
+            family-friendly vacation, indulging in culinary delights at charming
+            boutique hotels, or simply yearning for relaxation on picturesque
+            tropical beaches, our Sri Lanka tours have something for everyone.
+            Our experienced team of consultants is dedicated to tailoring these
+            itineraries to your exact specifications. With Travel Mango, not
+            only do you receive exceptional value for your money, but you also
+            gain access to our exclusive activities, top-notch chauffeur-guides,
+            and round-the-clock customer support. Trust us to curate your
+            unforgettable Sri Lanka journey.
+          </p>
+        </div>
         <div className="grid items-center gap-10 xl:grid-cols-3 md:grid-cols-2">
           {tripList.map((trip, index) => (
             <div
@@ -182,12 +222,58 @@ export default function Home() {
                     <span className="text-red-600 font-bold text-xl flex justify-end">
                       USD {trip.price}
                     </span>
-                    <span className="text-sm font-medium flex justify-end">per person</span>
+                    <span className="text-sm font-medium flex justify-end">
+                      per person
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div>
+        <div class="bg-gray-100 leanding-normal tracking-wide">
+          <div class="container mx-auto w-full overflow-hidden relative">
+            <div class="w-full h-full absolute z-10">
+              <div
+                class="w-1/4 h-full absolute z-50 left-0"
+                style={{
+                  background:
+                    "linear-gradient(to right, #edf2f7 0%, rgba(255, 255, 255, 0) 100%)",
+                }}
+              ></div>
+              <div
+                class="w-1/4 h-full absolute z-50 right-0"
+                style={{
+                  background:
+                    "linear-gradient(to left, #edf2f7 0%, rgba(255, 255, 255, 0) 100%)",
+                }}
+              ></div>
+            </div>
+
+            <div
+              class="carousel-items flex items-center justify-center"
+              style={{
+                width: "fit-content",
+                animation: "carouselAnim 30s infinite alternate linear",
+              }}
+            >
+              {galleryImages.map((image, index) => (
+                <div
+                  class="carousel-focus flex items-center flex-col relative bg-white  my-10  rounded-lg shadow-lg"
+                  style={{ width: "350px" }}
+                >
+                  <img
+                    class="w-full md:h-[250px] h-[150px] object-cover shadow-2xl"
+                    alt="Img"
+                    src={image}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
       <Footer />

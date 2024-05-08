@@ -21,7 +21,7 @@ export default function SevenDays() {
       topic: `Sigiriya to Kandy`,
       img: `./trips/templeTooth.jpg`,
       detail: `Sigiriya Rock Fortress (Lion Rock) <br/> Dambulla Royal Cave Temple and Golden Temple <br/> Spice Garden <br/> Matale Muthumariamman Temple <br/> Temple of Tooth Relic <br/> Kandy Cultural Dance Show`,
-      accommodation: `Please Request Us`,
+      accommodation: `As Your Request`,
       activities: ``,
     },
     {
@@ -29,7 +29,7 @@ export default function SevenDays() {
       topic: `Kandy to Ella`,
       img: `./trips/damro.jpg`,
       detail: `Ramboda Falls <br/> Damro Labookellie Tea Centre<br/> Gregory Lake <br/> Nuwara Eliya Post Office`,
-      accommodation: `Please Request Us`,
+      accommodation: `As Your Request`,
       activities: ``,
     },
     {
@@ -37,7 +37,7 @@ export default function SevenDays() {
       topic: `Ella to Yala`,
       img: `./trips/nineArch.jpg`,
       detail: `Little adam's peak <br/> Nine Arches Bridge <br/> Ravana Falls <br/> Yala Safari`,
-      accommodation: `Please Request Us`,
+      accommodation: `As Your Request`,
       activities: ``,
     },
     {
@@ -45,7 +45,7 @@ export default function SevenDays() {
       topic: `Yala to Mirissa`,
       img: `./trips/coconut_tree_hill.jpg`,
       detail: `Coconut Tree Hill <br/> Mirissa Bay <br/> Fish Market <br/>Whale watching <br/> Dolphin Watching <br/> `,
-      accommodation: `Please Request Us`,
+      accommodation: `As Your Request`,
       activities: ``,
     },
     {
@@ -53,7 +53,7 @@ export default function SevenDays() {
       topic: `Mirissa to Bentota`,
       img: `./trips/Galle_Fort.jpg`,
       detail: `Galle Fort <br/> Turtle Farm & Hatchery <br/> Madu River`,
-      accommodation: `Please Request Us`,
+      accommodation: `As Your Request`,
       activities: ``,
     },
   ];

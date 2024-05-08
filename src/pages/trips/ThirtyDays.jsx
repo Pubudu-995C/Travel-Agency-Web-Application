@@ -25,7 +25,7 @@ export default function ThirtyDays() {
       activities: `Ruwanweli Maha Seya - Jaya Sri Maha Bodhi - Thuparama vihara - Isurumuni Royal Temple - Abhayagiri viharaya - Overnight Stay in a Hotel at Anuradhapura`,
     },
     {
-      day: `2 Nights in Nilaveli`,
+      day: `3 Nights in Nilaveli`,
       topic: `Anuradhapura to Nilaveli`,
       img: `./trips/Nilaveli_Beach.jpg`,
       detail: `Experience the enchanting beauty of Sri Lanka's eastern coast with a journey that encompasses the allure of Pigeon Island's marine sanctuary, the pristine shores of Nilaveli Beach, and the spiritual resonance of Thirukoneswaram Kovil. Explore the historic charm of Fort Frederick and the laid-back vibes of Uppuveli. Dive into the azure depths through scuba diving adventures, discovering vibrant coral reefs and exotic marine life. Finally, unwind with an overnight stay in a cozy hotel nestled in the tranquil ambiance of Nilaveli, where the whispers of the ocean lull you into a state of serenity, completing a journey of blissful discovery.`,
@@ -50,7 +50,7 @@ export default function ThirtyDays() {
       activities: `Dambulla Royal Cave Temple and Golden Temple - Overnight Stay in a Hotel at Dambulla`,
     },
     {
-      day: `2 Nights in Kandy`,
+      day: `3 Nights in Kandy`,
       topic: `Dambulla to Kandy`,
       img: `./trips/templeTooth.jpg`,
       detail: `Embark on a mesmerizing journey through Kandy's cultural tapestry. Begin at the Royal Botanic Gardens, where lush greenery unveils botanical wonders. Pay respects at the solemn Commonwealth War Cemetery, a poignant reminder of history's sacrifices. Seek tranquility in the Udawatta Kele Sanctuary, a haven for nature enthusiasts. Ascend to the majestic Bahirawakanda Temple, offering panoramic views of the city. Experience spiritual reverence at the Temple of Tooth Relic, an icon of Buddhist heritage. Immerse in the rhythmic beats of Kandy's Cultural Dance Show, a vibrant celebration of tradition. Conclude your day with a blissful overnight stay in a luxurious hotel, cradled by Kandy's serene ambiance.`,
@@ -58,7 +58,7 @@ export default function ThirtyDays() {
       activities: `Royal Botanic Gardens - Commonwealth War Cemetery - Udawatta Kele Sanctuary -  Bahirawakanda Temple - Temple of Tooth Relic - Kandy Cultural Dance Show - Overnight Stay in a Hotel at Kandy`,
     },
     {
-      day: `1 Night in Nuwara Eliya`,
+      day: `2 Night in Nuwara Eliya`,
       topic: `Kandy to Nuwara Eliya`,
       img: `./trips/nuwara_eliya_post_office.jpg`,
       detail: `Embark on an enchanting journey to Nuwara Eliya, where you'll ascend the majestic Ambuluwawa Tower, immerse yourself in the aromatic bliss of Damro Labookellie Tea Centre, and witness nature's grandeur at the cascading Ramboda Waterfalls. Explore the lush tea plantations and factories, bask in the tranquil beauty of Gregory Lake, and marvel at the architectural splendor of Nuwara Eliya Post Office. Pay reverence at the sacred Seetha Eliya Temple, trek to the breathtaking Bomburu Ella, and soak in panoramic vistas from Lipton's Seat, before retreating to a cozy hotel for an overnight stay in this hill country paradise.`,
@@ -74,7 +74,7 @@ export default function ThirtyDays() {
       activities: `Little adam's peak - Ellawella Waterfalls - Nine Arches Bridge - Ravana Falls - Overnight Stay in a Hotel at Ella`,
     },
     {
-      day: `6 Nights in Arugam Bay`,
+      day: `4 Nights in Arugam Bay`,
       topic: `Ella to Arugam Bay`,
       img: `./trips/Arugam_Bay.jpg`,
       detail: `Explore the captivating wonders of Arugam Bay Beach, where golden sands meet azure waters, offering a tranquil escape. Venture to Muhudu Maha Viharaya, an ancient Buddhist temple steeped in history and spirituality. Embark on a serene lagoon safari in Pottuvil, immersing in the pristine natural beauty. Discover the biodiversity hotspot of Kudumbigala Sanctuary, home to diverse flora and fauna. Uncover the mystique of Kudumbigala Monastery Complex, a sacred site nestled in lush greenery. Ascend Sangamankanda Lighthouse for panoramic views of the coastline. Conclude your adventure with an overnight stay at a cozy hotel, relishing the serenity of Arugam Bay.`,
@@ -230,9 +230,9 @@ export default function ThirtyDays() {
           <div>
             <div className="grid grid-cols-1 gap-y-10 my-10 2xl:px-40 xl:px-24 lg:px-20 px-5">
               {dateList.map((date, index) => (
-                <div class="flex flex-col items-center bg-white border border-gray-300 rounded-lg shadow md:flex-row hover:bg-yellow-50 transition-colors duration-300 w-full">
+                <div class="flex flex-col items-center bg-white border border-gray-300 rounded-lg shadow lg:flex-row hover:bg-yellow-50 transition-colors duration-300 w-full">
                   <img
-                    class="object-cover xl:w-[400px] lg:w-[300px] md:w-[200px] w-full h-full rounded-t-lg md:rounded-none md:rounded-s-lg"
+                    class="object-cover xl:w-[400px] lg:w-[300px] w-full lg:h-full md:h-[200px] rounded-t-lg lg:rounded-none lg:rounded-s-lg"
                     src={date.img}
                     alt=""
                   />
@@ -245,11 +245,9 @@ export default function ThirtyDays() {
                         {date.topic}
                       </p>
                     </div>
-                    <p
-                      class="font-normal text-gray-700 lg:text-base text-sm text-justify"
-                      dangerouslySetInnerHTML={{ __html: date.detail }}
-                    ></p>
-
+                    <p class="font-normal text-gray-700 lg:text-base text-sm text-justify">
+                      {date.detail}
+                    </p>
                     <div className="flex flex-col mt-5 lg:text-base text-sm">
                       <p class="font-normal text-gray-700 space-x-5">
                         <span className="font-bold ">Accommodation: </span>{" "}
