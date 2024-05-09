@@ -7,9 +7,10 @@ import Navbar from "../components/Layout/Navbar";
 import Footer from "../components/Layout/Footer";
 // ===============Trips==================
 import SevenDays from "../pages/trips/SevenDays";
-import NineDays from "../pages/trips/NineDays";
+import TenDays from "../pages/trips/TenDays";
 import FourteenDays from "../pages/trips/FourteenDays";
 import ThirtyDays from "../pages/trips/ThirtyDays";
+import FortyFiveDays from "../pages/trips/FortyFiveDays";
 // =================Pages=================
 import Home from "../pages/Home";
 import Vehicles from "../pages/Vehicles";
@@ -25,9 +26,10 @@ const RouteList = () => {
       <Route path="/footer" element={<Footer />} />
       {/* ===============Trips================== */}
       <Route path="/SevenDays" element={<SevenDays />} />
-      <Route path="/NineDays" element={<NineDays />} />
+      <Route path="/TenDays" element={<TenDays />} />
       <Route path="/FourteenDays" element={<FourteenDays />} />
       <Route path="/ThirtyDays" element={<ThirtyDays />} />
+      <Route path="/FortyFiveDays" element={<FortyFiveDays />} />
       {/* ===============Contact Form================== */}
       <Route path="/contactForm" element={<ContactForm />} />
     </Routes>

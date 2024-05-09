@@ -4,7 +4,7 @@ import Footer from "../../components/Layout/Footer";
 import Ella from "../../images/wallpapers/Ella.jpg";
 import ContactForm from "../Contact-Form";
 
-export default function NineDays() {
+export default function TenDays() {
   const [activeTab, setActiveTab] = useState("trips");
 
   const dateList = [

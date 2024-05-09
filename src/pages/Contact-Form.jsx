@@ -221,11 +221,11 @@ export default function ContactForm() {
               className="mt-1 p-2 w-full resize-none rounded border border-[#54B435]"
             ></textarea>
           </div>
-          <div className="col-span-2 flex justify-center">
+          <div className="col-span-2 flex justify-center mt-5">
             <input
               type="submit"
               value="CONFIRM"
-              className="cursor-pointer bg-[#54B435] py-2 px-10 mx-auto text-white hover:text-[#F0FF42] transition-colors duration-300 font-bold text-lg rounded"
+              className="cursor-pointer bg-[#54B435] md:py-2 md:px-10 py-1 px-5 mx-auto text-white hover:text-[#F0FF42] transition-colors duration-300 font-bold md:text-lg text-base rounded"
             />
           </div>
         </div>

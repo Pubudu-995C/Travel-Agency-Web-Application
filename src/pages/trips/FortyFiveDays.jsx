@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Navbar from "../../components/Layout/Navbar";
 import Footer from "../../components/Layout/Footer";
-import NilaveliBeach from "../../images/wallpapers/Nilaveli_Beach.jpg";
+import HiriketiyaBeach from "../../images/wallpapers/Hiriketiya_Beach.jpg";
 import ContactForm from "../Contact-Form";
 
-export default function ThirtyDays() {
+export default function FortyFiveDays() {
   const [activeTab, setActiveTab] = useState("trips");
 
   const dateList = [
@@ -25,16 +25,24 @@ export default function ThirtyDays() {
       activities: `Ruwanweli Maha Seya - Jaya Sri Maha Bodhi - Thuparama vihara - Isurumuni Royal Temple - Abhayagiri viharaya - Overnight Stay in a Hotel at Anuradhapura`,
     },
     {
-      day: `3 Nights in Nilaveli`,
-      topic: `Anuradhapura to Nilaveli`,
-      img: `./trips/Nilaveli_Beach.jpg`,
-      detail: `Experience the enchanting beauty of Sri Lanka's eastern coast with a journey that encompasses the allure of Pigeon Island's marine sanctuary, the pristine shores of Nilaveli Beach, and the spiritual resonance of Thirukoneswaram Kovil. Explore the historic charm of Fort Frederick and the laid-back vibes of Uppuveli. Dive into the azure depths through scuba diving adventures, discovering vibrant coral reefs and exotic marine life. Finally, unwind with an overnight stay in a cozy hotel nestled in the tranquil ambiance of Nilaveli, where the whispers of the ocean lull you into a state of serenity, completing a journey of blissful discovery.`,
+      day: `4 Nights in Jaffna`,
+      topic: `Anuradhapura to Jaffna`,
+      img: `./trips/Casurina_Beach.jpeg`,
+      detail: `Immerse yourself in the vibrant tapestry of Jaffna's cultural and historical wonders. Begin your journey at the majestic Nallur Kandaswamy Kovil, a testament to ancient Tamil architecture and spirituality. Explore the treasure trove of knowledge at the Jaffna Public Library, a symbol of resilience and learning. Wander through the echoes of colonial history at the Dutch Fort, standing tall amidst the cityscape. Relax on the golden shores of Casuarina Beach, where the azure waters beckon. Dive into the bustling energy of Jaffna Market, a sensory delight of sights and sounds. Seek solace at the Nagadeepa Temple, steeped in legend and devotion. Venture to Fort Hammenhiel, a picturesque island fortress steeped in maritime history. Conclude your day with a peaceful overnight stay at a cozy hotel, relishing the essence of Jaffna's hospitality and charm.`,
       accommodation: `As Your Request`,
-      activities: `Pigeon Island - Nilaveli Beach - Thirukoneswaram Kovil - Fort Frederick - Uppuveli - Scuba Diving - Overnight Stay in a Hotel at Nilaveli`,
+      activities: `Nallur Kandaswamy Kovil - Jaffna Public Library - Dutch Fort - Casuarina Beach - Jaffna Market - Nagadeepa Temple - Fort Hammenhiel - Overnight Stay in a Hotel at Jaffna`,
     },
     {
-      day: `2 Nights in Sigiriya`,
-      topic: `Nilaveli to Sigiriya`,
+      day: `4 Nights in Trincomalee`,
+      topic: `Jaffna to Trincomalee`,
+      img: `./trips/Koneswaram_temple.jpg`,
+      detail: `Trincomalee, a coastal gem in Sri Lanka, boasts a plethora of captivating attractions. Begin your journey with a visit to Pigeon Island, renowned for its pristine shores and vibrant marine life. Explore the idyllic Nilaveli Beach before immersing yourself in the spiritual ambiance of Thirukoneswaram Kovil and Pathirakali Amman Temple. Marvel at the surreal beauty of Marble Beach and delve into history at Fort Frederick, a testament to the city's colonial past. Indulge in the tranquility of Uppuveli Beach and rejuvenate your senses at Kanniya Hot Spring's therapeutic waters. For adventure enthusiasts, Trincomalee offers exhilarating opportunities for scuba diving amidst its azure waters. Conclude your day with an overnight stay at a luxurious hotel, embracing the comfort and serenity of Trincomalee's enchanting atmosphere.`,
+      accommodation: `As Your Request`,
+      activities: `Pigeon Island - Nilaveli Beach - Thirukoneswaram Kovil - Marble beach - Fort Frederick - Uppuveli beach - Scuba Diving - Pathirakali Amman Temple - Kanniya Hot Spring - Overnight Stay in a Hotel at Trincomalee`,
+    },
+    {
+      day: `3 Nights in Sigiriya`,
+      topic: `Trincomalee to Sigiriya`,
       img: `./trips/sigiriya.jpg`,
       detail: `Experience the rich tapestry of Sri Lanka's cultural and natural wonders with a journey that begins at the majestic Sigiriya Rock Fortress, also known as Lion Rock, an ancient marvel perched atop a towering monolith. Delve into the wilderness of Minneriya National Park, where elephant herds roam freely amidst lush landscapes. Trek to Pidurangala Rock for panoramic views of Sigiriya and its surroundings. Continue your wildlife odyssey at Kaudulla National Park, encountering diverse flora and fauna. Immerse yourself in local life with a Sigiriya Village Tour, discovering the traditions and customs of the region. Find tranquility at Kaludiya Pokuna, an ancient forest monastery. Conclude your day with an overnight stay at a hotel in Sigiriya, where comfort meets the allure of Sri Lanka's historical heartland.`,
       accommodation: `As Your Request`,
@@ -50,15 +58,15 @@ export default function ThirtyDays() {
       activities: `Dambulla Royal Cave Temple and Golden Temple - Overnight Stay in a Hotel at Dambulla`,
     },
     {
-      day: `3 Nights in Kandy`,
+      day: `4 Nights in Kandy`,
       topic: `Dambulla to Kandy`,
       img: `./trips/templeTooth.jpg`,
-      detail: `Embark on a mesmerizing journey through Kandy's cultural tapestry. Begin at the Royal Botanic Gardens, where lush greenery unveils botanical wonders. Pay respects at the solemn Commonwealth War Cemetery, a poignant reminder of history's sacrifices. Seek tranquility in the Udawatta Kele Sanctuary, a haven for nature enthusiasts. Ascend to the majestic Bahirawakanda Temple, offering panoramic views of the city. Experience spiritual reverence at the Temple of Tooth Relic, an icon of Buddhist heritage. Immerse in the rhythmic beats of Kandy's Cultural Dance Show, a vibrant celebration of tradition. Conclude your day with a blissful overnight stay in a luxurious hotel, cradled by Kandy's serene ambiance.`,
+      detail: `Embark on a captivating journey through Kandy's cultural and natural wonders. Begin your exploration at the serene Royal Botanic Gardens, where lush greenery and vibrant blooms offer respite. Pay homage to history at the Commonwealth War Cemetery, a poignant reminder of sacrifice. Ascend to the Kandy viewpoint, treating your senses to panoramic vistas of the city's picturesque landscape. Find solace amidst the verdant Udawatta Kele Sanctuary, a sanctuary for both nature and the soul. Immerse yourself in Sri Lanka's rich tea heritage at the Ceylon Tea Museum, before seeking blessings at the Bahirawakanda Temple. Witness the sacred allure of the Temple of the Tooth Relic, a revered site of Buddhist pilgrimage. As night falls, indulge in the rhythmic beats and vibrant colors of a Kandy Cultural Dance Show. Finally, unwind in comfort with an overnight stay at a luxurious hotel, completing a day brimming with cultural immersion and natural beauty.`,
       accommodation: `As Your Request`,
-      activities: `Royal Botanic Gardens - Commonwealth War Cemetery - Udawatta Kele Sanctuary -  Bahirawakanda Temple - Temple of Tooth Relic - Kandy Cultural Dance Show - Overnight Stay in a Hotel at Kandy`,
+      activities: `Royal Botanic Gardens - Commonwealth War Cemetery - Kandy view point - Udawatta Kele Sanctuary - Ceylon Tea Museum - Bahirawakanda Temple - Temple of Tooth Relic - Kandy Cultural Dance Show - Overnight Stay in a Hotel at Kandy`,
     },
     {
-      day: `2 Nights in Nuwara Eliya`,
+      day: `3 Night in Nuwara Eliya`,
       topic: `Kandy to Nuwara Eliya`,
       img: `./trips/nuwara_eliya_post_office.jpg`,
       detail: `Embark on an enchanting journey to Nuwara Eliya, where you'll ascend the majestic Ambuluwawa Tower, immerse yourself in the aromatic bliss of Damro Labookellie Tea Centre, and witness nature's grandeur at the cascading Ramboda Waterfalls. Explore the lush tea plantations and factories, bask in the tranquil beauty of Gregory Lake, and marvel at the architectural splendor of Nuwara Eliya Post Office. Pay reverence at the sacred Seetha Eliya Temple, trek to the breathtaking Bomburu Ella, and soak in panoramic vistas from Lipton's Seat, before retreating to a cozy hotel for an overnight stay in this hill country paradise.`,
@@ -66,12 +74,12 @@ export default function ThirtyDays() {
       activities: `Ambuluwawa Tower - Ramboda Waterfalls - Damro Labookellie Tea Centre - Gregory Lake - Nuwara Eliya Post Office - Seetha Eliya Temple - Bomburu Ella - Lipton Seat - Overnight Stay in a Hotel at Nuwara Eliya`,
     },
     {
-      day: `4 Nights in Ella`,
+      day: `5 Nights in Ella`,
       topic: `Nuwara Eliya to Ella`,
       img: `./trips/Little_Adam.jpg`,
-      detail: `Embark on a picturesque journey by train to Ella, where nature's wonders await. Marvel at the majestic Ravana Falls, cascading gracefully amidst lush greenery. Explore the iconic Nine Arch Bridge, a marvel of architecture nestled in the verdant landscape. Hike up to Little Adam's Peak for breathtaking panoramic views that stretch to the horizon. Don't miss the enchanting Ellawella Waterfalls, where tranquility reigns supreme. After a day of exploration, unwind in comfort with an overnight stay at a cozy hotel in Ella, surrounded by the serene beauty of the Sri Lankan countryside.`,
+      detail: `Embark on an enchanting journey through Ella's natural wonders, where each step unveils a tapestry of breathtaking sights. Begin your adventure with a hike to Little Adam's Peak, offering panoramic vistas that stretch beyond imagination. Venture deeper into the mystique as you explore Ravana's Cave, steeped in legend and history. Feel the misty embrace of Ellawella Waterfalls cascading down with ethereal grace, a symphony of nature's might. Ready your spirit for the ascent from Ella Rock Trailhead, promising unforgettable views of the lush landscape below. Traverse the iconic Nine Arches Bridge, an engineering marvel amidst emerald foliage. Refresh your senses at Ravana Falls, a tranquil oasis in the heart of wilderness. Finally, unwind in the comfort of a hotel nestled in Ella, letting the day's memories linger under the stars.`,
       accommodation: `As Your Request`,
-      activities: `Little adam's peak - Ellawella Waterfalls - Nine Arches Bridge - Ravana Falls - Overnight Stay in a Hotel at Ella`,
+      activities: `Little adam's peak - Ravana's Cave - Ellawella Waterfalls - Ella Rock Trailhead - Nine Arches Bridge - Ravana Falls - Overnight Stay in a Hotel at Ella`,
     },
     {
       day: `4 Nights in Arugam Bay`,
@@ -82,8 +90,24 @@ export default function ThirtyDays() {
       activities: `Arugam Bay Beach - Muhudu Maha Viharaya - Lagoon Safari ,Pottuvil - Kudumbigala Sanctuary - Kudumbigala Monastery Complex - Sangamankanda Lighthouse - Overnight Stay in a Hotel at Arugam Bay`,
     },
     {
+      day: `3 Nights in Yala`,
+      topic: `Arugam Bay to Yala`,
+      img: `./trips/yala.jpg`,
+      detail: `Embark on a breathtaking journey through the wonders of Sri Lanka's natural and cultural treasures. Begin your adventure by immersing yourself in the mesmerizing cascade of Diyaluma Waterfalls, where nature's grandeur takes center stage. Dive deeper into the wilderness with thrilling Yala and Udawalawe Jeep Safaris, encountering diverse wildlife amidst stunning landscapes. Explore the ancient allure of Buduruwagala Temple, adorned with remarkable rock carvings dating back centuries. Finally, unwind and rejuvenate in the comfort of a luxurious hotel, nestled amidst the tranquil surroundings of Yala or Udawalawe, ensuring an unforgettable overnight stay to complement your unforgettable expedition.`,
+      accommodation: `As Your Request`,
+      activities: `Diyaluma Waterfalls - Yala Jeep Safari - Udawalawe Jeep Safari - Buduruwagala Temple - Overnight Stay in a Hotel at Yala / Udawalawe`,
+    },
+    {
+      day: `3 Nights in Tangalle`,
+      topic: `Yala to Tangalle`,
+      img: `./trips/Hiriketiya-Beach.jpg`,
+      detail: `Embark on a coastal odyssey, beginning with the sun-kissed shores of Tangalle Beach, where golden sands meet azure waters, promising moments of tranquility. Dive into the heart of nature at Ridiyagama Safari Park, where majestic wildlife roams freely against a backdrop of lush greenery. Seek solace at Hiriketiya Beach, a hidden gem renowned for its pristine beauty and gentle waves, perfect for unwinding. Explore the ancient marvels of Mulgirigala Raja Maha Viharaya, a sacred site steeped in history and spirituality. Witness the awe-inspiring spectacle of the Hummanaya Blow Hole, nature's own masterpiece. Conclude your day at the secluded shores of Rekawa Beach and Silent Beach, where serenity reigns supreme. Retreat to the comfort of a coastal hotel in Tangalle, ensuring a restful overnight stay, completing your coastal escapade with unforgettable memories.`,
+      accommodation: `As Your Request`,
+      activities: `Tangalle Beach - Ridiyagama Safari Park - Hiriketiya Beach - Mulgirigala Raja Maha Viharaya -  Rekawa Beach - Hummanaya Blow Hole - Silent Beach - Overnight Stay in a Hotel at Tangalle`,
+    },
+    {
       day: `3 Nights in Mirissa`,
-      topic: `Arugam Bay to Mirissa`,
+      topic: `Tangalle to Mirissa`,
       img: `./trips/coconut_tree_hill.jpg`,
       detail: `Embark on an enchanting journey along the southern coast of Sri Lanka, beginning at the picturesque Coconut Tree Hill, offering panoramic views of Mirissa Bay's azure waters. Delve into the vibrant culture at the local fish market, brimming with the day's fresh catch. Venture into the vast expanse of the ocean for an unforgettable experience of whale and dolphin watching. Then, unwind on the pristine shores of Unawatuna Beach, where golden sands meet the gentle lapping waves. Conclude your day with an idyllic overnight stay in the charming town of Mirissa, where tranquility and beauty converge for an unforgettable coastal retreat.`,
       accommodation: `As Your Request`,
@@ -98,7 +122,7 @@ export default function ThirtyDays() {
       activities: `Galle Dutch Fort - Lighthouse - Sea Turtle Hatchery Centre - Japanese Peace Pagoda - Unawatuna Beach - Jungle Beach - Rumassala Sanctuary - Old Dutch Hospital - Maritime Museum - Overnight Stay in a Hotel at Galle`,
     },
     {
-      day: `Day 30`,
+      day: `Day 45`,
       topic: `Galle to Negombo`,
       img: `./trips/Negombo_Beach.jpg`,
       detail: ``,
@@ -190,20 +214,20 @@ export default function ThirtyDays() {
       <div>
         <div className="xl:h-[550px] lg:h-[400px] h-[300px]">
           <img
-            src={NilaveliBeach}
+            src={HiriketiyaBeach}
             className="object-cover w-full h-full"
             alt="Wallpaper"
           />
         </div>
         <div className="p-3 w-full md:flex justify-between bg-[#54B435] 2xl:px-40 xl:px-24 lg:px-20 px-5">
           <p className="xl:text-2xl lg:text-xl md:text-base text-sm font-semibold text-white">
-            Sri Lanka Tour 30 Days Package{" "}
+            Sri Lanka Tour 45 Days Package{" "}
             <span className="lg:text-lg text-sm lg:font-bold text-[#F0FF42]">
-              (30 Days 29 Nights)
+              (45 Days 44 Nights)
             </span>
           </p>
           <p className="xl:text-2xl lg:text-lg md:text-base text-sm font-medium text-white md:mt-0 mt-2">
-            Starting from <span className="font-bold"> USD 4000</span> per
+            Starting from <span className="font-bold"> USD 5400</span> per
             person
           </p>
         </div>

@@ -11,7 +11,7 @@ export default function Vehicles() {
     infinite: true,
     speed: 500,
     slidesToScroll: 1,
-    autoplay: true, // Enable autoplay
+    autoplay: true,
     autoplaySpeed: 4000,
   };
 

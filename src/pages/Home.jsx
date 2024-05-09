@@ -9,7 +9,7 @@ export default function Home() {
       img: `/trips/nuwara_eliya_post_office.jpg`,
       topic: `Sri Lanka Tour 07 Days Package`,
       day: `(07 Days 06 Nights)`,
-      town: `Negombo, Sigiriya, Kandy, Nuwara Eliya, Ella, Yala, Galle, Mirissa, Bentota, Collombo`,
+      town: `Negombo, Sigiriya, Dambulla, Kandy, Nuwara Eliya, Ella, Yala, Galle, Mirissa, Bentota, Collombo`,
       detail: `Experience the essence of Sri Lanka through the Classic Sri Lanka Tour, where you'll encounter a captivating blend of ancient cities, picturesque tea-covered hills, vibrant wildlife parks, breathtaking beaches, and luxurious accommodations.`,
       price: `1200`,
       seeMore: `/SevenDays`,
@@ -18,16 +18,16 @@ export default function Home() {
       img: `/trips/coconut_tree_hill.jpg`,
       topic: `Sri Lanka Tour 10 Days Package`,
       day: `(10 Days 09 Nights)`,
-      town: `Negombo, Sigiriya, Kandy, Nuwara Eliya, Ella, Yala, Galle, Tangalle, Mirissa, Bentota, Collombo`,
+      town: `Negombo, Sigiriya, Dambulla, Kandy, Nuwara Eliya, Ella, Yala, Galle, Tangalle, Mirissa, Bentota, Collombo`,
       detail: `Experience the essence of Sri Lanka through the Classic Sri Lanka Tour, where you'll encounter a captivating blend of ancient cities, picturesque tea-covered hills, vibrant wildlife parks, breathtaking beaches, and luxurious accommodations.`,
       price: `1600`,
-      seeMore: `/Ninedays`,
+      seeMore: `/TenDays`,
     },
     {
       img: `/wallpapers/wallpaper.jpg`,
       topic: `Sri Lanka Tour 14 Days Package`,
       day: `(14 Days 13 Nights)`,
-      town: ` Negombo, Sigiriya, Kandy, Nuwara Eliya, Ella, Yala, Galle, Mirissa, Bentota, Collombo`,
+      town: `Negombo, Sigiriya, Dambulla, Kandy, Nuwara Eliya, Ella, Yala, Galle, Mirissa, Bentota, Collombo`,
       detail: `Experience the essence of Sri Lanka through the Classic Sri Lanka Tour, where you'll encounter a captivating blend of ancient cities, picturesque tea-covered hills, vibrant wildlife parks, breathtaking beaches, and luxurious accommodations.`,
       price: `2000`,
       seeMore: `/FourteenDays`,
@@ -36,21 +36,27 @@ export default function Home() {
       img: `/wallpapers/wallpaper5.jpg`,
       topic: `Sri Lanka Tour 30 Days Package`,
       day: `(30 Days 29 Nights)`,
-      town: `Negombo, Sigiriya, Kandy, Nuwara Eliya, Ella, Yala, Galle, Mirissa, Galle, Nilaveli, Arugam Bay Collombo`,
+      town: `Negombo, Sigiriya, Dambulla, Kandy, Nuwara Eliya, Ella, Galle, Mirissa, Nilaveli, Arugam Bay, Collombo`,
       detail: `Experience the essence of Sri Lanka through the Classic Sri Lanka Tour, where you'll encounter a captivating blend of ancient cities, picturesque tea-covered hills, vibrant wildlife parks, breathtaking beaches, and luxurious accommodations.`,
       price: `4000`,
       seeMore: `/ThirtyDays`,
     },
     {
       img: `/wallpapers/kandy1.jpg`,
-      topic: `Barrier-Free Sri Lanka Tour 45 Days Package`,
-      town: ` Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.`,
-      seeMore: ``,
+      topic: `Sri Lanka Tour 45 Days Package`,
+      day: `(45 Days 44 Nights)`,
+      town: `Negombo, Anuradhapura, Jaffna, Sigiriya, Kandy, Nuwara Eliya, Ella, Yala, Tangalle, Galle, Mirissa, Nilaveli, Arugam Bay, Collombo`,
+      detail: `Experience the essence of Sri Lanka through the Classic Sri Lanka Tour, where you'll encounter a captivating blend of ancient cities, picturesque tea-covered hills, vibrant wildlife parks, breathtaking beaches, and luxurious accommodations.`,
+      price: `5400`,
+      seeMore: `/FortyFiveDays`,
     },
     {
       img: `/wallpapers/wallpaper7.jpg`,
-      topic: `Barrier-Free Sri Lanka Tour 60 Days Package`,
-      town: ` Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.`,
+      topic: `Sri Lanka Tour 60 Days Package`,
+      day: `(60 Days 59 Nights)`,
+      town: `Negombo, Sigiriya, Kandy, Nuwara Eliya, Ella, Yala, Tangalle, Galle, Mirissa, Nilaveli, Arugam Bay, Collombo`,
+      detail: `Experience the essence of Sri Lanka through the Classic Sri Lanka Tour, where you'll encounter a captivating blend of ancient cities, picturesque tea-covered hills, vibrant wildlife parks, breathtaking beaches, and luxurious accommodations.`,
+      price: `7000`,
       seeMore: ``,
     },
   ];
@@ -84,16 +90,16 @@ export default function Home() {
         />
         <div className="absolute top-0 w-full px-5 mt-40 2xl:px-40 xl:px-24 lg:px-20">
           <div>
-            <p className="font-serif text-5xl font-bold tracking-widest text-center text-yellow-300 xl:text-8xl lg:text-7xl md:text-6xl">
+            <p className="font-serif text-5xl font-bold tracking-widest text-center text-yellow-300 xl:text-8xl lg:text-7xl md:text-6xl uppercase">
               Ayubowan
             </p>
             <p className="mt-2 text-lg font-bold text-center text-white xl:text-3xl lg:text-xl">
-              We are Travel <span className="text-[#54B435]">mango</span>
+              We are Travel <span className="text-[#54B435]">Mango</span>
             </p>
-            <p className="mt-24 text-3xl font-bold text-center text-gray-200 xl:text-4xl">
+            <p className="mt-24 text-3xl font-bold text-center text-gray-100 xl:text-4xl">
               Welcome to Sri Lanka
             </p>
-            <p className="p-5 mt-16 font-serif text-xl font-bold text-center border-2 md:mt-28 xl:text-3xl lg:text-2xl bg-gray-50 opacity-60 lg:leading-10">
+            <p className="p-5 mt-16 font-serif text-base font-bold text-center border-2 md:mt-28 xl:text-3xl lg:text-2xl bg-gray-50 opacity-60 lg:leading-10">
               In the list of top travel spots for 2023, Sri Lanka stands out as
               a must-visit destination, drawing attention as one of the hottest
               tourist spots of the year.
@@ -103,12 +109,12 @@ export default function Home() {
       </div>
 
       <div className="px-5 2xl:px-40 xl:px-24 lg:px-20">
-        <div className="grid pt-20 lg:grid-cols-2 lg:gap-x-10 gap-y-10">
-          <p className="font-bold xl:text-6xl md:text-5xl text-2xl text-center flex items-center font-serif xl:leading-[70px]">
+        <div className="grid pt-20 lg:grid-cols-2 lg:gap-x-10 gap-y-10 items-center">
+          <p className="font-bold xl:text-5xl md:text-5xl text-2xl text-center flex items-center font-serif xl:leading-[70px] uppercase">
             Crafted just for you, our Sri Lanka vacations offer tailor-made
             experiences.
           </p>
-          <p className="text-sm font-medium text-justify xl:text-xl md:text-base">
+          <p className="text-sm font-medium text-justify xl:text-lg md:text-base">
             Discover the captivating allure of Sri Lanka, a tropical paradise
             hailed as one of the world's top destinations for vacations. Despite
             its compact size, this island nation boasts an astonishing array of
@@ -183,7 +189,7 @@ export default function Home() {
           {tripList.map((trip, index) => (
             <div
               key={index}
-              class=" bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 duration-500 ease-in-out h-full"
+              class=" bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 duration-500 ease-in-out h-full justify-between flex flex-col"
             >
               <a href={trip.seeMore ? trip.seeMore.toLowerCase() : "#"}>
                 <img
@@ -207,24 +213,26 @@ export default function Home() {
                 <p className="mb-3 font-medium md:text-base text-sm">
                   {trip.detail}
                 </p>
-                <div className="flex justify-between items-center">
-                  <a
-                    href={trip.seeMore ? trip.seeMore.toLowerCase() : "#"}
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#54B435] hover:text-white border-2 border-[#54B435] transition-colors duration-300 bg-white  rounded-lg hover:bg-[#54B435]"
-                  >
-                    Read more
-                    <i class="fa-solid fa-arrow-right pl-3"></i>
-                  </a>
-                  <div className="leading-3">
-                    <span className="text-red-600 font-bold text-sm flex justify-end">
-                      Starting From
-                    </span>
-                    <span className="text-red-600 font-bold text-xl flex justify-end">
-                      USD {trip.price}
-                    </span>
-                    <span className="text-sm font-medium flex justify-end">
-                      per person
-                    </span>
+                <div className="">
+                  <div className="flex justify-between items-center">
+                    <a
+                      href={trip.seeMore ? trip.seeMore.toLowerCase() : "#"}
+                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#54B435] hover:text-white border-2 border-[#54B435] transition-colors duration-300 bg-white  rounded-lg hover:bg-[#54B435]"
+                    >
+                      Read more
+                      <i class="fa-solid fa-arrow-right pl-3"></i>
+                    </a>
+                    <div className="leading-3">
+                      <span className="text-red-600 font-bold text-sm flex justify-end">
+                        Starting From
+                      </span>
+                      <span className="text-red-600 font-bold text-xl flex justify-end">
+                        USD {trip.price}
+                      </span>
+                      <span className="text-sm font-medium flex justify-end">
+                        per person
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
