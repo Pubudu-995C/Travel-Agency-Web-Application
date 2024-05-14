@@ -82,6 +82,14 @@ export default function Home() {
     process.env.PUBLIC_URL + `./trips/mirissa-bay.jpg`,
     process.env.PUBLIC_URL + `./trips/Gregory_Lake.jpg`,
     process.env.PUBLIC_URL + `./trips/Little_Adam.jpg`,
+    process.env.PUBLIC_URL + `./trips/Hiriketiya-Beach.jpg`,
+    process.env.PUBLIC_URL + `./trips/sigiriya.jpg`,
+    process.env.PUBLIC_URL + `./trips/Koneswaram_temple.jpg`,
+    process.env.PUBLIC_URL + `./trips/Jaffna_Library.jpg`,
+    process.env.PUBLIC_URL + `./trips/Dutch_Fort.jpg`,
+    process.env.PUBLIC_URL + `./trips/Gangaramaya_Temple.jpg`,
+    process.env.PUBLIC_URL + `./trips/Arugam_Bay.jpg`,
+    process.env.PUBLIC_URL + `./trips/Pigeon_Island.jpg`,
   ];
 
   const choose = [
@@ -335,7 +343,7 @@ export default function Home() {
               class="carousel-items flex items-center justify-center"
               style={{
                 width: "fit-content",
-                animation: "carouselAnim 30s infinite alternate linear",
+                animation: "carouselAnim 60s infinite alternate linear",
               }}
             >
               {galleryImages.map((image, index) => (
