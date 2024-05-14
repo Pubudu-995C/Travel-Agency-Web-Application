@@ -56,6 +56,14 @@ export default function SevenDays() {
       accommodation: `As Your Request`,
       activities: ``,
     },
+    {
+      day: `Day 07`,
+      topic: `Bentota to Airport`,
+      img: `./trips/airplane_landing.jpg`,
+      detail: ``,
+      accommodation: ``,
+      activities: ``,
+    },
   ];
 
   const galleryImages = [

@@ -14,10 +14,10 @@ export default function FourteenDays() {
       img: `./trips/Negombo_Beach.jpg`,
       detail: `Embark on an unforgettable journey as you explore Negombo's treasures. Witness the serene beauty of Negombo Lagoon, where tranquility meets nature's splendor. Dive into the vibrant atmosphere of the Fish Market, where the local culture comes alive. After a day of discovery, unwind in comfort with an overnight stay at a charming hotel, immersing yourself in Negombo's allure.`,
       accommodation: `As Your Request`,
-      activities: `Pickup at the Airport - Visit Negombo Lagoon - Visit Fish Market - Overnight Stay in a Hotel at Negombo`,
+      activities: `Visit Negombo Lagoon - Visit Fish Market - Overnight Stay in a Hotel at Negombo`,
     },
     {
-      day: `Day 02 and 03`,
+      day: `Day 02 & 03`,
       topic: `Negombo to Sigiriya`,
       img: `./trips/sigiriya.jpg`,
       detail: `Embark on an unforgettable journey through Sri Lanka's cultural marvels. Begin with the heartwarming experience of Pinnawala Elephant Orphanage, witnessing majestic creatures in their natural habitat. Then, venture towards Sigiriya, where history and nature converge. Ascend the iconic Sigiriya Rock Fortress, marveling at its ancient splendor and panoramic vistas. Nearby, explore Pidurangala Rock, offering a unique perspective of Sigiriya. Immerse yourself in Sigiriya Village, discovering local customs and traditions. Continue the expedition with a captivating tour of Polonnaruwa City, delving into its rich heritage. Conclude the day's adventures with a peaceful overnight stay in a cozy hotel nestled in the enchanting surroundings of Sigiriya.`,
@@ -25,7 +25,7 @@ export default function FourteenDays() {
       activities: `Pinnawala Elephant Orphanage - Proceed to Sigiriya - Sigiriya Rock Fortress (Lion Rock) - Visit Pidurangala Rock - Sigiriya Village Tour - Polonnaruwa City Tour - Overnight Stay in a Hotel at Sigiriya`,
     },
     {
-      day: `Day 04 and 05`,
+      day: `Day 04 & 05`,
       topic: `Sigiriya to Kandy`,
       img: `./trips/templeTooth.jpg`,
       detail: `Nestled in the heart of Sri Lanka, the Dambulla Royal Cave Temple and Golden Temple stand as timeless marvels, their ancient sanctuaries echoing with spiritual resonance. Nearby, the Spice Garden captivates with its aromatic allure, a sensory journey through the rich tapestry of Sri Lankan flavors. Further afield, the Matale Muthumariamman Temple beckons with its ornate architecture and devout ambiance. In Kandy, the revered Temple of the Tooth Relic holds the essence of Buddhist faith, a sacred repository of veneration. And amidst the cultural vibrancy, the Kandy Cultural Dance Show unfolds, a mesmerizing spectacle of rhythm and tradition, showcasing the island's artistic heritage in captivating splendor.`,
@@ -33,15 +33,15 @@ export default function FourteenDays() {
       activities: `Dambulla Royal Cave Temple and Golden Temple - Spice Garden - Matale Muthumariamman Temple - Temple of Tooth Relic - Kandy Cultural Dance Show - Overnight Stay in a Hotel at Kandy`,
     },
     {
-      day: `Day 06 and 07`,
+      day: `Day 06 & 07`,
       topic: `Kandy to Nuwara Eliya `,
       img: `./trips/Gregory_Lake.jpg`,
       detail: `Embark on an enchanting journey to Nuwara Eliya, where you'll ascend the majestic Ambuluwawa Tower, immerse yourself in the aromatic bliss of Damro Labookellie Tea Centre, and witness nature's grandeur at the cascading Ramboda Waterfalls. Explore the lush tea plantations and factories, bask in the tranquil beauty of Gregory Lake, and marvel at the architectural splendor of Nuwara Eliya Post Office. Pay reverence at the sacred Seetha Eliya Temple, trek to the breathtaking Bomburu Ella, and soak in panoramic vistas from Lipton's Seat, before retreating to a cozy hotel for an overnight stay in this hill country paradise.`,
       accommodation: `As Your Request`,
-      activities: `Proceed to Nuwara Eliya - Ambuluwawa Tower - Ramboda Waterfalls - Damro Labookellie Tea Centre - Gregory Lake - Nuwara Eliya Post Office - Seetha Eliya Temple - Bomburu Ella - Lipton Seat - Overnight Stay in a Hotel at Nuwara Eliya`,
+      activities: `Ambuluwawa Tower - Ramboda Waterfalls - Damro Labookellie Tea Centre - Gregory Lake - Nuwara Eliya Post Office - Seetha Eliya Temple - Bomburu Ella - Lipton Seat - Overnight Stay in a Hotel at Nuwara Eliya`,
     },
     {
-      day: `Day 08 and 09`,
+      day: `Day 08 & 09`,
       topic: `Nuwara Eliya to Ella`,
       img: `./trips/Little_Adam.jpg`,
       detail: `Embark on a picturesque journey by train to Ella, where nature's wonders await. Marvel at the majestic Ravana Falls, cascading gracefully amidst lush greenery. Explore the iconic Nine Arch Bridge, a marvel of architecture nestled in the verdant landscape. Hike up to Little Adam's Peak for breathtaking panoramic views that stretch to the horizon. Don't miss the enchanting Ellawella Waterfalls, where tranquility reigns supreme. After a day of exploration, unwind in comfort with an overnight stay at a cozy hotel in Ella, surrounded by the serene beauty of the Sri Lankan countryside.`,
@@ -49,7 +49,7 @@ export default function FourteenDays() {
       activities: `Little adam's peak - Ellawella Waterfalls - Nine Arches Bridge - Ravana Falls - Overnight Stay in a Hotel at Ella`,
     },
     {
-      day: `Day 10 and 11`,
+      day: `Day 10 & 11`,
       topic: `Ella to Yala`,
       img: `./trips/yala.jpg`,
       detail: `Embark on an exhilarating journey through Sri Lanka's scenic wonders with a visit to the awe-inspiring Diyaluma Waterfalls, where cascading waters create a mesmerizing spectacle. Explore the ancient marvels of Buduruwagala Temple, steeped in history and spiritual significance. Continue your adventure with a thrilling Yala or Udawalawe Evening Jeep Safari, immersing yourself in the untamed beauty of nature as you encounter diverse wildlife in their natural habitat. Conclude your day with a serene overnight stay at a hotel nestled amidst the wilderness of Yala or Udawalawe, offering comfort and tranquility amidst the captivating surroundings.`,
@@ -57,7 +57,7 @@ export default function FourteenDays() {
       activities: `Diyaluma Waterfalls - Proceed to Yala / Udawalawe Jeep Safari - Buduruwagala Temple - Overnight Stay in a Hotel at Yala/ Udawalawe`,
     },
     {
-      day: `Day 12 and 13`,
+      day: `Day 12 & 13`,
       topic: `Yala to Mirissa`,
       img: `./trips/coconut_tree_hill.jpg`,
       detail: `Embark on an enchanting journey along the southern coast of Sri Lanka, beginning at the picturesque Coconut Tree Hill, offering panoramic views of Mirissa Bay's azure waters. Delve into the vibrant culture at the local fish market, brimming with the day's fresh catch. Venture into the vast expanse of the ocean for an unforgettable experience of whale and dolphin watching. Then, unwind on the pristine shores of Unawatuna Beach, where golden sands meet the gentle lapping waves. Conclude your day with an idyllic overnight stay in the charming town of Mirissa, where tranquility and beauty converge for an unforgettable coastal retreat.`,
@@ -67,10 +67,10 @@ export default function FourteenDays() {
     {
       day: `Day 14`,
       topic: `Mirissa to Airport`,
-      img: `./trips/Gangaramaya_Temple.jpg`,
-      detail: `Embark on a captivating journey through Colombo's cultural tapestry. Start at the Colombo Red Mosque, a stunning architectural marvel echoing centuries of Islamic heritage. Then, ascend the Lotus Tower, an emblem of modernity offering panoramic views of the city's skyline. Immerse yourself in spiritual tranquility at Gangarama Temple, adorned with intricate carvings and serene ponds. For a serene escape, unwind at Mount Lavinia Beach, where golden sands meet azure waters. Finally, bid farewell to this enchanting city, cherishing memories as you depart from the airport, carrying with you the essence of Colombo's rich diversity and timeless allure.`,
-      accommodation: `As Your Request`,
-      activities: `Colombo Red Mosque - Lotus Tower - Gangarama Temple - Mount Lavinia Beach - Leave at the Airport`,
+      img: `./trips/airplane_landing.jpg`,
+      detail: ``,
+      accommodation: ``,
+      activities: ``,
     },
   ];
 

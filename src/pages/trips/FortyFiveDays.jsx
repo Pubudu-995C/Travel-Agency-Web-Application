@@ -9,23 +9,23 @@ export default function FortyFiveDays() {
 
   const dateList = [
     {
-      day: `2 Nights in Colombo`,
-      topic: `Airport to Colombo or Negombo`,
-      img: `./trips/Gangaramaya_Temple.jpg`,
-      detail: `Explore the vibrant tapestry of Colombo's cultural landmarks, beginning with the majestic Colombo Red Mosque, a symbol of Islamic heritage. Ascend the iconic Lotus Tower for panoramic city views before immersing yourself in tranquility at Gangarama Temple. Wander through history at Independence Square and delve into spiritual serenity at Kelaniya Raja Maha Viharaya. Relax on the golden sands of Mount Lavinia Beach, soaking in the tropical bliss. End your day with an overnight stay at a luxurious hotel, nestled either in the bustling cityscape of Colombo or the coastal charm of Negombo, ensuring a rejuvenating experience amidst Sri Lanka's enchanting allure.`,
+      day: `Day 1 & 2 in Negombo`,
+      topic: `Airport to Negombo`,
+      img: `./trips/Negombo_Beach.jpg`,
+      detail: `Nestled along Sri Lanka's western coast, Negombo captivates with its serene Negombo Lagoon, where tranquility meets the gentle lull of waters. Just steps away lies Negombo Beach, where golden sands stretch lazily under the tropical sun. Nearby, the historic Negombo Dutch Fort stands as a testament to colonial legacy, echoing tales of a bygone era. Amidst this cultural tapestry, St. Mary's Church adds a spiritual allure with its elegant architecture. As dusk descends, retreat to a cozy hotel, where comfort awaits for an overnight stay, promising relaxation and rejuvenation amidst the charm of Negombo's coastal allure.`,
       accommodation: `As Your Request`,
-      activities: `Colombo Red Mosque - Lotus Tower - Gangarama Temple - Independence Square - Kelaniya Raja Maha Viharaya - Mount Lavinia Beach - Overnight Stay in a Hotel at Colombo or Negombo`,
+      activities: `Negombo Lagoon - Negombo Beach - Negombo Dutch Fort - St. Mary's Church - Overnight Stay in a Hotel at Negombo`,
     },
     {
-      day: `2 Nights in Anuradhapura`,
-      topic: `Colombo to Anuradhapura`,
+      day: `Day 3 & 4 in Anuradhapura`,
+      topic: `Negombo to Anuradhapura`,
       img: `./trips/Anuradhapura.jpg`,
       detail: `Experience the ancient splendor of Anuradhapura with a journey through its revered landmarks. Start with the majestic Ruwanweli Maha Seya, emanating spiritual grandeur. Then, marvel at the sacred Jaya Sri Maha Bodhi, a symbol of enlightenment and tranquility. Visit the Thuparama Vihara, resonating with historical significance and architectural grace. Explore the Isurumuni Royal Temple, a testament to Sri Lanka's rich cultural heritage. Don't miss the serene Abhayagiri Viharaya, offering insight into Buddhist traditions. Conclude your day with a comfortable overnight stay in a hotel, immersing yourself in the city's mystical aura and preparing for more adventures in Anuradhapura.`,
       accommodation: `As Your Request`,
       activities: `Ruwanweli Maha Seya - Jaya Sri Maha Bodhi - Thuparama vihara - Isurumuni Royal Temple - Abhayagiri viharaya - Overnight Stay in a Hotel at Anuradhapura`,
     },
     {
-      day: `4 Nights in Jaffna`,
+      day: `Day 5, 6, 7 & 8 in Jaffna`,
       topic: `Anuradhapura to Jaffna`,
       img: `./trips/Casurina_Beach.jpeg`,
       detail: `Immerse yourself in the vibrant tapestry of Jaffna's cultural and historical wonders. Begin your journey at the majestic Nallur Kandaswamy Kovil, a testament to ancient Tamil architecture and spirituality. Explore the treasure trove of knowledge at the Jaffna Public Library, a symbol of resilience and learning. Wander through the echoes of colonial history at the Dutch Fort, standing tall amidst the cityscape. Relax on the golden shores of Casuarina Beach, where the azure waters beckon. Dive into the bustling energy of Jaffna Market, a sensory delight of sights and sounds. Seek solace at the Nagadeepa Temple, steeped in legend and devotion. Venture to Fort Hammenhiel, a picturesque island fortress steeped in maritime history. Conclude your day with a peaceful overnight stay at a cozy hotel, relishing the essence of Jaffna's hospitality and charm.`,
@@ -33,7 +33,7 @@ export default function FortyFiveDays() {
       activities: `Nallur Kandaswamy Kovil - Jaffna Public Library - Dutch Fort - Casuarina Beach - Jaffna Market - Nagadeepa Temple - Fort Hammenhiel - Overnight Stay in a Hotel at Jaffna`,
     },
     {
-      day: `4 Nights in Trincomalee`,
+      day: `Day 9, 10, 11 & 12 in Trincomalee`,
       topic: `Jaffna to Trincomalee`,
       img: `./trips/Koneswaram_temple.jpg`,
       detail: `Trincomalee, a coastal gem in Sri Lanka, boasts a plethora of captivating attractions. Begin your journey with a visit to Pigeon Island, renowned for its pristine shores and vibrant marine life. Explore the idyllic Nilaveli Beach before immersing yourself in the spiritual ambiance of Thirukoneswaram Kovil and Pathirakali Amman Temple. Marvel at the surreal beauty of Marble Beach and delve into history at Fort Frederick, a testament to the city's colonial past. Indulge in the tranquility of Uppuveli Beach and rejuvenate your senses at Kanniya Hot Spring's therapeutic waters. For adventure enthusiasts, Trincomalee offers exhilarating opportunities for scuba diving amidst its azure waters. Conclude your day with an overnight stay at a luxurious hotel, embracing the comfort and serenity of Trincomalee's enchanting atmosphere.`,
@@ -41,7 +41,7 @@ export default function FortyFiveDays() {
       activities: `Pigeon Island - Nilaveli Beach - Thirukoneswaram Kovil - Marble beach - Fort Frederick - Uppuveli beach - Scuba Diving - Pathirakali Amman Temple - Kanniya Hot Spring - Overnight Stay in a Hotel at Trincomalee`,
     },
     {
-      day: `3 Nights in Sigiriya`,
+      day: `Day 13, 14 & 15 in Sigiriya`,
       topic: `Trincomalee to Sigiriya`,
       img: `./trips/sigiriya.jpg`,
       detail: `Experience the rich tapestry of Sri Lanka's cultural and natural wonders with a journey that begins at the majestic Sigiriya Rock Fortress, also known as Lion Rock, an ancient marvel perched atop a towering monolith. Delve into the wilderness of Minneriya National Park, where elephant herds roam freely amidst lush landscapes. Trek to Pidurangala Rock for panoramic views of Sigiriya and its surroundings. Continue your wildlife odyssey at Kaudulla National Park, encountering diverse flora and fauna. Immerse yourself in local life with a Sigiriya Village Tour, discovering the traditions and customs of the region. Find tranquility at Kaludiya Pokuna, an ancient forest monastery. Conclude your day with an overnight stay at a hotel in Sigiriya, where comfort meets the allure of Sri Lanka's historical heartland.`,
@@ -50,7 +50,7 @@ export default function FortyFiveDays() {
       Sigiriya Village Tour - Kaludiya Pokuna - Overnight Stay in a Hotel at Sigiriya`,
     },
     {
-      day: `1 Night in Dambulla`,
+      day: `Day 16 in Dambulla`,
       topic: `Sigiriya to Dambulla`,
       img: `./trips/Dambulla_Cave_Temple.jpg`,
       detail: `Experience the majestic allure of Dambulla with a visit to the renowned Royal Cave Temple and Golden Temple. Marvel at the ancient rock cave complex, adorned with intricate Buddhist murals and over 150 statues, a testament to Sri Lanka's rich cultural heritage. After a day of exploration, unwind in comfort with an overnight stay at a hotel in Dambulla. Let the echoes of history guide your journey as you immerse yourself in the serenity of this sacred site and indulge in the warm hospitality of your accommodations, making memories to cherish for a lifetime.`,
@@ -58,7 +58,7 @@ export default function FortyFiveDays() {
       activities: `Dambulla Royal Cave Temple and Golden Temple - Overnight Stay in a Hotel at Dambulla`,
     },
     {
-      day: `4 Nights in Kandy`,
+      day: `Day 17, 18, 19 & 20 in Kandy`,
       topic: `Dambulla to Kandy`,
       img: `./trips/templeTooth.jpg`,
       detail: `Embark on a captivating journey through Kandy's cultural and natural wonders. Begin your exploration at the serene Royal Botanic Gardens, where lush greenery and vibrant blooms offer respite. Pay homage to history at the Commonwealth War Cemetery, a poignant reminder of sacrifice. Ascend to the Kandy viewpoint, treating your senses to panoramic vistas of the city's picturesque landscape. Find solace amidst the verdant Udawatta Kele Sanctuary, a sanctuary for both nature and the soul. Immerse yourself in Sri Lanka's rich tea heritage at the Ceylon Tea Museum, before seeking blessings at the Bahirawakanda Temple. Witness the sacred allure of the Temple of the Tooth Relic, a revered site of Buddhist pilgrimage. As night falls, indulge in the rhythmic beats and vibrant colors of a Kandy Cultural Dance Show. Finally, unwind in comfort with an overnight stay at a luxurious hotel, completing a day brimming with cultural immersion and natural beauty.`,
@@ -66,7 +66,7 @@ export default function FortyFiveDays() {
       activities: `Royal Botanic Gardens - Commonwealth War Cemetery - Kandy view point - Udawatta Kele Sanctuary - Ceylon Tea Museum - Bahirawakanda Temple - Temple of Tooth Relic - Kandy Cultural Dance Show - Overnight Stay in a Hotel at Kandy`,
     },
     {
-      day: `3 Night in Nuwara Eliya`,
+      day: `Day 21, 22 & 23 in Nuwara Eliya`,
       topic: `Kandy to Nuwara Eliya`,
       img: `./trips/nuwara_eliya_post_office.jpg`,
       detail: `Embark on an enchanting journey to Nuwara Eliya, where you'll ascend the majestic Ambuluwawa Tower, immerse yourself in the aromatic bliss of Damro Labookellie Tea Centre, and witness nature's grandeur at the cascading Ramboda Waterfalls. Explore the lush tea plantations and factories, bask in the tranquil beauty of Gregory Lake, and marvel at the architectural splendor of Nuwara Eliya Post Office. Pay reverence at the sacred Seetha Eliya Temple, trek to the breathtaking Bomburu Ella, and soak in panoramic vistas from Lipton's Seat, before retreating to a cozy hotel for an overnight stay in this hill country paradise.`,
@@ -74,7 +74,7 @@ export default function FortyFiveDays() {
       activities: `Ambuluwawa Tower - Ramboda Waterfalls - Damro Labookellie Tea Centre - Gregory Lake - Nuwara Eliya Post Office - Seetha Eliya Temple - Bomburu Ella - Lipton Seat - Overnight Stay in a Hotel at Nuwara Eliya`,
     },
     {
-      day: `5 Nights in Ella`,
+      day: `Day 24, 25, 26 & 27 in Ella`,
       topic: `Nuwara Eliya to Ella`,
       img: `./trips/Little_Adam.jpg`,
       detail: `Embark on an enchanting journey through Ella's natural wonders, where each step unveils a tapestry of breathtaking sights. Begin your adventure with a hike to Little Adam's Peak, offering panoramic vistas that stretch beyond imagination. Venture deeper into the mystique as you explore Ravana's Cave, steeped in legend and history. Feel the misty embrace of Ellawella Waterfalls cascading down with ethereal grace, a symphony of nature's might. Ready your spirit for the ascent from Ella Rock Trailhead, promising unforgettable views of the lush landscape below. Traverse the iconic Nine Arches Bridge, an engineering marvel amidst emerald foliage. Refresh your senses at Ravana Falls, a tranquil oasis in the heart of wilderness. Finally, unwind in the comfort of a hotel nestled in Ella, letting the day's memories linger under the stars.`,
@@ -82,31 +82,31 @@ export default function FortyFiveDays() {
       activities: `Little adam's peak - Ravana's Cave - Ellawella Waterfalls - Ella Rock Trailhead - Nine Arches Bridge - Ravana Falls - Overnight Stay in a Hotel at Ella`,
     },
     {
-      day: `4 Nights in Arugam Bay`,
-      topic: `Ella to Arugam Bay`,
-      img: `./trips/Arugam_Bay.jpg`,
-      detail: `Explore the captivating wonders of Arugam Bay Beach, where golden sands meet azure waters, offering a tranquil escape. Venture to Muhudu Maha Viharaya, an ancient Buddhist temple steeped in history and spirituality. Embark on a serene lagoon safari in Pottuvil, immersing in the pristine natural beauty. Discover the biodiversity hotspot of Kudumbigala Sanctuary, home to diverse flora and fauna. Uncover the mystique of Kudumbigala Monastery Complex, a sacred site nestled in lush greenery. Ascend Sangamankanda Lighthouse for panoramic views of the coastline. Conclude your adventure with an overnight stay at a cozy hotel, relishing the serenity of Arugam Bay.`,
-      accommodation: `As Your Request`,
-      activities: `Arugam Bay Beach - Muhudu Maha Viharaya - Lagoon Safari ,Pottuvil - Kudumbigala Sanctuary - Kudumbigala Monastery Complex - Sangamankanda Lighthouse - Overnight Stay in a Hotel at Arugam Bay`,
-    },
-    {
-      day: `3 Nights in Yala`,
-      topic: `Arugam Bay to Yala`,
+      day: `Day 28, 29 & 30 in Yala`,
+      topic: `Ella to Yala`,
       img: `./trips/yala.jpg`,
       detail: `Embark on a breathtaking journey through the wonders of Sri Lanka's natural and cultural treasures. Begin your adventure by immersing yourself in the mesmerizing cascade of Diyaluma Waterfalls, where nature's grandeur takes center stage. Dive deeper into the wilderness with thrilling Yala and Udawalawe Jeep Safaris, encountering diverse wildlife amidst stunning landscapes. Explore the ancient allure of Buduruwagala Temple, adorned with remarkable rock carvings dating back centuries. Finally, unwind and rejuvenate in the comfort of a luxurious hotel, nestled amidst the tranquil surroundings of Yala or Udawalawe, ensuring an unforgettable overnight stay to complement your unforgettable expedition.`,
       accommodation: `As Your Request`,
       activities: `Diyaluma Waterfalls - Yala Jeep Safari - Udawalawe Jeep Safari - Buduruwagala Temple - Overnight Stay in a Hotel at Yala / Udawalawe`,
     },
     {
-      day: `3 Nights in Tangalle`,
-      topic: `Yala to Tangalle`,
+      day: `Day 31, 32 & 33 in Arugam Bay`,
+      topic: `Yala to Arugam Bay`,
+      img: `./trips/Arugam_Bay.jpg`,
+      detail: `Explore the captivating wonders of Arugam Bay Beach, where golden sands meet azure waters, offering a tranquil escape. Venture to Muhudu Maha Viharaya, an ancient Buddhist temple steeped in history and spirituality. Embark on a serene lagoon safari in Pottuvil, immersing in the pristine natural beauty. Discover the biodiversity hotspot of Kudumbigala Sanctuary, home to diverse flora and fauna. Uncover the mystique of Kudumbigala Monastery Complex, a sacred site nestled in lush greenery. Ascend Sangamankanda Lighthouse for panoramic views of the coastline. Conclude your adventure with an overnight stay at a cozy hotel, relishing the serenity of Arugam Bay.`,
+      accommodation: `As Your Request`,
+      activities: `Arugam Bay Beach - Muhudu Maha Viharaya - Lagoon Safari ,Pottuvil - Kudumbigala Sanctuary - Kudumbigala Monastery Complex - Sangamankanda Lighthouse - Overnight Stay in a Hotel at Arugam Bay`,
+    },
+    {
+      day: `Day 34, 35 & 36 in Tangalle`,
+      topic: `Arugam Bay to Tangalle`,
       img: `./trips/Hiriketiya-Beach.jpg`,
       detail: `Embark on a coastal odyssey, beginning with the sun-kissed shores of Tangalle Beach, where golden sands meet azure waters, promising moments of tranquility. Dive into the heart of nature at Ridiyagama Safari Park, where majestic wildlife roams freely against a backdrop of lush greenery. Seek solace at Hiriketiya Beach, a hidden gem renowned for its pristine beauty and gentle waves, perfect for unwinding. Explore the ancient marvels of Mulgirigala Raja Maha Viharaya, a sacred site steeped in history and spirituality. Witness the awe-inspiring spectacle of the Hummanaya Blow Hole, nature's own masterpiece. Conclude your day at the secluded shores of Rekawa Beach and Silent Beach, where serenity reigns supreme. Retreat to the comfort of a coastal hotel in Tangalle, ensuring a restful overnight stay, completing your coastal escapade with unforgettable memories.`,
       accommodation: `As Your Request`,
       activities: `Tangalle Beach - Ridiyagama Safari Park - Hiriketiya Beach - Mulgirigala Raja Maha Viharaya -  Rekawa Beach - Hummanaya Blow Hole - Silent Beach - Overnight Stay in a Hotel at Tangalle`,
     },
     {
-      day: `3 Nights in Mirissa`,
+      day: `Day 37, 38 & 39 in Mirissa`,
       topic: `Tangalle to Mirissa`,
       img: `./trips/coconut_tree_hill.jpg`,
       detail: `Embark on an enchanting journey along the southern coast of Sri Lanka, beginning at the picturesque Coconut Tree Hill, offering panoramic views of Mirissa Bay's azure waters. Delve into the vibrant culture at the local fish market, brimming with the day's fresh catch. Venture into the vast expanse of the ocean for an unforgettable experience of whale and dolphin watching. Then, unwind on the pristine shores of Unawatuna Beach, where golden sands meet the gentle lapping waves. Conclude your day with an idyllic overnight stay in the charming town of Mirissa, where tranquility and beauty converge for an unforgettable coastal retreat.`,
@@ -114,7 +114,7 @@ export default function FortyFiveDays() {
       activities: `Coconut Tree Hill - Mirissa Bay - Fish Market - Whale watching - Dolphin Watching - Unawatuna Beach - Overnight Stay in a Hotel at Mirissa`,
     },
     {
-      day: `3 Nights in Galle`,
+      day: `Day 40, 41 & 42 in Galle`,
       topic: `Mirissa to Galle`,
       img: `./trips/Galle_Fort.jpg`,
       detail: `Explore the rich tapestry of Galle, Sri Lanka, where history meets nature in a captivating blend. Wander through the ancient cobblestone streets of Galle Dutch Fort, a UNESCO World Heritage Site, echoing tales of colonial legacy. Ascend the towering Galle Lighthouse for panoramic vistas of the azure ocean. Immerse yourself in conservation efforts at the Sea Turtle Hatchery Centre, marveling at these gentle creatures. Find serenity at the Japanese Peace Pagoda, a symbol of tranquility amidst lush surroundings. Sink your toes into the golden sands of Unawatuna Beach and the secluded oasis of Jungle Beach. Discover biodiversity at Rumassala Sanctuary, a haven for wildlife enthusiasts. Indulge in history at the Old Dutch Hospital and Maritime Museum, weaving narratives of maritime heritage. Conclude your day with an overnight stay in a cozy hotel, completing an unforgettable journey through Galle's wonders.`,
@@ -122,11 +122,19 @@ export default function FortyFiveDays() {
       activities: `Galle Dutch Fort - Lighthouse - Sea Turtle Hatchery Centre - Japanese Peace Pagoda - Unawatuna Beach - Jungle Beach - Rumassala Sanctuary - Old Dutch Hospital - Maritime Museum - Overnight Stay in a Hotel at Galle`,
     },
     {
-      day: `Day 45`,
-      topic: `Galle to Negombo`,
-      img: `./trips/Negombo_Beach.jpg`,
-      detail: ``,
+      day: `Day 43 & 44 in Colombo`,
+      topic: `Galle to Colombo`,
+      img: `./trips/Gangaramaya_Temple.jpg`,
+      detail: `Explore the vibrant tapestry of Colombo's cultural landmarks, beginning with the majestic Colombo Red Mosque, a symbol of Islamic heritage. Ascend the iconic Lotus Tower for panoramic city views before immersing yourself in tranquility at Gangarama Temple. Wander through history at Independence Square and delve into spiritual serenity at Kelaniya Raja Maha Viharaya. Relax on the golden sands of Mount Lavinia Beach, soaking in the tropical bliss. End your day with an overnight stay at a luxurious hotel, nestled either in the bustling cityscape of Colombo or the coastal charm of Negombo, ensuring a rejuvenating experience amidst Sri Lanka's enchanting allure.`,
       accommodation: `As Your Request`,
+      activities: `Colombo Red Mosque - Lotus Tower - Gangarama Temple - Independence Square - Kelaniya Raja Maha Viharaya - Mount Lavinia Beach - Overnight Stay in a Hotel at Colombo or Negombo`,
+    },
+    {
+      day: `Day 45`,
+      topic: `Colombo to Airport`,
+      img: `./trips/airplane_landing.jpg`,
+      detail: ``,
+      accommodation: ``,
       activities: ``,
     },
   ];
@@ -262,7 +270,7 @@ export default function FortyFiveDays() {
                   />
                   <div class="flex flex-col justify-center p-4 leading-normal w-full h-full">
                     <div className="md:flex items-baseline gap-x-20">
-                      <p class="mb-2 lg:text-2xl text-lg font-bold tracking-tight text-gray-900">
+                      <p class="mb-2 lg:text-xl text-lg font-bold tracking-tight text-gray-900">
                         {date.day}
                       </p>
                       <p class="mb-3 lg:text-base text-sm font-medium text-gray-700 italic">
