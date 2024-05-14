@@ -3,6 +3,9 @@ import Navbar from "../../components/Layout/Navbar";
 import Footer from "../../components/Layout/Footer";
 import NuwaraEliya from "../../images/wallpapers/Nuwara_Eliya.jpg";
 import ContactForm from "../Contact-Form";
+import WhatsApp from "../../components/WhatsApp";
+import ScrollToTopButton from "../../components/ScrollToTopButton";
+import { Breadcrumbs } from "@material-tailwind/react";
 
 export default function FourteenDays() {
   const [activeTab, setActiveTab] = useState("trips");
@@ -12,9 +15,9 @@ export default function FourteenDays() {
       day: `Day 01`,
       topic: `Airport to Negombo`,
       img: `./trips/Negombo_Beach.jpg`,
-      detail: `Embark on an unforgettable journey as you explore Negombo's treasures. Witness the serene beauty of Negombo Lagoon, where tranquility meets nature's splendor. Dive into the vibrant atmosphere of the Fish Market, where the local culture comes alive. After a day of discovery, unwind in comfort with an overnight stay at a charming hotel, immersing yourself in Negombo's allure.`,
+      detail: `Upon landing, you will be warmly greeted by our English-speaking chauffeur guide and the airport team, ready to assist with any needs. After reaching your hotel, take the remainder of the day to relax and unwind from your long flight, enjoying the time at your own pace. Discover the serene beauty of Negombo Lagoon and the picturesque Negombo Beach, before settling in for an overnight stay at a comfortable hotel in Negombo.`,
       accommodation: `As Your Request`,
-      activities: `Visit Negombo Lagoon - Visit Fish Market - Overnight Stay in a Hotel at Negombo`,
+      activities: `Negombo Lagoon - Negombo Beach - Overnight Stay in a Hotel at Negombo`,
     },
     {
       day: `Day 02 & 03`,
@@ -22,7 +25,7 @@ export default function FourteenDays() {
       img: `./trips/sigiriya.jpg`,
       detail: `Embark on an unforgettable journey through Sri Lanka's cultural marvels. Begin with the heartwarming experience of Pinnawala Elephant Orphanage, witnessing majestic creatures in their natural habitat. Then, venture towards Sigiriya, where history and nature converge. Ascend the iconic Sigiriya Rock Fortress, marveling at its ancient splendor and panoramic vistas. Nearby, explore Pidurangala Rock, offering a unique perspective of Sigiriya. Immerse yourself in Sigiriya Village, discovering local customs and traditions. Continue the expedition with a captivating tour of Polonnaruwa City, delving into its rich heritage. Conclude the day's adventures with a peaceful overnight stay in a cozy hotel nestled in the enchanting surroundings of Sigiriya.`,
       accommodation: `As Your Request`,
-      activities: `Pinnawala Elephant Orphanage - Proceed to Sigiriya - Sigiriya Rock Fortress (Lion Rock) - Visit Pidurangala Rock - Sigiriya Village Tour - Polonnaruwa City Tour - Overnight Stay in a Hotel at Sigiriya`,
+      activities: `Pinnawala Elephant Orphanage - Sigiriya Rock Fortress (Lion Rock) - Pidurangala Rock - Sigiriya Village Tour - Polonnaruwa City Tour - Overnight Stay in a Hotel at Sigiriya`,
     },
     {
       day: `Day 04 & 05`,
@@ -175,6 +178,16 @@ export default function FourteenDays() {
             person
           </p>
         </div>
+        {/* ===========Breadcrumbs=========== */}
+        <Breadcrumbs className="justify-center">
+          <a href="/" className="opacity-60">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <a href="/fourteendays" className="opacity-60 font-bold">
+            <span>FOURTEEN DAYS</span>
+          </a>
+        </Breadcrumbs>
+        {/* ===========Breadcrumbs=========== */}
         {/* Tabs */}
         <div className="flex justify-center mt-5">
           <button
@@ -198,26 +211,24 @@ export default function FourteenDays() {
           <div>
             <div className="grid grid-cols-1 gap-y-10 my-10 2xl:px-40 xl:px-24 lg:px-20 px-5">
               {dateList.map((date, index) => (
-                <div class="flex flex-col items-center bg-white border border-gray-300 rounded-lg shadow md:flex-row hover:bg-yellow-50 transition-colors duration-300 w-full">
+                <div class="flex flex-col items-center bg-white border border-gray-300 rounded-lg shadow lg:flex-row hover:bg-yellow-50 transition-colors duration-300 w-full">
                   <img
-                    class="object-cover xl:w-[400px] lg:w-[300px] md:w-[200px] w-full h-full rounded-t-lg md:rounded-none md:rounded-s-lg"
+                    class="object-cover xl:w-[400px] lg:w-[300px] w-full lg:h-full md:h-[200px] rounded-t-lg lg:rounded-none lg:rounded-s-lg"
                     src={date.img}
                     alt=""
                   />
                   <div class="flex flex-col justify-center p-4 leading-normal w-full h-full">
                     <div className="md:flex items-baseline gap-x-20">
-                      <p class="mb-2 lg:text-2xl text-lg font-bold tracking-tight text-gray-900">
+                      <p class="mb-2 lg:text-xl text-lg font-bold tracking-tight text-gray-900">
                         {date.day}
                       </p>
                       <p class="mb-3 lg:text-base text-sm font-medium text-gray-700 italic">
                         {date.topic}
                       </p>
                     </div>
-                    <p
-                      class="font-normal text-gray-700 lg:text-base text-sm text-justify"
-                      dangerouslySetInnerHTML={{ __html: date.detail }}
-                    ></p>
-
+                    <p class="font-normal text-gray-700 lg:text-base text-sm text-justify">
+                      {date.detail}
+                    </p>
                     <div className="flex flex-col mt-5 lg:text-base text-sm">
                       <p class="font-normal text-gray-700 space-x-5">
                         <span className="font-bold ">Accommodation: </span>{" "}
@@ -280,6 +291,8 @@ export default function FourteenDays() {
         )}
       </div>
       <Footer />
+      <WhatsApp />
+      <ScrollToTopButton />
     </div>
   );
 }

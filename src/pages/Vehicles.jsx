@@ -13,6 +13,7 @@ export default function Vehicles() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
+    arrows: false,
   };
 
   return (

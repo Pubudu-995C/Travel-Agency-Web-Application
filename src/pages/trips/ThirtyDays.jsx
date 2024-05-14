@@ -3,6 +3,9 @@ import Navbar from "../../components/Layout/Navbar";
 import Footer from "../../components/Layout/Footer";
 import NilaveliBeach from "../../images/wallpapers/Nilaveli_Beach.jpg";
 import ContactForm from "../Contact-Form";
+import WhatsApp from "../../components/WhatsApp";
+import ScrollToTopButton from "../../components/ScrollToTopButton";
+import { Breadcrumbs } from "@material-tailwind/react";
 
 export default function ThirtyDays() {
   const [activeTab, setActiveTab] = useState("trips");
@@ -215,6 +218,16 @@ export default function ThirtyDays() {
             person
           </p>
         </div>
+        {/* ===========Breadcrumbs=========== */}
+        <Breadcrumbs className="justify-center">
+          <a href="/" className="opacity-60">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <a href="/thirtydays" className="opacity-60 font-bold">
+            <span>THIRTY DAYS</span>
+          </a>
+        </Breadcrumbs>
+        {/* ===========Breadcrumbs=========== */}
         {/* Tabs */}
         <div className="flex justify-center mt-5">
           <button
@@ -318,6 +331,8 @@ export default function ThirtyDays() {
         )}
       </div>
       <Footer />
+      <WhatsApp />
+      <ScrollToTopButton />
     </div>
   );
 }

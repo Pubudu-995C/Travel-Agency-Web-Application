@@ -1,7 +1,12 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import Navbar from "../components/Layout/Navbar";
 import Footer from "../components/Layout/Footer";
-import Wallpaper from "../images/wallpapers/wallpaper10.jpg";
 import "./home.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import WhatsApp from "../components/WhatsApp";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 export default function Home() {
   const tripList = [
@@ -79,27 +84,64 @@ export default function Home() {
     process.env.PUBLIC_URL + `./trips/Little_Adam.jpg`,
   ];
 
+  const choose = [
+    {
+      img: `/choose/tailor.png`,
+      details: `We strive to understand your tour preferences and create the perfect private tour itinerary to bring your vision to life. Our fully customized tour plans ensure you have the best experience possible.`,
+    },
+    {
+      img: `/choose/staff.png`,
+      details: `Our travel agents and drivers are both friendly and professional. They'll provide you with excellent ideas and tour plans to ensure you have the best experience in Sri Lanka.`,
+    },
+    {
+      img: `/choose/match.png`,
+      details: `Our pricing is designed to give you excellent value for your investment.`,
+    },
+    {
+      img: `/choose/24h.png`,
+      details: `Our helpful tour operator team is available around the clock to assist you. With our excellent online chat service, you can effortlessly plan your entire tour without needing to make a single phone call.`,
+    },
+  ];
+
+  const settings = {
+    fade: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    waitForAnimate: false,
+    autoplaySpeed: 4000,
+    autoplay: true,
+    arrows: false,
+  };
+
   return (
     <div>
       <Navbar />
       <div>
-        <img
-          src={Wallpaper}
-          alt=""
-          className="brightness-75 w-full h-[750px] object-cover"
-        />
-        <div className="absolute top-0 w-full px-5 mt-40 2xl:px-40 xl:px-24 lg:px-20">
+        <Slider {...settings}>
+          {galleryImages.map((image, index) => (
+            <div key={index}>
+              <img
+                src={image}
+                alt={`Gallery Image ${index + 1}`}
+                className="brightness-[60%] w-full h-[540px] object-cover xl:mt-[70px] mt-[60px]"
+              />
+            </div>
+          ))}
+        </Slider>
+        <div className="absolute top-0 w-full px-5 md:mt-40 mt-28 2xl:px-40 xl:px-24 lg:px-20">
           <div>
-            <p className="font-serif text-5xl font-bold tracking-widest text-center text-yellow-300 xl:text-8xl lg:text-7xl md:text-6xl uppercase">
+            <p className="font-serif text-4xl font-bold tracking-widest text-center text-yellow-300 xl:text-6xl lg:text-5xl md:text-5xl uppercase">
               Ayubowan
             </p>
-            <p className="mt-2 text-lg font-bold text-center text-white xl:text-3xl lg:text-xl">
-              We are Travel <span className="text-[#54B435]">Mango</span>
+            <p className="mt-2 text-lg font-bold text-center text-white xl:text-2xl lg:text-xl uppercase">
+              We are Travel <span className="text-[#79c234]">Mango</span>
             </p>
-            <p className="mt-24 text-3xl font-bold text-center text-gray-100 xl:text-4xl">
+            <p className="mt-24 text-2xl font-bold text-center text-gray-100 lg:text-4xl">
               Welcome to Sri Lanka
             </p>
-            <p className="p-5 mt-16 font-serif text-base font-bold text-center border-2 md:mt-28 xl:text-3xl lg:text-2xl bg-gray-50 opacity-60 lg:leading-10">
+            <p className="p-5 mt-10 font-serif text-base font-bold text-center border-2 md:mt-20 xl:text-2xl lg:text-xl bg-gray-50 opacity-70 lg:leading-10">
               In the list of top travel spots for 2023, Sri Lanka stands out as
               a must-visit destination, drawing attention as one of the hottest
               tourist spots of the year.
@@ -109,8 +151,8 @@ export default function Home() {
       </div>
 
       <div className="px-5 2xl:px-40 xl:px-24 lg:px-20">
-        <div className="grid pt-20 lg:grid-cols-2 lg:gap-x-10 gap-y-10 items-center">
-          <p className="font-bold xl:text-5xl md:text-5xl text-2xl text-center flex items-center font-serif xl:leading-[70px] uppercase">
+        <div className="grid pt-10 lg:grid-cols-2 lg:gap-x-10 gap-y-10 items-center">
+          <p className="font-bold lg:text-5xl md:text-4xl text-2xl text-center flex items-center font-serif xl:leading-[70px] uppercase">
             Crafted just for you, our Sri Lanka vacations offer tailor-made
             experiences.
           </p>
@@ -141,13 +183,13 @@ export default function Home() {
         <img
           src="./wallpapers/accessible.jpg"
           alt=""
-          className="opacity-50 w-full h-[500px] object-cover mt-20"
+          className="opacity-50 w-full h-[500px] object-cover lg:mt-20 mt-10"
         />
         <div className="absolute top-0 px-5 mt-10 2xl:px-40 xl:px-24 lg:px-20">
-          <p className="text-2xl font-bold md:mt-28 xl:text-4xl">
+          <p className="text-xl font-bold md:mt-28 md:text-4xl">
             ACCESSIBLE TOURISM
           </p>
-          <p className="mt-2 text-sm font-medium text-justify xl:text-xl md:text-base">
+          <p className="mt-2 text-sm font-medium text-justify lg:text-lg md:text-base">
             Travelmango is the go-to travel companion you can rely on,
             specializing in catering to the needs of those seeking medical,
             wellness, and accessible tourism experiences in Sri Lanka. They
@@ -158,7 +200,7 @@ export default function Home() {
             into uncovering these treasures to provide you with an exclusive
             experience.
           </p>
-          <button className="bg-black hover:bg-[#54B435] transition-colors duration-300 mt-5 xl:py-2 xl:px-10 py-1 px-8 text-xl rounded-lg font-bold text-white hover:text-white">
+          <button className="bg-black hover:bg-[#54B435] transition-colors duration-300 mt-5 md:py-2 md:px-10 py-1 px-8 md:text-xl text-base rounded-lg font-bold text-white hover:text-white">
             See More
           </button>
         </div>
@@ -169,7 +211,7 @@ export default function Home() {
           <p className="font-bold text-center xl:text-4xl lg:text-3xl md:text-2xl text-xl">
             Check out our top picks for Sri Lanka travel plans!
           </p>
-          <p className="mt-5 text-center lg:text-lg md:text-base text-sm">
+          <p className="mt-5 md:text-center text-justify lg:text-lg md:text-base text-sm">
             Explore Travel Mango's diverse selection of Sri Lanka tours,
             offering an array of options to suit your preferences on this
             stunning island getaway. Whether you're craving a traditional island
@@ -242,6 +284,34 @@ export default function Home() {
       </div>
 
       <div>
+        <div className="2xl:px-40 xl:px-24 lg:px-20 px-5">
+          <div className="flex justify-center my-10">
+            <p className="font-bold text-center xl:text-4xl lg:text-3xl md:text-2xl text-xl">
+              Why Choose Us
+            </p>
+          </div>
+          <div className="mt-20 text-xl">
+            <div className="text-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                {choose.map((c) => (
+                  <div>
+                    <img
+                      src={c.img}
+                      className="w-16 mx-auto mb-4 xl:w-20"
+                      alt=""
+                    />
+                    <p className="mb-10 text-sm xl:mx-10 lg:mx-10 mx-2 md:text-base">
+                      {c.details}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
         <div class="bg-gray-100 leanding-normal tracking-wide">
           <div class="container mx-auto w-full overflow-hidden relative">
             <div class="w-full h-full absolute z-10">
@@ -285,6 +355,8 @@ export default function Home() {
         </div>
       </div>
       <Footer />
+      <WhatsApp />
+      <ScrollToTopButton />
     </div>
   );
 }
