@@ -20,7 +20,7 @@ export default function Footer() {
               </h4>
               <p className="text-gray-500 hover:text-gray-400">
                 {/* No 333, <br /> William Gopallawa Mawatha, <br /> Kandy. <br /> */}
-                <strong>Phone:</strong> +(94) 704 239 249 <br />
+                <strong>Phone:</strong> +(94) 704 339 349 <br />
                 <strong>Email:</strong> mangoglobal87@gmail.com <br />
               </p>
             </div>
@@ -43,7 +43,7 @@ export default function Footer() {
                 </li>
                 <li className="pb-4">
                   <i class="fa-solid fa-splotch text-[#FFD43B]"></i>
-                  <a href="/Gallery" className=" hover:text-yellow-500">
+                  <a href="/" className=" hover:text-yellow-500">
                     {" "}
                     Gallery
                   </a>
@@ -57,7 +57,7 @@ export default function Footer() {
                 </li>
                 <li className="pb-4">
                   <i class="fa-solid fa-splotch text-[#FFD43B]"></i>
-                  <a href="/jobs" className=" hover:text-yellow-500">
+                  <a href="/" className=" hover:text-yellow-500">
                     {" "}
                     Careers
                   </a>
