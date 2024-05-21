@@ -6,18 +6,19 @@ import ContactForm from "../Contact-Form";
 import WhatsApp from "../../components/WhatsApp";
 import ScrollToTopButton from "../../components/ScrollToTopButton";
 import { Breadcrumbs } from "@material-tailwind/react";
+import Gallery from "../Gallery";
 
 export default function SevenDays() {
-  const [activeTab, setActiveTab] = useState("trips");
+  const [activeTab, setActiveTab] = useState("overview");
 
   const dateList = [
     {
       day: `Day 01`,
-      topic: `Negombo to Sigiriya`,
+      topic: `Airport to Sigiriya`,
       img: `./trips/pinnawala.jpg`,
-      detail: ``,
+      detail: `Upon arrival, our proficient chauffeur guide, fluent in English, alongside the attentive airport team, warmly welcomes you, ensuring all your needs are met. Upon reaching your hotel, indulge in a leisurely day of relaxation, recuperating from your journey. Delight in the freedom to unwind at your own pace. Your adventure continues with an overnight stay at a hotel in Sigiriya, where the majestic Pinnawala Elephant Orphanage awaits. Immerse yourself in the tranquility of this haven, embracing the essence of Sri Lanka's natural beauty and cultural richness throughout your stay.`,
       accommodation: `As Your Request`,
-      activities: `Pinnawala Elephant Orphanage`,
+      activities: `Pinnawala Elephant Orphanage - Overnight Stay in a Hotel at Sigiriya`,
     },
     {
       day: `Day 02`,
@@ -69,84 +70,6 @@ export default function SevenDays() {
     },
   ];
 
-  const galleryImages = [
-    {
-      image: `./trips/coconut_tree_hill.jpg`,
-      topic: `Coconut Tree Hill`,
-      town: `Mirissa`,
-    },
-    {
-      image: `./trips/Galle_Fort.jpg`,
-      topic: `Galle Fort`,
-      town: `Galle`,
-    },
-    {
-      image: `./trips/nineArch.jpg`,
-      topic: `Nine Arches Bridge`,
-      town: `Ella`,
-    },
-    {
-      image: `./trips/pinnawala.jpg`,
-      topic: `Pinnawala Elephant Orphanage`,
-      town: `Rambukkana`,
-    },
-    {
-      image: `./trips/damro.jpg`,
-      topic: `Damro Labookellie Tea Centre and Tea Garden`,
-      town: `Nuwara Eliya`,
-    },
-    {
-      image: `./trips/templeTooth.jpg`,
-      topic: `Temple of the Tooth Relic`,
-      town: `Kandy`,
-    },
-    {
-      image: `./trips/Dambulla_Cave_Temple.jpg`,
-      topic: `Dambulla Royal Cave Temple`,
-      town: `Dambulla`,
-    },
-    {
-      image: `./trips/Kandy_Cultural_Dance.jpg`,
-      topic: `Cultural Dance Show`,
-      town: `Kandy`,
-    },
-    {
-      image: `./trips/nuwara_eliya_post_office.jpg`,
-      topic: `Post Office`,
-      town: `Nuwara Eliya`,
-    },
-    {
-      image: `./trips/yala.jpg`,
-      topic: `Yala National Park`,
-      town: `Yala`,
-    },
-    {
-      image: `./trips/Madu-River.jpg`,
-      topic: `Madu River`,
-      town: `Galle`,
-    },
-    {
-      image: `./trips/whale-watching.jpg`,
-      topic: `Whale watching`,
-      town: `Mirissa`,
-    },
-    {
-      image: `./trips/mirissa-bay.jpg`,
-      topic: `Mirissa Bay`,
-      town: `Mirissa`,
-    },
-    {
-      image: `./trips/Gregory_Lake.jpg`,
-      topic: `Gregory Lake`,
-      town: `Nuwara Eliya`,
-    },
-    {
-      image: `./trips/Little_Adam.jpg`,
-      topic: `Little Adam's Peak`,
-      town: `Ella`,
-    },
-  ];
-
   return (
     <div>
       <Navbar />
@@ -183,17 +106,25 @@ export default function SevenDays() {
         {/* ===========Breadcrumbs=========== */}
 
         {/* Tabs */}
-        <div className="flex justify-center mt-5">
+        <div className="flex flex-wrap justify-center md:mt-5 mt-0">
           <button
-            className={`mx-2 md:px-14 md:py-2 py-1 px-8  border-2  ${
-              activeTab === "trips" ? "bg-blue-500 text-white" : "bg-white"
+            className={`md:m-2 m-1 w-40 md:w-auto md:px-14 md:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
+              activeTab === "overview" ? "bg-blue-500 text-white" : "bg-white"
             }`}
-            onClick={() => setActiveTab("trips")}
+            onClick={() => setActiveTab("overview")}
           >
-            Trips
+            Overview
           </button>
           <button
-            className={`mx-2 md:px-14 md:py-2 py-1 px-8  border-2  ${
+            className={`md:m-2 m-1 w-40 md:w-auto md:px-14 md:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
+              activeTab === "itinerary" ? "bg-blue-500 text-white" : "bg-white"
+            }`}
+            onClick={() => setActiveTab("itinerary")}
+          >
+            Itinerary
+          </button>
+          <button
+            className={`md:m-2 m-1 w-40 md:w-auto md:px-14 md:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
               activeTab === "gallery" ? "bg-blue-500 text-white" : "bg-white"
             }`}
             onClick={() => setActiveTab("gallery")}
@@ -201,7 +132,24 @@ export default function SevenDays() {
             Gallery
           </button>
         </div>
-        {activeTab === "trips" && (
+        {activeTab === "overview" && (
+          <div>
+            <div className="flex justify-center my-10 2xl:px-40 xl:px-24 lg:px-20 md:px-5 px-0">
+              <iframe
+                class="w-full h-[500px]"
+                src="https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d1013886.6552091112!2d80.01799022669655!3d6.950817195451891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e0!4m5!1s0x3ae2efb735f22d5d%3A0x6ebd702103828b37!2sBandaranaike%20International%20Airport%20(CMB)%2C%20Katunayake!3m2!1d7.180155999999999!2d79.8842559!4m5!1s0x3afca0dfa73179d1%3A0x1e04c1150cff0edf!2sSigiriya!3m2!1d7.954108499999999!2d80.75469799999999!4m5!1s0x3ae366266498acd3%3A0x411a3818a1e03c35!2sKandy!3m2!1d7.2905714999999995!2d80.6337262!4m5!1s0x3ae465955bc09a25%3A0xbdfadcdadec487fb!2sElla!3m2!1d6.8666988!2d81.046553!4m5!1s0x3ae5d3a62ffb9359%3A0x3bb623d70b5a3314!2sYala%20National%20Park!3m2!1d6.463961299999999!2d81.47188469999999!4m5!1s0x3ae13fce3177dc59%3A0xa2d8a78b36dc9c90!2sMirissa!3m2!1d5.948262!2d80.4715866!4m5!1s0x3ae22e900168ca21%3A0x96c438f00a68c060!2sBentota!3m2!1d6.4189175!2d80.005979!5e0!3m2!1sen!2slk!4v1715923992026!5m2!1sen!2slk"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="7 Days Trip"
+              ></iframe>
+            </div>
+            <div className="2xl:px-40 xl:px-24 lg:px-20 py-5">
+              <ContactForm />
+            </div>
+          </div>
+        )}
+        {activeTab === "itinerary" && (
           <div>
             <div className="grid grid-cols-1 gap-y-10 my-10 2xl:px-40 xl:px-24 lg:px-20 px-5">
               {dateList.map((date, index) => (
@@ -252,34 +200,13 @@ export default function SevenDays() {
         )}
         {activeTab === "gallery" && (
           <div>
-            <div class="px-5">
-              <div class="flex items-center justify-center min-h-screen py-12">
-                <div class="">
-                  <div class="grid xl:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-6">
-                    {galleryImages.map((i, index) => (
-                      <figure class="col-span-2 relative group overflow-hidden">
-                        <img
-                          key={index}
-                          src={i.image}
-                          alt=""
-                          class="w-full lg:h-[300px] h-[200px] object-cover group-hover:scale-105 group transition-all duration-200"
-                        />
-                        <figcaption class="flex w-full p-3 absolute -bottom-20 left-0 bg-slate-900/60 text-white justify-between items-center invisible group-hover:bottom-0 group-hover:visible transition-all duration-200">
-                          <div class="flex flex-col gap-y-2">
-                            <p class="text-lg font-semibold">{i.topic}</p>
-                            <p class="flex justify-between text-sm">
-                              <span>{i.town}</span>
-                            </p>
-                          </div>
-                        </figcaption>
-                      </figure>
-                    ))}
-                  </div>
-                </div>
+            <div className="2xl:px-40 xl:px-24 lg:px-20 md:px-5 px-0">
+              <div className="mt-10">
+                <Gallery />
               </div>
-            </div>
-            <div className="2xl:px-40 xl:px-24 lg:px-20 py-5">
-              <ContactForm />
+              <div className="my-10">
+                <ContactForm />
+              </div>
             </div>
           </div>
         )}

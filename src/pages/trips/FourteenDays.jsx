@@ -6,9 +6,10 @@ import ContactForm from "../Contact-Form";
 import WhatsApp from "../../components/WhatsApp";
 import ScrollToTopButton from "../../components/ScrollToTopButton";
 import { Breadcrumbs } from "@material-tailwind/react";
+import Gallery from "../Gallery";
 
 export default function FourteenDays() {
-  const [activeTab, setActiveTab] = useState("trips");
+  const [activeTab, setActiveTab] = useState("overview");
 
   const dateList = [
     {
@@ -77,84 +78,6 @@ export default function FourteenDays() {
     },
   ];
 
-  const galleryImages = [
-    {
-      image: `./trips/coconut_tree_hill.jpg`,
-      topic: `Coconut Tree Hill`,
-      town: `Mirissa`,
-    },
-    {
-      image: `./trips/Galle_Fort.jpg`,
-      topic: `Galle Fort`,
-      town: `Galle`,
-    },
-    {
-      image: `./trips/nineArch.jpg`,
-      topic: `Nine Arches Bridge`,
-      town: `Ella`,
-    },
-    {
-      image: `./trips/pinnawala.jpg`,
-      topic: `Pinnawala Elephant Orphanage`,
-      town: `Rambukkana`,
-    },
-    {
-      image: `./trips/damro.jpg`,
-      topic: `Damro Labookellie Tea Centre and Tea Garden`,
-      town: `Nuwara Eliya`,
-    },
-    {
-      image: `./trips/templeTooth.jpg`,
-      topic: `Temple of the Tooth Relic`,
-      town: `Kandy`,
-    },
-    {
-      image: `./trips/Dambulla_Cave_Temple.jpg`,
-      topic: `Dambulla Royal Cave Temple`,
-      town: `Dambulla`,
-    },
-    {
-      image: `./trips/Kandy_Cultural_Dance.jpg`,
-      topic: `Cultural Dance Show`,
-      town: `Kandy`,
-    },
-    {
-      image: `./trips/nuwara_eliya_post_office.jpg`,
-      topic: `Post Office`,
-      town: `Nuwara Eliya`,
-    },
-    {
-      image: `./trips/yala.jpg`,
-      topic: `Yala National Park`,
-      town: `Yala`,
-    },
-    {
-      image: `./trips/Madu-River.jpg`,
-      topic: `Madu River`,
-      town: `Galle`,
-    },
-    {
-      image: `./trips/whale-watching.jpg`,
-      topic: `Whale watching`,
-      town: `Mirissa`,
-    },
-    {
-      image: `./trips/mirissa-bay.jpg`,
-      topic: `Mirissa Bay`,
-      town: `Mirissa`,
-    },
-    {
-      image: `./trips/Gregory_Lake.jpg`,
-      topic: `Gregory Lake`,
-      town: `Nuwara Eliya`,
-    },
-    {
-      image: `./trips/Little_Adam.jpg`,
-      topic: `Little Adam's Peak`,
-      town: `Ella`,
-    },
-  ];
-
   return (
     <div>
       <Navbar />
@@ -189,17 +112,25 @@ export default function FourteenDays() {
         </Breadcrumbs>
         {/* ===========Breadcrumbs=========== */}
         {/* Tabs */}
-        <div className="flex justify-center mt-5">
+        <div className="flex flex-wrap justify-center md:mt-5 mt-0">
           <button
-            className={`mx-2 md:px-14 md:py-2 py-1 px-8  border-2  ${
-              activeTab === "trips" ? "bg-blue-500 text-white" : "bg-white"
+            className={`md:m-2 m-1 w-40 md:w-auto md:px-14 md:py-2 py-1 px-8 border-2 md:text-base text-sm ${
+              activeTab === "overview" ? "bg-blue-500 text-white" : "bg-white"
             }`}
-            onClick={() => setActiveTab("trips")}
+            onClick={() => setActiveTab("overview")}
           >
-            Trips
+            Overview
           </button>
           <button
-            className={`mx-2 md:px-14 md:py-2 py-1 px-8  border-2  ${
+            className={`md:m-2 m-1 w-40 md:w-auto md:px-14 md:py-2 py-1 px-8 border-2 md:text-base text-sm ${
+              activeTab === "itinerary" ? "bg-blue-500 text-white" : "bg-white"
+            }`}
+            onClick={() => setActiveTab("itinerary")}
+          >
+            Itinerary
+          </button>
+          <button
+            className={`md:m-2 m-1 w-40 md:w-auto md:px-14 md:py-2 py-1 px-8 border-2 md:text-base text-sm ${
               activeTab === "gallery" ? "bg-blue-500 text-white" : "bg-white"
             }`}
             onClick={() => setActiveTab("gallery")}
@@ -207,7 +138,24 @@ export default function FourteenDays() {
             Gallery
           </button>
         </div>
-        {activeTab === "trips" && (
+        {activeTab === "overview" && (
+          <div>
+            <div className="flex justify-center my-10 2xl:px-40 xl:px-24 lg:px-20 md:px-5 px-0">
+              <iframe
+                class="w-full h-[500px]"
+                src="https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d1013883.9024891664!2d80.01334617722836!3d6.952093059716726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e0!4m5!1s0x3ae2ee9c6bb2f73b%3A0xa51626e908186f3e!2sNegombo!3m2!1d7.2007968!2d79.8736754!4m5!1s0x3afca0dfa73179d1%3A0x1e04c1150cff0edf!2sSigiriya!3m2!1d7.954108499999999!2d80.75469799999999!4m5!1s0x3ae366266498acd3%3A0x411a3818a1e03c35!2sKandy!3m2!1d7.2905714999999995!2d80.6337262!4m5!1s0x3ae380434e1554c7%3A0x291608404c937d9c!2sNuwara%20Eliya!3m2!1d6.9497165999999995!2d80.7891068!4m5!1s0x3ae465955bc09a25%3A0xbdfadcdadec487fb!2sElla!3m2!1d6.8666988!2d81.046553!4m5!1s0x3ae5d3a62ffb9359%3A0x3bb623d70b5a3314!2sYala%20National%20Park!3m2!1d6.463961299999999!2d81.47188469999999!4m5!1s0x3ae13fce3177dc59%3A0xa2d8a78b36dc9c90!2sMirissa!3m2!1d5.948262!2d80.4715866!5e0!3m2!1sen!2slk!4v1715919682433!5m2!1sen!2slk"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="14 Days Trip"
+              ></iframe>
+            </div>
+            <div className="2xl:px-40 xl:px-24 lg:px-20 py-5">
+              <ContactForm />
+            </div>
+          </div>
+        )}
+        {activeTab === "itinerary" && (
           <div>
             <div className="grid grid-cols-1 gap-y-10 my-10 2xl:px-40 xl:px-24 lg:px-20 px-5">
               {dateList.map((date, index) => (
@@ -258,34 +206,13 @@ export default function FourteenDays() {
         )}
         {activeTab === "gallery" && (
           <div>
-            <div class="px-5">
-              <div class="flex items-center justify-center min-h-screen py-12">
-                <div class="">
-                  <div class="grid xl:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-6">
-                    {galleryImages.map((i, index) => (
-                      <figure class="col-span-2 relative group overflow-hidden">
-                        <img
-                          key={index}
-                          src={i.image}
-                          alt=""
-                          class="w-full lg:h-[300px] h-[200px] object-cover group-hover:scale-105 group transition-all duration-200"
-                        />
-                        <figcaption class="flex w-full p-3 absolute -bottom-20 left-0 bg-slate-900/60 text-white justify-between items-center invisible group-hover:bottom-0 group-hover:visible transition-all duration-200">
-                          <div class="flex flex-col gap-y-2">
-                            <p class="text-lg font-semibold">{i.topic}</p>
-                            <p class="flex justify-between text-sm">
-                              <span>{i.town}</span>
-                            </p>
-                          </div>
-                        </figcaption>
-                      </figure>
-                    ))}
-                  </div>
-                </div>
+            <div className="2xl:px-40 xl:px-24 lg:px-20 md:px-5 px-0">
+              <div className="mt-10">
+                <Gallery />
               </div>
-            </div>
-            <div className="2xl:px-40 xl:px-24 lg:px-20 py-5">
-              <ContactForm />
+              <div className="my-10">
+                <ContactForm />
+              </div>
             </div>
           </div>
         )}

@@ -6,9 +6,10 @@ import ContactForm from "../Contact-Form";
 import WhatsApp from "../../components/WhatsApp";
 import ScrollToTopButton from "../../components/ScrollToTopButton";
 import { Breadcrumbs } from "@material-tailwind/react";
+import Gallery from "../Gallery";
 
 export default function ThirtyDays() {
-  const [activeTab, setActiveTab] = useState("trips");
+  const [activeTab, setActiveTab] = useState("overview");
 
   const dateList = [
     {
@@ -104,9 +105,9 @@ export default function ThirtyDays() {
       day: `Day 28 & 29 in Colombo`,
       topic: `Galle to Colombo`,
       img: `./trips/Gangaramaya_Temple.jpg`,
-      detail: `Explore the vibrant tapestry of Colombo's cultural landmarks, beginning with the majestic Colombo Red Mosque, a symbol of Islamic heritage. Ascend the iconic Lotus Tower for panoramic city views before immersing yourself in tranquility at Gangarama Temple. Wander through history at Independence Square and delve into spiritual serenity at Kelaniya Raja Maha Viharaya. Relax on the golden sands of Mount Lavinia Beach, soaking in the tropical bliss. End your day with an overnight stay at a luxurious hotel, nestled either in the bustling cityscape of Colombo or the coastal charm of Negombo, ensuring a rejuvenating experience amidst Sri Lanka's enchanting allure.`,
+      detail: `During your visit to Colombo, you can explore a variety of significant landmarks and attractions that showcase the city's rich cultural and architectural heritage. Begin with a visit to the Colombo Red Mosque, a striking structure known for its vibrant red-and-white patterned facade. Next, admire panoramic views from the Lotus Tower, one of the tallest structures in South Asia. Continue to the serene Gangarama Temple, which offers a blend of modern architecture and cultural essence. Take a moment to reflect on Sri Lanka's history at Independence Square, a monument commemorating the country's independence from British rule. Discover the historical and spiritual significance of the Kelaniya Raja Maha Viharaya, a revered Buddhist temple. Relax and unwind at the picturesque Mount Lavinia Beach, a popular spot for both locals and tourists. After a day of exploration, enjoy an overnight stay at a comfortable hotel in Colombo, ensuring you are well-rested for the adventures ahead.`,
       accommodation: `As Your Request`,
-      activities: `Colombo Red Mosque - Lotus Tower - Gangarama Temple - Independence Square - Kelaniya Raja Maha Viharaya - Mount Lavinia Beach - Overnight Stay in a Hotel at Colombo or Negombo`,
+      activities: `Colombo Red Mosque - Lotus Tower - Gangarama Temple - Independence Square - Kelaniya Raja Maha Viharaya - Mount Lavinia Beach - Overnight Stay in a Hotel at Colombo`,
     },
     {
       day: `Day 30`,
@@ -118,83 +119,6 @@ export default function ThirtyDays() {
     },
   ];
 
-  const galleryImages = [
-    {
-      image: `./trips/coconut_tree_hill.jpg`,
-      topic: `Coconut Tree Hill`,
-      town: `Mirissa`,
-    },
-    {
-      image: `./trips/Galle_Fort.jpg`,
-      topic: `Galle Fort`,
-      town: `Galle`,
-    },
-    {
-      image: `./trips/nineArch.jpg`,
-      topic: `Nine Arches Bridge`,
-      town: `Ella`,
-    },
-    {
-      image: `./trips/pinnawala.jpg`,
-      topic: `Pinnawala Elephant Orphanage`,
-      town: `Rambukkana`,
-    },
-    {
-      image: `./trips/damro.jpg`,
-      topic: `Damro Labookellie Tea Centre and Tea Garden`,
-      town: `Nuwara Eliya`,
-    },
-    {
-      image: `./trips/templeTooth.jpg`,
-      topic: `Temple of the Tooth Relic`,
-      town: `Kandy`,
-    },
-    {
-      image: `./trips/Dambulla_Cave_Temple.jpg`,
-      topic: `Dambulla Royal Cave Temple`,
-      town: `Dambulla`,
-    },
-    {
-      image: `./trips/Kandy_Cultural_Dance.jpg`,
-      topic: `Cultural Dance Show`,
-      town: `Kandy`,
-    },
-    {
-      image: `./trips/nuwara_eliya_post_office.jpg`,
-      topic: `Post Office`,
-      town: `Nuwara Eliya`,
-    },
-    {
-      image: `./trips/yala.jpg`,
-      topic: `Yala National Park`,
-      town: `Yala`,
-    },
-    {
-      image: `./trips/Madu-River.jpg`,
-      topic: `Madu River`,
-      town: `Galle`,
-    },
-    {
-      image: `./trips/whale-watching.jpg`,
-      topic: `Whale watching`,
-      town: `Mirissa`,
-    },
-    {
-      image: `./trips/mirissa-bay.jpg`,
-      topic: `Mirissa Bay`,
-      town: `Mirissa`,
-    },
-    {
-      image: `./trips/Gregory_Lake.jpg`,
-      topic: `Gregory Lake`,
-      town: `Nuwara Eliya`,
-    },
-    {
-      image: `./trips/Little_Adam.jpg`,
-      topic: `Little Adam's Peak`,
-      town: `Ella`,
-    },
-  ];
   return (
     <div>
       <Navbar />
@@ -229,17 +153,25 @@ export default function ThirtyDays() {
         </Breadcrumbs>
         {/* ===========Breadcrumbs=========== */}
         {/* Tabs */}
-        <div className="flex justify-center mt-5">
+        <div className="flex flex-wrap justify-center md:mt-5 mt-0">
           <button
-            className={`mx-2 md:px-14 md:py-2 py-1 px-8  border-2  ${
-              activeTab === "trips" ? "bg-blue-500 text-white" : "bg-white"
+            className={`md:m-2 m-1 w-40 md:w-auto md:px-14 md:py-2 py-1 px-8 border-2 md:text-base text-sm ${
+              activeTab === "overview" ? "bg-blue-500 text-white" : "bg-white"
             }`}
-            onClick={() => setActiveTab("trips")}
+            onClick={() => setActiveTab("overview")}
           >
-            Trips
+            Overview
           </button>
           <button
-            className={`mx-2 md:px-14 md:py-2 py-1 px-8  border-2  ${
+            className={`md:m-2 m-1 w-40 md:w-auto md:px-14 md:py-2 py-1 px-8 border-2 md:text-base text-sm ${
+              activeTab === "itinerary" ? "bg-blue-500 text-white" : "bg-white"
+            }`}
+            onClick={() => setActiveTab("itinerary")}
+          >
+            Itinerary
+          </button>
+          <button
+            className={`md:m-2 m-1 w-40 md:w-auto md:px-14 md:py-2 py-1 px-8 border-2 md:text-base text-sm ${
               activeTab === "gallery" ? "bg-blue-500 text-white" : "bg-white"
             }`}
             onClick={() => setActiveTab("gallery")}
@@ -247,7 +179,25 @@ export default function ThirtyDays() {
             Gallery
           </button>
         </div>
-        {activeTab === "trips" && (
+
+        {activeTab === "overview" && (
+          <div>
+            <div className="flex justify-center my-10 2xl:px-40 xl:px-24 lg:px-20 md:px-5 px-0">
+              <iframe
+                class="w-full h-[500px]"
+                src="https://www.google.com/maps/embed?pb=!1m88!1m12!1m3!1d2026131.7831204839!2d79.52774705088288!3d7.321439711447633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m73!3e0!4m5!1s0x3ae2ee9c6bb2f73b%3A0xa51626e908186f3e!2sNegombo!3m2!1d7.2007968!2d79.8736754!4m5!1s0x3afcf4f99360e159%3A0xc111fe9ebc6dcf0e!2sAnuradhapura!3m2!1d8.311351799999999!2d80.4036508!4m5!1s0x3afbbfb5c9304551%3A0xc6d99d1084095189!2sNilaveli!3m2!1d8.6927331!2d81.1885293!4m5!1s0x3afca0dfa73179d1%3A0x1e04c1150cff0edf!2sSigiriya!3m2!1d7.954108499999999!2d80.75469799999999!4m5!1s0x3afcaff4c8adcc4f%3A0x67ae3cc5b1536914!2sDambulla!3m2!1d7.874217!2d80.6511287!4m5!1s0x3ae366266498acd3%3A0x411a3818a1e03c35!2sKandy!3m2!1d7.2905714999999995!2d80.6337262!4m5!1s0x3ae380434e1554c7%3A0x291608404c937d9c!2sNuwara%20Eliya!3m2!1d6.9497165999999995!2d80.7891068!4m5!1s0x3ae465955bc09a25%3A0xbdfadcdadec487fb!2sElla!3m2!1d6.8666988!2d81.046553!4m5!1s0x3ae5bd26f6a1ccd7%3A0xb934be79f3ce3515!2sArugam%20Bay!3m2!1d6.8379771!2d81.82516869999999!4m5!1s0x3ae13fce3177dc59%3A0xa2d8a78b36dc9c90!2sMirissa!3m2!1d5.948262!2d80.4715866!4m5!1s0x3ae173bb6932fce3%3A0x4a35b903f9c64c03!2sGalle!3m2!1d6.032894799999999!2d80.2167912!4m5!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!3m2!1d6.9270786!2d79.861243!5e0!3m2!1sen!2slk!4v1715885997871!5m2!1sen!2slk"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="30 Days Trip"
+              ></iframe>
+            </div>
+            <div className="2xl:px-40 xl:px-24 lg:px-20 py-5">
+              <ContactForm />
+            </div>
+          </div>
+        )}
+        {activeTab === "itinerary" && (
           <div>
             <div className="grid grid-cols-1 gap-y-10 my-10 2xl:px-40 xl:px-24 lg:px-20 px-5">
               {dateList.map((date, index) => (
@@ -298,34 +248,13 @@ export default function ThirtyDays() {
         )}
         {activeTab === "gallery" && (
           <div>
-            <div class="px-5">
-              <div class="flex items-center justify-center min-h-screen py-12">
-                <div class="">
-                  <div class="grid xl:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-6">
-                    {galleryImages.map((i, index) => (
-                      <figure class="col-span-2 relative group overflow-hidden">
-                        <img
-                          key={index}
-                          src={i.image}
-                          alt=""
-                          class="w-full lg:h-[300px] h-[200px] object-cover group-hover:scale-105 group transition-all duration-200"
-                        />
-                        <figcaption class="flex w-full p-3 absolute -bottom-20 left-0 bg-slate-900/60 text-white justify-between items-center invisible group-hover:bottom-0 group-hover:visible transition-all duration-200">
-                          <div class="flex flex-col gap-y-2">
-                            <p class="text-lg font-semibold">{i.topic}</p>
-                            <p class="flex justify-between text-sm">
-                              <span>{i.town}</span>
-                            </p>
-                          </div>
-                        </figcaption>
-                      </figure>
-                    ))}
-                  </div>
-                </div>
+            <div className="2xl:px-40 xl:px-24 lg:px-20 md:px-5 px-0">
+              <div className="mt-10">
+                <Gallery />
               </div>
-            </div>
-            <div className="2xl:px-40 xl:px-24 lg:px-20 py-5">
-              <ContactForm />
+              <div className="my-10">
+                <ContactForm />
+              </div>
             </div>
           </div>
         )}

@@ -6,15 +6,16 @@ import ContactForm from "../Contact-Form";
 import WhatsApp from "../../components/WhatsApp";
 import ScrollToTopButton from "../../components/ScrollToTopButton";
 import { Breadcrumbs } from "@material-tailwind/react";
+import Gallery from "../Gallery";
 
 export default function TenDays() {
-  const [activeTab, setActiveTab] = useState("trips");
+  const [activeTab, setActiveTab] = useState("overview");
 
   const dateList = [
     {
       day: `Day 01`,
       topic: `Airport to negombo`,
-      img: `./trips/airplane_landing.jpg`,
+      img: `./trips/Negombo_Beach.jpg`,
       detail: `When you land, our chauffeur guide, fluent in English, and the airport team will be there to greet you and help you with anything you need. Once you reach your hotel, take the rest of the day to relax and unwind after your long flight. It's your time to enjoy at your own pace.`,
       accommodation: `As Your Request`,
       activities: ``,
@@ -23,145 +24,76 @@ export default function TenDays() {
       day: `Day 02`,
       topic: `Negombo to sigiriya`,
       img: `./trips/sigiriya.jpg`,
-      detail: `Visit the Pinnawala Elephant Orphanage to witness gentle giants in their sanctuary, then journey to Sigiriya Rock Fortress, a majestic ancient marvel rising dramatically, offering breathtaking views and a glimpse into Sri Lanka's rich history.`,
+      detail: `Explore the wonders of Sri Lanka with a visit to the Pinnawala Elephant Orphanage, where you can witness the heartwarming care of rescued elephants. Continue your adventure at the iconic Sigiriya Rock Fortress, also known as Lion Rock, an ancient marvel that offers breathtaking views and a glimpse into the island's rich history. After a day of exploration, relax with an overnight stay in a comfortable hotel at Sigiriya, allowing you to unwind and soak in the serene surroundings, ready for more adventures in this beautiful region.`,
       accommodation: `As Your Request`,
-      activities: `Pinnawala Elephant Orphanage - Sigiriya Rock Fortress (Lion Rock)`,
+      activities: `Pinnawala Elephant Orphanage - Sigiriya Rock Fortress (Lion Rock) - Overnight Stay in a Hotel at Sigiriya`,
     },
     {
       day: `Day 03`,
       topic: `Sigiriya to kandy`,
       img: `./trips/templeTooth.jpg`,
-      detail: `Nestled in the heart of Sri Lanka, the Dambulla Royal Cave Temple and Golden Temple stand as timeless marvels, their ancient sanctuaries echoing with spiritual resonance. Nearby, the Spice Garden captivates with its aromatic allure, a sensory journey through the rich tapestry of Sri Lankan flavors. Further afield, the Matale Muthumariamman Temple beckons with its ornate architecture and devout ambiance. In Kandy, the revered Temple of the Tooth Relic holds the essence of Buddhist faith, a sacred repository of veneration. And amidst the cultural vibrancy, the Kandy Cultural Dance Show unfolds, a mesmerizing spectacle of rhythm and tradition, showcasing the island's artistic heritage in captivating splendor.`,
+      detail: `The itinerary includes a visit to the Dambulla Royal Cave Temple and Golden Temple, renowned for its ancient Buddhist murals and statues. Next, explore a Spice Garden, experiencing the aromatic allure of Sri Lanka's famed spices. In Matale, visit the vibrant Muthumariamman Temple, showcasing rich Hindu traditions. The journey continues to the Temple of the Tooth Relic in Kandy, a sacred site housing a revered tooth of Buddha. Enjoy the colorful Kandy Cultural Dance Show, a spectacle of traditional dance and music. Conclude with an overnight stay at a comfortable hotel in Kandy, immersed in the city's cultural charm.`,
       accommodation: `As Your Request`,
-      activities: `Dambulla Royal Cave Temple and Golden Temple - Spice Garden - Matale Muthumariamman Temple - Temple of Tooth Relic - Kandy Cultural Dance Show`,
+      activities: `Dambulla Royal Cave Temple and Golden Temple - Spice Garden - Matale Muthumariamman Temple - Temple of Tooth Relic - Kandy Cultural Dance Show - Overnight Stay in a Hotel at Kandy`,
     },
     {
       day: `Day 04`,
       topic: `Kandy to Nuwara Eliya `,
       img: `./trips/Gregory_Lake.jpg`,
-      detail: `Nestled in the lush landscapes of Sri Lanka lies a tapestry of wonders waiting to be explored. Ramboda Falls cascades gracefully, its waters a symphony of nature's beauty. The Damro Labookellie Tea Centre offers a sensory journey through the aroma and taste of exquisite Ceylon tea. Reflective tranquility envelops Gregory Lake, inviting serene contemplation amidst its serene shores. The quaint charm of Nuwara Eliya Post Office echoes the town's colonial heritage, a picturesque reminder of days gone by. Nearby, Nanu Oya Railway Station stands as a gateway to adventure, its vintage allure beckoning travelers to embark on scenic rail journeys through breathtaking vistas.`,
+      detail: `Begin your journey with the breathtaking Ramboda Falls, then visit the Damro Labookellie Tea Centre to savor fresh Ceylon tea. Enjoy a serene afternoon by the picturesque Gregory Lake, perfect for a relaxing boat ride or a peaceful stroll. Marvel at the charming colonial architecture of the Nuwara Eliya Post Office, a historic landmark. End your day with an overnight stay in a comfortable hotel in Nuwara Eliya, where the cool mountain air and scenic views provide a perfect retreat.`,
       accommodation: `As Your Request`,
-      activities: `Ramboda Falls - Damro Labookellie Tea Centre - Gregory Lake - Nuwara Eliya Post Office - Nanu oya Railway Station`,
+      activities: `Ramboda Falls - Damro Labookellie Tea Centre - Gregory Lake - Nuwara Eliya Post Office - Overnight Stay in a Hotel at Nuwara Eliya`,
     },
     {
       day: `Day 05`,
       topic: `Nuwara Eliya to Ella`,
       img: `./trips/Little_Adam.jpg`,
-      detail: `Nestled in the lush landscape of Sri Lanka lies the enchanting trio of wonders: Little Adam's Peak, a majestic summit offering panoramic vistas; the iconic Nine Arches Bridge, a marvel of colonial engineering spanning verdant valleys; and the cascading beauty of Ravana Falls, its crystalline waters descending gracefully amidst the emerald greenery, captivating all who behold their splendor.`,
+      detail: `In the enchanting town of Ella, begin your adventure with a trek up Little Adam's Peak, offering breathtaking panoramic views of lush green landscapes. Next, marvel at the architectural wonder of the Nine Arches Bridge, a relic from the colonial era surrounded by dense jungle and tea plantations. Continue to Ravana Falls, where cascading waters create a serene and picturesque setting, perfect for relaxation and photography. Conclude your day with an overnight stay at a cozy hotel in Ella, allowing you to immerse yourself in the tranquil ambiance and rejuvenate for the next day's explorations.`,
       accommodation: `As Your Request`,
-      activities: `Little adam's peak - Nine Arches Bridge - Ravana Falls`,
+      activities: `Little adam's peak - Nine Arches Bridge - Ravana Falls - Overnight Stay in a Hotel at Ella`,
     },
     {
       day: `Day 06`,
       topic: `Ella to Yala`,
       img: `./trips/yala.jpg`,
-      detail: `Yala National Park, a biodiversity hotspot in Sri Lanka, boasts diverse ecosystems and abundant wildlife. Buduruwagala Temple nearby showcases remarkable ancient Buddhist sculptures, reflecting the rich cultural heritage of the region amidst stunning natural surroundings.`,
+      detail: `Explore the natural beauty and cultural heritage of Sri Lanka with a visit to Yala National Park, renowned for its diverse wildlife, including leopards, elephants, and a variety of bird species. After an exhilarating safari, immerse yourself in history at the Buduruwagala Temple, where ancient rock carvings of Buddha and his disciples stand as a testament to the island’s rich spiritual past. Conclude your day with an overnight stay at a comfortable hotel in Yala, offering a perfect blend of relaxation and adventure amidst the serene landscape, ensuring a memorable and rejuvenating experience.`,
       accommodation: `As Your Request`,
-      activities: `Yala National Park - Buduruwagala Temple`,
+      activities: `Yala National Park - Buduruwagala Temple - Overnight Stay in a Hotel at Yala`,
     },
     {
       day: `Day 07`,
       topic: `Yala to Tangalle`,
       img: `./trips/Hiriketiya-Beach.jpg`,
-      detail: `Discover a coastal paradise along Sri Lanka's southern shores, where azure waters meet golden sands. Tangalle Beach entices with its serene beauty, offering a tranquil escape for sun-seekers. Nearby, Hiriketiya Beach beckons with its crescent-shaped bay, perfect for surfing or simply soaking up the sun. Further along, Rekawa Beach invites you to witness mesmerizing turtle hatchings, a remarkable natural spectacle. Finally, find solace at Silent Beach, a secluded haven for those seeking peace amidst breathtaking scenery.`,
+      detail: `Tangalle, a coastal paradise in Sri Lanka, boasts several stunning beaches. Tangalle Beach offers serene shores perfect for relaxation. Nearby, Hiriketiya Beach, known for its horseshoe bay, is a haven for surfers and swimmers. Rekawa Beach, a sanctuary for marine life, is renowned for its sea turtle nesting sites. Silent Beach, true to its name, provides a tranquil escape from the crowds. After a day of exploring these picturesque beaches, enjoy an overnight stay in one of Tangalle’s charming hotels, ensuring a restful end to a day filled with the natural beauty and tranquility of Sri Lanka’s southern coastline.`,
       accommodation: `As Your Request`,
-      activities: `Tangalle Beach - Hiriketiya Beach - Rekawa Beach - Silent Beach`,
+      activities: `Tangalle Beach - Hiriketiya Beach - Rekawa Beach - Silent Beach - Overnight Stay in a Hotel at Tangalle`,
     },
     {
       day: `Day 08`,
       topic: `Tangalle to Mirissa`,
       img: `./trips/coconut_tree_hill.jpg`,
-      detail: `Perched atop the picturesque Coconut Tree Hill overlooking Mirissa Bay, visitors can soak in breathtaking vistas of the azure waters below. Nearby, the vibrant Fish Market bustles with the day's fresh catch, offering a glimpse into the local fishing culture. Adventure seekers flock to Mirissa for exhilarating experiences like whale watching and dolphin spotting, where the vast ocean becomes a playground for marine marvels, leaving unforgettable memories etched in the minds of all who venture there.`,
+      detail: `Coconut Tree Hill in Mirissa offers stunning panoramic views of the coastline, making it a perfect spot for photography and relaxation. Mirissa Bay's tranquil waters are ideal for swimming and sunbathing. Nearby, the vibrant fish market showcases the daily catch, providing an authentic glimpse into the local fishing culture. For adventure seekers, whale and dolphin watching tours are a must, offering a chance to see these magnificent creatures up close. After a day of exploration, unwind with an overnight stay at a comfortable hotel in Mirissa, ensuring a restful end to a day filled with unforgettable experiences.`,
       accommodation: `As Your Request`,
-      activities: `Coconut Tree Hill - Mirissa Bay - Fish Market - Whale watching - Dolphin Watching`,
+      activities: `Coconut Tree Hill - Mirissa Bay - Fish Market - Whale watching - Dolphin Watching - Overnight Stay in a Hotel at Mirissa`,
     },
     {
       day: `Day 09`,
       topic: `Mirissa to Bentota`,
       img: `./trips/Galle_Fort.jpg`,
-      detail: `Explore the vibrant tapestry of Sri Lanka's southwest coast with its captivating attractions. Begin your journey at the historic Galle Dutch Fort, a UNESCO World Heritage Site showcasing colonial charm. Venture to the Bentota Turtle Hatchery, where conservation meets wonder, as you witness the nurturing of these magnificent creatures. Glide through the enchanting Madu River Safari, immersed in the lush mangroves and diverse wildlife. Find tranquility amidst the botanical marvels of Brief Garden, a sanctuary of artistry and nature. Finally, unwind at Bentota Beach, where golden sands meet azure waters, offering serenity and adventure in equal measure.`,
+      detail: `Embark on a captivating journey through Sri Lanka's wonders. Explore the ancient charm of Galle Dutch Fort, where history whispers through cobblestone streets. Venture to Bentota Turtle Hatchery, a sanctuary for these gentle creatures, fostering conservation efforts. Glide along the enchanting Madu River, a haven of biodiversity and serene landscapes. Discover the artistic haven of Brief Garden, a lush oasis blending nature and creativity. Relax on the golden shores of Bentota Beach, where the azure waters beckon. Conclude your day with an overnight stay in a tranquil hotel, immersed in the coastal serenity of Bentota, as memories of the day's adventures dance through your dreams.`,
       accommodation: `As Your Request`,
-      activities: `Galle Dutch Fort - Bentota Turtle Hatchery - Madu River Safari - Brief Garden - Bentota Beach`,
+      activities: `Galle Dutch Fort - Bentota Turtle Hatchery - Madu River Safari - Brief Garden - Bentota Beach - Overnight Stay in a Hotel at Bentota`,
+    },
+    {
+      day: `Day 10`,
+      topic: `Bentota to Airport`,
+      img: `./trips/airplane_landing.jpg`,
+      detail: ``,
+      accommodation: ``,
+      activities: ``,
     },
   ];
 
-  const galleryImages = [
-    {
-      image: `./trips/coconut_tree_hill.jpg`,
-      topic: `Coconut Tree Hill`,
-      town: `Mirissa`,
-    },
-    {
-      image: `./trips/Galle_Fort.jpg`,
-      topic: `Galle Fort`,
-      town: `Galle`,
-    },
-    {
-      image: `./trips/nineArch.jpg`,
-      topic: `Nine Arches Bridge`,
-      town: `Ella`,
-    },
-    {
-      image: `./trips/pinnawala.jpg`,
-      topic: `Pinnawala Elephant Orphanage`,
-      town: `Rambukkana`,
-    },
-    {
-      image: `./trips/damro.jpg`,
-      topic: `Damro Labookellie Tea Centre and Tea Garden`,
-      town: `Nuwara Eliya`,
-    },
-    {
-      image: `./trips/templeTooth.jpg`,
-      topic: `Temple of the Tooth Relic`,
-      town: `Kandy`,
-    },
-    {
-      image: `./trips/Dambulla_Cave_Temple.jpg`,
-      topic: `Dambulla Royal Cave Temple`,
-      town: `Dambulla`,
-    },
-    {
-      image: `./trips/Kandy_Cultural_Dance.jpg`,
-      topic: `Cultural Dance Show`,
-      town: `Kandy`,
-    },
-    {
-      image: `./trips/nuwara_eliya_post_office.jpg`,
-      topic: `Post Office`,
-      town: `Nuwara Eliya`,
-    },
-    {
-      image: `./trips/yala.jpg`,
-      topic: `Yala National Park`,
-      town: `Yala`,
-    },
-    {
-      image: `./trips/Madu-River.jpg`,
-      topic: `Madu River`,
-      town: `Galle`,
-    },
-    {
-      image: `./trips/whale-watching.jpg`,
-      topic: `Whale watching`,
-      town: `Mirissa`,
-    },
-    {
-      image: `./trips/mirissa-bay.jpg`,
-      topic: `Mirissa Bay`,
-      town: `Mirissa`,
-    },
-    {
-      image: `./trips/Gregory_Lake.jpg`,
-      topic: `Gregory Lake`,
-      town: `Nuwara Eliya`,
-    },
-    {
-      image: `./trips/Little_Adam.jpg`,
-      topic: `Little Adam's Peak`,
-      town: `Ella`,
-    },
-  ];
   return (
     <div>
       <Navbar />
@@ -196,17 +128,25 @@ export default function TenDays() {
         </Breadcrumbs>
         {/* ===========Breadcrumbs=========== */}
         {/* Tabs */}
-        <div className="flex justify-center mt-5">
+        <div className="flex flex-wrap justify-center md:mt-5 mt-0">
           <button
-            className={`mx-2 md:px-14 md:py-2 py-1 px-8  border-2  ${
-              activeTab === "trips" ? "bg-blue-500 text-white" : "bg-white"
+            className={`md:m-2 m-1 w-40 md:w-auto md:px-14 md:py-2 py-1 px-8 border-2 md:text-base text-sm ${
+              activeTab === "overview" ? "bg-blue-500 text-white" : "bg-white"
             }`}
-            onClick={() => setActiveTab("trips")}
+            onClick={() => setActiveTab("overview")}
           >
-            Trips
+            Overview
           </button>
           <button
-            className={`mx-2 md:px-14 md:py-2 py-1 px-8  border-2  ${
+            className={`md:m-2 m-1 w-40 md:w-auto md:px-14 md:py-2 py-1 px-8 border-2 md:text-base text-sm ${
+              activeTab === "itinerary" ? "bg-blue-500 text-white" : "bg-white"
+            }`}
+            onClick={() => setActiveTab("itinerary")}
+          >
+            Itinerary
+          </button>
+          <button
+            className={`md:m-2 m-1 w-40 md:w-auto md:px-14 md:py-2 py-1 px-8 border-2 md:text-base text-sm ${
               activeTab === "gallery" ? "bg-blue-500 text-white" : "bg-white"
             }`}
             onClick={() => setActiveTab("gallery")}
@@ -214,30 +154,45 @@ export default function TenDays() {
             Gallery
           </button>
         </div>
-        {activeTab === "trips" && (
+        {activeTab === "overview" && (
+          <div>
+            <div className="flex justify-center my-10 2xl:px-40 xl:px-24 lg:px-20 md:px-5 px-0">
+              <iframe
+                class="w-full h-[500px]"
+                src="https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d1013886.6552091112!2d80.01334617669652!3d6.950817195451904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e0!4m5!1s0x3ae2ee9c6bb2f73b%3A0xa51626e908186f3e!2sNegombo!3m2!1d7.2007968!2d79.8736754!4m5!1s0x3afca0dfa73179d1%3A0x1e04c1150cff0edf!2sSigiriya!3m2!1d7.954108499999999!2d80.75469799999999!4m5!1s0x3ae366266498acd3%3A0x411a3818a1e03c35!2sKandy!3m2!1d7.2905714999999995!2d80.6337262!4m5!1s0x3ae380434e1554c7%3A0x291608404c937d9c!2sNuwara%20Eliya!3m2!1d6.9497165999999995!2d80.7891068!4m5!1s0x3ae465955bc09a25%3A0xbdfadcdadec487fb!2sElla!3m2!1d6.8666988!2d81.046553!4m5!1s0x3ae5d3a62ffb9359%3A0x3bb623d70b5a3314!2sYala%20National%20Park!3m2!1d6.463961299999999!2d81.47188469999999!4m5!1s0x3ae14afd19b00141%3A0x4045d305f7526bba!2sTangalle!3m2!1d6.0243383!2d80.79407259999999!4m5!1s0x3ae13fce3177dc59%3A0xa2d8a78b36dc9c90!2sMirissa!3m2!1d5.948262!2d80.4715866!4m5!1s0x3ae22e900168ca21%3A0x96c438f00a68c060!2sBentota!3m2!1d6.4189175!2d80.005979!5e0!3m2!1sen!2slk!4v1715920422430!5m2!1sen!2slk"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="10 Days Trip"
+              ></iframe>
+            </div>
+            <div className="2xl:px-40 xl:px-24 lg:px-20 py-5">
+              <ContactForm />
+            </div>
+          </div>
+        )}
+        {activeTab === "itinerary" && (
           <div>
             <div className="grid grid-cols-1 gap-y-10 my-10 2xl:px-40 xl:px-24 lg:px-20 px-5">
               {dateList.map((date, index) => (
-                <div class="flex flex-col items-center bg-white border border-gray-300 rounded-lg shadow md:flex-row hover:bg-yellow-50 transition-colors duration-300 w-full">
+                <div class="flex flex-col items-center bg-white border border-gray-300 rounded-lg shadow lg:flex-row hover:bg-yellow-50 transition-colors duration-300 w-full">
                   <img
-                    class="object-cover xl:w-[400px] lg:w-[300px] md:w-[200px] w-full h-full rounded-t-lg md:rounded-none md:rounded-s-lg"
+                    class="object-cover xl:w-[400px] lg:w-[300px] w-full lg:h-full md:h-[200px] rounded-t-lg lg:rounded-none lg:rounded-s-lg"
                     src={date.img}
                     alt=""
                   />
                   <div class="flex flex-col justify-center p-4 leading-normal w-full h-full">
                     <div className="md:flex items-baseline gap-x-20">
-                      <p class="mb-2 lg:text-2xl text-lg font-bold tracking-tight text-gray-900">
+                      <p class="mb-2 lg:text-xl text-lg font-bold tracking-tight text-gray-900">
                         {date.day}
                       </p>
                       <p class="mb-3 lg:text-base text-sm font-medium text-gray-700 italic">
                         {date.topic}
                       </p>
                     </div>
-                    <p
-                      class="font-normal text-gray-700 lg:text-base text-sm text-justify"
-                      dangerouslySetInnerHTML={{ __html: date.detail }}
-                    ></p>
-
+                    <p class="font-normal text-gray-700 lg:text-base text-sm text-justify">
+                      {date.detail}
+                    </p>
                     <div className="flex flex-col mt-5 lg:text-base text-sm">
                       <p class="font-normal text-gray-700 space-x-5">
                         <span className="font-bold ">Accommodation: </span>{" "}
@@ -267,34 +222,13 @@ export default function TenDays() {
         )}
         {activeTab === "gallery" && (
           <div>
-            <div class="px-5">
-              <div class="flex items-center justify-center min-h-screen py-12">
-                <div class="">
-                  <div class="grid xl:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-6">
-                    {galleryImages.map((i, index) => (
-                      <figure class="col-span-2 relative group overflow-hidden">
-                        <img
-                          key={index}
-                          src={i.image}
-                          alt=""
-                          class="w-full lg:h-[300px] h-[200px] object-cover group-hover:scale-105 group transition-all duration-200"
-                        />
-                        <figcaption class="flex w-full p-3 absolute -bottom-20 left-0 bg-slate-900/60 text-white justify-between items-center invisible group-hover:bottom-0 group-hover:visible transition-all duration-200">
-                          <div class="flex flex-col gap-y-2">
-                            <p class="text-lg font-semibold">{i.topic}</p>
-                            <p class="flex justify-between text-sm">
-                              <span>{i.town}</span>
-                            </p>
-                          </div>
-                        </figcaption>
-                      </figure>
-                    ))}
-                  </div>
-                </div>
+            <div className="2xl:px-40 xl:px-24 lg:px-20 md:px-5 px-0">
+              <div className="mt-10">
+                <Gallery />
               </div>
-            </div>
-            <div className="2xl:px-40 xl:px-24 lg:px-20 py-5">
-              <ContactForm />
+              <div className="my-10">
+                <ContactForm />
+              </div>
             </div>
           </div>
         )}

@@ -30,7 +30,7 @@ export default function Home() {
       seeMore: `/TenDays`,
     },
     {
-      img: `/wallpapers/wallpaper.jpg`,
+      img: `/trips/Sigiriya_Rock.jpg`,
       topic: `Sri Lanka Tour 14 Days Package`,
       day: `(14 Days 13 Nights)`,
       town: `Negombo, Sigiriya, Dambulla, Kandy, Nuwara Eliya, Ella, Yala, Galle, Mirissa, Bentota, Collombo`,
@@ -39,7 +39,7 @@ export default function Home() {
       seeMore: `/FourteenDays`,
     },
     {
-      img: `/wallpapers/wallpaper5.jpg`,
+      img: `/trips/Dutch_Fort.jpg`,
       topic: `Sri Lanka Tour 30 Days Package`,
       day: `(30 Days 29 Nights)`,
       town: `Negombo, Sigiriya, Dambulla, Kandy, Nuwara Eliya, Ella, Galle, Mirissa, Nilaveli, Arugam Bay, Collombo`,
@@ -48,7 +48,7 @@ export default function Home() {
       seeMore: `/ThirtyDays`,
     },
     {
-      img: `/wallpapers/kandy1.jpg`,
+      img: `/trips/kandy_view.jpg`,
       topic: `Sri Lanka Tour 45 Days Package`,
       day: `(45 Days 44 Nights)`,
       town: `Negombo, Anuradhapura, Jaffna, Sigiriya, Kandy, Nuwara Eliya, Ella, Yala, Tangalle, Galle, Mirissa, Nilaveli, Arugam Bay, Collombo`,
@@ -57,13 +57,13 @@ export default function Home() {
       seeMore: `/FortyFiveDays`,
     },
     {
-      img: `/wallpapers/wallpaper7.jpg`,
+      img: `/trips/Ruwanweli-Maha-Seya.jpg`,
       topic: `Sri Lanka Tour 60 Days Package`,
       day: `(60 Days 59 Nights)`,
-      town: `Negombo, Sigiriya, Kandy, Nuwara Eliya, Ella, Yala, Tangalle, Galle, Mirissa, Nilaveli, Arugam Bay, Collombo`,
+      town: `Negombo, Mannar, Wilpattu, Anuradhapura, Polonnaruwa, Jaffna, Sigiriya, Trincomalee, Kandy, Nuwara Eliya, Ella, Yala, Udawalawa, Pottuvil, Down South, Collombo`,
       detail: `Experience the essence of Sri Lanka through the Classic Sri Lanka Tour, where you'll encounter a captivating blend of ancient cities, picturesque tea-covered hills, vibrant wildlife parks, breathtaking beaches, and luxurious accommodations.`,
       price: `7000`,
-      seeMore: ``,
+      seeMore: `/SixtyDays`,
     },
   ];
 
@@ -361,7 +361,9 @@ export default function Home() {
                           {m.topic}
                         </h5>
                       </a>
-                      <p class="mb-3 font-normal text-gray-700 lg:text-base text-sm">{m.detail}</p>
+                      <p class="mb-3 font-normal text-gray-700 lg:text-base text-sm">
+                        {m.detail}
+                      </p>
                       <div className="flex justify-end">
                         <a
                           href={m.seeMedia}

@@ -110,13 +110,15 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  to="/"
+                  to="/Destinations"
                   onClick={scrollToTop}
                   className={`${
-                    isActivePage("/faq") ? "text-[#F0FF42]" : "text-gray-300"
+                    isActivePage("/Destinations")
+                      ? "text-[#F0FF42]"
+                      : "text-gray-300"
                   }  hover:text-white block py-2 pl-3 pr-4 border-b border-gray-100  lg:border-0 lg:p-0 lg:dark:hover:bg-transparent font-bold text-lg`}
                 >
-                  FAQ
+                  DESTINATIONS
                 </Link>
               </li>
               <li>
