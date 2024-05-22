@@ -192,11 +192,13 @@ export default function Home() {
   const mobileSettings = {
     ...MediaSettings,
     slidesToShow: 1,
+    arrows: false,
   };
 
   const tabletSettings = {
     ...MediaSettings,
     slidesToShow: 2,
+    arrows: false,
   };
 
   const tabletLargeSettings = {
