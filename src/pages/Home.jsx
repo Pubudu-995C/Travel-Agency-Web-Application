@@ -258,11 +258,11 @@ export default function Home() {
 
       <div className="px-5 2xl:px-40 xl:px-24 lg:px-20">
         <div className="grid pt-10 lg:grid-cols-2 lg:gap-x-10 gap-y-10 items-center">
-          <p className="font-bold lg:text-5xl md:text-4xl text-2xl text-center flex items-center font-serif xl:leading-[70px] uppercase">
+          <p className="font-bold lg:text-5xl md:text-3xl text-2xl text-center flex items-center font-serif xl:leading-[70px] uppercase">
             Crafted just for you, our Sri Lanka vacations offer tailor-made
             experiences.
           </p>
-          <p className="text-sm font-medium text-justify xl:text-lg md:text-base">
+          <p className="text-sm font-medium text-justify xl:text-lg lg:text-base">
             Discover the captivating allure of Sri Lanka, a tropical paradise
             hailed as one of the world's top destinations for vacations. Despite
             its compact size, this island nation boasts an astonishing array of
@@ -289,13 +289,13 @@ export default function Home() {
         <img
           src="./wallpapers/accessible.jpg"
           alt=""
-          className="opacity-50 w-full h-[500px] object-cover lg:mt-20 mt-10"
+          className="opacity-50 w-full lg:h-[500px] h-[400px] object-cover lg:mt-20 mt-20 md:mt-0"
         />
-        <div className="absolute top-0 px-5 mt-10 2xl:px-40 xl:px-24 lg:px-20">
-          <p className="text-xl font-bold md:mt-28 md:text-4xl">
+        <div className="absolute top-0 px-5 lg:mt-10 md:mt-0 mt-10 2xl:px-40 xl:px-24 lg:px-20">
+          <p className="text-xl font-bold md:mt-28 md:text-2xl lg:text-4xl">
             ACCESSIBLE TOURISM
           </p>
-          <p className="mt-2 text-sm font-medium text-justify lg:text-lg md:text-base">
+          <p className="mt-2 text-sm font-medium text-justify xl:text-lg lg:text-base">
             Travelmango is the go-to travel companion you can rely on,
             specializing in catering to the needs of those seeking medical,
             wellness, and accessible tourism experiences in Sri Lanka. They
@@ -306,7 +306,7 @@ export default function Home() {
             into uncovering these treasures to provide you with an exclusive
             experience.
           </p>
-          <button className="bg-black hover:bg-[#54B435] transition-colors duration-300 mt-5 md:py-2 md:px-10 py-1 px-8 md:text-xl text-base rounded-lg font-bold text-white hover:text-white">
+          <button className="bg-black hover:bg-[#54B435] transition-colors duration-300 mt-5 lg:py-2 lg:px-10 py-1 px-8 lg:text-xl text-base rounded-lg font-bold text-white hover:text-white">
             See More
           </button>
         </div>
@@ -347,7 +347,7 @@ export default function Home() {
                       href={m.seeMedia}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex justify-center h-[200px] bg-gray-200"
+                      className="flex justify-center lg:h-[200px] h-[150px] bg-gray-200"
                     >
                       <img
                         class="object-cover md:h-16 h-10 my-auto"
@@ -369,7 +369,7 @@ export default function Home() {
                           href={m.seeMedia}
                           target="_blank"
                           rel="noreferrer"
-                          class=" absolute inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white hover:text-[#54B435] bg-[#54B435] transition-colors duration-300 border-2 border-[#54B435] rounded-lg hover:bg-white bottom-5"
+                          class=" absolute inline-flex items-center md:px-3 md:py-2 px-2 py-1 text-sm font-medium text-center text-white hover:text-[#54B435] bg-[#54B435] transition-colors duration-300 border-2 border-[#54B435] md:rounded-lg rounded hover:bg-white bottom-5"
                         >
                           Read more
                           <i class="fa-solid fa-arrow-right pl-3"></i>
@@ -389,7 +389,7 @@ export default function Home() {
           <p className="font-bold text-center xl:text-4xl lg:text-3xl md:text-2xl text-xl">
             Check out our top picks for Sri Lanka travel plans!
           </p>
-          <p className="mt-5 md:text-center text-justify lg:text-lg md:text-base text-sm">
+          <p className="mt-5 md:text-center text-justify xl:text-lg lg:text-base text-sm">
             Explore Travel Mango's diverse selection of Sri Lanka tours,
             offering an array of options to suit your preferences on this
             stunning island getaway. Whether you're craving a traditional island
@@ -405,7 +405,7 @@ export default function Home() {
             unforgettable Sri Lanka journey.
           </p>
         </div>
-        <div className="grid items-center gap-10 xl:grid-cols-3 md:grid-cols-2">
+        <div className="grid items-center lg:gap-10 gap-5 xl:grid-cols-3 md:grid-cols-2">
           {tripList.map((trip, index) => (
             <div
               key={index}
@@ -413,7 +413,7 @@ export default function Home() {
             >
               <a href={trip.seeMore ? trip.seeMore.toLowerCase() : "#"}>
                 <img
-                  class="rounded-t-lg h-[250px] w-full object-cover transform hover:scale-105 duration-500 ease-in-out"
+                  class="rounded-t-lg lg:h-[250px] h-[150px] w-full object-cover transform hover:scale-105 duration-500 ease-in-out"
                   src={trip.img}
                   alt=""
                 />
@@ -424,13 +424,13 @@ export default function Home() {
                     {trip.topic}
                   </h5>
                 </a>
-                <p class="mb-3 font-medium text-gray-700 md:text-base text-sm">
+                <p class="mb-3 font-medium text-gray-700 lg:text-base text-sm">
                   {trip.day}
                 </p>
-                <p class="mb-3 font-normal text-gray-700 italic md:text-base text-sm">
+                <p class="mb-3 font-normal text-gray-700 italic lg:text-base text-sm">
                   {trip.town}
                 </p>
-                <p className="mb-3 font-medium md:text-base text-sm">
+                <p className="mb-3 font-medium lg:text-base text-sm">
                   {trip.detail}
                 </p>
               </div>
@@ -478,7 +478,7 @@ export default function Home() {
                       className="w-16 mx-auto mb-4 xl:w-20"
                       alt=""
                     />
-                    <p className="mb-10 text-sm xl:mx-10 lg:mx-10 mx-2 md:text-base">
+                    <p className="mb-10 text-sm xl:mx-10 lg:mx-10 mx-2 lg:text-base">
                       {c.details}
                     </p>
                   </div>

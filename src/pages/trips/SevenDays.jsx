@@ -108,7 +108,7 @@ export default function SevenDays() {
         {/* Tabs */}
         <div className="flex flex-wrap justify-center md:mt-5 mt-0">
           <button
-            className={`md:m-2 m-1 w-40 md:w-auto md:px-14 md:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
+            className={`md:m-2 m-1 w-40 md:w-auto lg:px-14 lg:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
               activeTab === "overview" ? "bg-blue-500 text-white" : "bg-white"
             }`}
             onClick={() => setActiveTab("overview")}
@@ -116,7 +116,7 @@ export default function SevenDays() {
             Overview
           </button>
           <button
-            className={`md:m-2 m-1 w-40 md:w-auto md:px-14 md:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
+            className={`md:m-2 m-1 w-40 md:w-auto lg:px-14 lg:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
               activeTab === "itinerary" ? "bg-blue-500 text-white" : "bg-white"
             }`}
             onClick={() => setActiveTab("itinerary")}
@@ -124,7 +124,7 @@ export default function SevenDays() {
             Itinerary
           </button>
           <button
-            className={`md:m-2 m-1 w-40 md:w-auto md:px-14 md:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
+            className={`md:m-2 m-1 w-40 md:w-auto lg:px-14 lg:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
               activeTab === "gallery" ? "bg-blue-500 text-white" : "bg-white"
             }`}
             onClick={() => setActiveTab("gallery")}
@@ -137,7 +137,7 @@ export default function SevenDays() {
             <div className="flex justify-center my-10 2xl:px-40 xl:px-24 lg:px-20 md:px-5 px-0">
               <iframe
                 class="w-full h-[500px]"
-                src="https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d1013886.6552091112!2d80.01799022669655!3d6.950817195451891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e0!4m5!1s0x3ae2efb735f22d5d%3A0x6ebd702103828b37!2sBandaranaike%20International%20Airport%20(CMB)%2C%20Katunayake!3m2!1d7.180155999999999!2d79.8842559!4m5!1s0x3afca0dfa73179d1%3A0x1e04c1150cff0edf!2sSigiriya!3m2!1d7.954108499999999!2d80.75469799999999!4m5!1s0x3ae366266498acd3%3A0x411a3818a1e03c35!2sKandy!3m2!1d7.2905714999999995!2d80.6337262!4m5!1s0x3ae465955bc09a25%3A0xbdfadcdadec487fb!2sElla!3m2!1d6.8666988!2d81.046553!4m5!1s0x3ae5d3a62ffb9359%3A0x3bb623d70b5a3314!2sYala%20National%20Park!3m2!1d6.463961299999999!2d81.47188469999999!4m5!1s0x3ae13fce3177dc59%3A0xa2d8a78b36dc9c90!2sMirissa!3m2!1d5.948262!2d80.4715866!4m5!1s0x3ae22e900168ca21%3A0x96c438f00a68c060!2sBentota!3m2!1d6.4189175!2d80.005979!5e0!3m2!1sen!2slk!4v1715923992026!5m2!1sen!2slk"
+                src="https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d1013886.6552091112!2d80.01799022669655!3d6.950817195451891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e0!4m5!1s0x3ae2efb735f22d5d%3A0x6ebd702103828b37!2sBandaranaike%20International%20Airport%20(CMB)%2C%20Katunayake!3m2!1d7.180155999999999!2d79.8842559!4m5!1s0x3afca0dfa73179d1%3A0x1e04c1150cff0edf!2sSigiriya!3m2!1d7.954108499999999!2d80.75469799999999!4m5!1s0x3ae366266498acd3%3A0x411a3818a1e03c35!2sKandy!3m2!1d7.2905714999999995!2d80.6337262!4m5!1s0x3ae380434e1554c7%3A0x291608404c937d9c!2sNuwara%20Eliya!3m2!1d6.9497165999999995!2d80.7891068!4m5!1s0x3ae465955bc09a25%3A0xbdfadcdadec487fb!2sElla!3m2!1d6.8666988!2d81.046553!4m5!1s0x3ae5d3a62ffb9359%3A0x3bb623d70b5a3314!2sYala%20National%20Park!3m2!1d6.463961299999999!2d81.47188469999999!4m5!1s0x3ae13fce3177dc59%3A0xa2d8a78b36dc9c90!2sMirissa!3m2!1d5.948262!2d80.4715866!4m5!1s0x3ae22e900168ca21%3A0x96c438f00a68c060!2sBentota!3m2!1d6.4189175!2d80.005979!5e0!3m2!1sen!2slk!4v1716403587420!5m2!1sen!2slk"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
@@ -155,7 +155,7 @@ export default function SevenDays() {
               {dateList.map((date, index) => (
                 <div class="flex flex-col items-center bg-white border border-gray-300 rounded-lg shadow lg:flex-row hover:bg-yellow-50 transition-colors duration-300 w-full">
                   <img
-                    class="object-cover xl:w-[400px] lg:w-[300px] w-full lg:h-full md:h-[200px] rounded-t-lg lg:rounded-none lg:rounded-s-lg"
+                    class="object-cover xl:w-[400px] lg:w-[300px] w-full lg:h-full md:h-[200px] h-[150px] rounded-t-lg lg:rounded-none lg:rounded-s-lg"
                     src={date.img}
                     alt=""
                   />
@@ -200,8 +200,8 @@ export default function SevenDays() {
         )}
         {activeTab === "gallery" && (
           <div>
-            <div className="2xl:px-40 xl:px-24 lg:px-20 md:px-5 px-0">
-              <div className="mt-10">
+            <div className="2xl:px-40 xl:px-24 lg:px-20 px-0">
+              <div className="mt-10 px-5 lg:px-0">
                 <Gallery />
               </div>
               <div className="my-10">

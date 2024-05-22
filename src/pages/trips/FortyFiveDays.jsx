@@ -179,7 +179,7 @@ export default function FortyFiveDays() {
         {/* Tabs */}
         <div className="flex flex-wrap justify-center md:mt-5 mt-0">
           <button
-            className={`md:m-2 m-1 w-40 md:w-auto md:px-14 md:py-2 py-1 px-8 border-2 md:text-base text-sm ${
+            className={`md:m-2 m-1 w-40 md:w-auto lg:px-14 lg:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
               activeTab === "overview" ? "bg-blue-500 text-white" : "bg-white"
             }`}
             onClick={() => setActiveTab("overview")}
@@ -187,7 +187,7 @@ export default function FortyFiveDays() {
             Overview
           </button>
           <button
-            className={`md:m-2 m-1 w-40 md:w-auto md:px-14 md:py-2 py-1 px-8 border-2 md:text-base text-sm ${
+            className={`md:m-2 m-1 w-40 md:w-auto lg:px-14 lg:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
               activeTab === "itinerary" ? "bg-blue-500 text-white" : "bg-white"
             }`}
             onClick={() => setActiveTab("itinerary")}
@@ -195,7 +195,7 @@ export default function FortyFiveDays() {
             Itinerary
           </button>
           <button
-            className={`md:m-2 m-1 w-40 md:w-auto md:px-14 md:py-2 py-1 px-8 border-2 md:text-base text-sm ${
+            className={`md:m-2 m-1 w-40 md:w-auto lg:px-14 lg:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
               activeTab === "gallery" ? "bg-blue-500 text-white" : "bg-white"
             }`}
             onClick={() => setActiveTab("gallery")}
@@ -227,7 +227,7 @@ export default function FortyFiveDays() {
               {dateList.map((date, index) => (
                 <div class="flex flex-col items-center bg-white border border-gray-300 rounded-lg shadow lg:flex-row hover:bg-yellow-50 transition-colors duration-300 w-full">
                   <img
-                    class="object-cover xl:w-[400px] lg:w-[300px] w-full lg:h-full md:h-[200px] rounded-t-lg lg:rounded-none lg:rounded-s-lg"
+                    class="object-cover xl:w-[400px] lg:w-[300px] w-full lg:h-full md:h-[200px] h-[150px] rounded-t-lg lg:rounded-none lg:rounded-s-lg"
                     src={date.img}
                     alt=""
                   />
@@ -272,8 +272,8 @@ export default function FortyFiveDays() {
         )}
         {activeTab === "gallery" && (
           <div>
-            <div className="2xl:px-40 xl:px-24 lg:px-20 md:px-5 px-0">
-              <div className="mt-10">
+            <div className="2xl:px-40 xl:px-24 lg:px-20 px-0">
+              <div className="mt-10 px-5 lg:px-0">
                 <Gallery />
               </div>
               <div className="my-10">

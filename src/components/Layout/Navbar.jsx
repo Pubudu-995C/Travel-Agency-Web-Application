@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 left-0 z-20 w-full">
       <div className="border-gray-200 py-2.5 bg-gray-900 w-full">
-        <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+        <div className="flex flex-wrap items-center justify-between max-w-screen-xl xl:px-4 lg:px-6 px-2 mx-auto">
           <a href="/" className="flex items-center">
             <img
               src="/travelmango.png"
@@ -31,7 +31,7 @@ export default function Navbar() {
             </div>
             <a
               href="/"
-              className="text-black hover:text-white bg-[#F0FF42] transition-colors duration-300 hover:bg-[#54B435] font-bold md:rounded-lg rounded-md text-sm px-2 md:px-5 py-1 md:py-2.5 sm:mr-2 lg:mr-0"
+              className="text-black hover:text-white bg-[#F0FF42] transition-colors duration-300 hover:bg-[#54B435] font-bold md:rounded-lg rounded-md text-sm px-2 xl:px-5 py-1 xl:py-2.5 sm:mr-2 lg:mr-0"
             >
               PLAN YOUR TRIP
             </a>
@@ -77,7 +77,7 @@ export default function Navbar() {
                   onClick={scrollToTop}
                   className={`${
                     isActivePage("/Trip") ? "text-[#F0FF42]" : "text-gray-300"
-                  }  hover:text-white block py-2 pl-3 pr-4 border-b border-gray-100  lg:border-0 lg:p-0 lg:dark:hover:bg-transparent font-bold text-lg`}
+                  }  hover:text-white block py-2 pl-3 pr-4 border-b border-gray-100  lg:border-0 lg:p-0 lg:dark:hover:bg-transparent font-bold xl:text-lg`}
                 >
                   ACCESSIBLE
                 </Link>
@@ -90,7 +90,7 @@ export default function Navbar() {
                     isActivePage("/Vehicles")
                       ? "text-[#F0FF42]"
                       : "text-gray-300"
-                  } hover:text-white block py-2 pl-3 pr-4 border-b border-gray-100  lg:border-0 lg:p-0 lg:dark:hover:bg-transparent font-bold text-lg`}
+                  } hover:text-white block py-2 pl-3 pr-4 border-b border-gray-100  lg:border-0 lg:p-0 lg:dark:hover:bg-transparent font-bold xl:text-lg`}
                 >
                   VEHICLES
                 </Link>
@@ -103,7 +103,7 @@ export default function Navbar() {
                     isActivePage("/Gallery")
                       ? "text-[#F0FF42]"
                       : "text-gray-300"
-                  }  hover:text-white block py-2 pl-3 pr-4 border-b border-gray-100  lg:border-0 lg:p-0 lg:dark:hover:bg-transparent font-bold text-lg`}
+                  }  hover:text-white block py-2 pl-3 pr-4 border-b border-gray-100  lg:border-0 lg:p-0 lg:dark:hover:bg-transparent font-bold xl:text-lg`}
                 >
                   GALLERY
                 </Link>
@@ -116,7 +116,7 @@ export default function Navbar() {
                     isActivePage("/Destinations")
                       ? "text-[#F0FF42]"
                       : "text-gray-300"
-                  }  hover:text-white block py-2 pl-3 pr-4 border-b border-gray-100  lg:border-0 lg:p-0 lg:dark:hover:bg-transparent font-bold text-lg`}
+                  }  hover:text-white block py-2 pl-3 pr-4 border-b border-gray-100  lg:border-0 lg:p-0 lg:dark:hover:bg-transparent font-bold xl:text-lg`}
                 >
                   DESTINATIONS
                 </Link>
@@ -127,7 +127,7 @@ export default function Navbar() {
                   onClick={scrollToTop}
                   className={`${
                     isActivePage("/jobs") ? "text-[#F0FF42]" : "text-gray-300"
-                  }  hover:text-white block py-2 pl-3 pr-4 border-b border-gray-100  lg:border-0 lg:p-0 lg:dark:hover:bg-transparent font-bold text-lg`}
+                  }  hover:text-white block py-2 pl-3 pr-4 border-b border-gray-100  lg:border-0 lg:p-0 lg:dark:hover:bg-transparent font-bold xl:text-lg`}
                 >
                   CAREERS
                 </Link>
@@ -140,7 +140,7 @@ export default function Navbar() {
                     isActivePage("/ContactUs")
                       ? "text-[#F0FF42]"
                       : "text-gray-300"
-                  }  hover:text-white block py-2 pl-3 pr-4 border-b border-gray-100  lg:border-0 lg:p-0 lg:dark:hover:bg-transparent font-bold text-lg`}
+                  }  hover:text-white block py-2 pl-3 pr-4 border-b border-gray-100  lg:border-0 lg:p-0 lg:dark:hover:bg-transparent font-bold xl:text-lg`}
                 >
                   CONTACT US
                 </Link>
