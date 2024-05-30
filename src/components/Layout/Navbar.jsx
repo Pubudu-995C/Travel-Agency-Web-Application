@@ -73,10 +73,12 @@ export default function Navbar() {
             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
               <li>
                 <Link
-                  to="/"
+                  to="/Accessible"
                   onClick={scrollToTop}
                   className={`${
-                    isActivePage("/Trip") ? "text-[#F0FF42]" : "text-gray-300"
+                    isActivePage("/Accessible")
+                      ? "text-[#F0FF42]"
+                      : "text-gray-300"
                   }  hover:text-white block py-2 pl-3 pr-4 border-b border-gray-100  lg:border-0 lg:p-0 lg:dark:hover:bg-transparent font-bold xl:text-lg`}
                 >
                   ACCESSIBLE

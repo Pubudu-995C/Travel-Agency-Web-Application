@@ -20,7 +20,7 @@ export default function Vehicles() {
     <div>
       <Navbar />
       <div>
-        <div className="xl:h-[550px] lg:h-[400px] h-[300px]">
+        <div className="xl:h-[500px] lg:h-[400px] h-[300px] xl:mt-[70px] mt-[60px]">
           <img
             src={Car}
             className="object-cover w-full h-full"

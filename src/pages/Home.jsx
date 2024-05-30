@@ -189,6 +189,7 @@ export default function Home() {
     autoplay: true,
     autoplaySpeed: 3000,
   };
+  
   const mobileSettings = {
     ...MediaSettings,
     slidesToShow: 1,
@@ -308,9 +309,13 @@ export default function Home() {
             into uncovering these treasures to provide you with an exclusive
             experience.
           </p>
-          <button className="bg-black hover:bg-[#54B435] transition-colors duration-300 mt-5 lg:py-2 lg:px-10 py-1 px-8 lg:text-xl text-base rounded-lg font-bold text-white hover:text-white">
-            See More
-          </button>
+          <a href="/Accessible">
+            <input
+              type="button"
+              value="See More"
+              className="bg-black hover:bg-[#54B435] transition-colors duration-300 mt-5 lg:py-2 lg:px-10 py-1 px-8 lg:text-xl text-base rounded-lg font-bold text-white hover:text-white cursor-pointer"
+            />
+          </a>
         </div>
       </div>
 

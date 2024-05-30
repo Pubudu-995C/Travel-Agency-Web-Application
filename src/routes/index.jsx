@@ -12,10 +12,13 @@ import FourteenDays from "../pages/trips/FourteenDays";
 import ThirtyDays from "../pages/trips/ThirtyDays";
 import FortyFiveDays from "../pages/trips/FortyFiveDays";
 import SixtyDays from "../pages/trips/SixtyDays";
+// ===============Team==================
+import Tharaka from "../pages/team/Tharaka";
 // =================Pages=================
 import Home from "../pages/Home";
 import Vehicles from "../pages/Vehicles";
 import Destinations from "../pages/Destinations";
+import Accessible from "../pages/accessible";
 // =================Contact Form=================
 import ContactForm from "../pages/Contact-Form";
 // =================Gallery=================
@@ -27,6 +30,7 @@ const RouteList = () => {
       <Route path="/" element={<Home />} />
       <Route path="/vehicles" element={<Vehicles />} />
       <Route path="/destinations" element={<Destinations />} />
+      <Route path="/Accessible" element={<Accessible />} />
       {/* ===============Layout================== */}
       <Route path="/navbar" element={<Navbar />} />
       <Route path="/footer" element={<Footer />} />
@@ -37,6 +41,8 @@ const RouteList = () => {
       <Route path="/ThirtyDays" element={<ThirtyDays />} />
       <Route path="/FortyFiveDays" element={<FortyFiveDays />} />
       <Route path="/SixtyDays" element={<SixtyDays />} />
+      {/* ===============Team================== */}
+      <Route path="/Tharaka" element={<Tharaka />} />
       {/* ===============Contact Form================== */}
       <Route path="/contactForm" element={<ContactForm />} />
       {/* ===============Gallery================== */}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../../components/Layout/Navbar";
 import Footer from "../../components/Layout/Footer";
-import Sigiriya from "../../images/wallpapers/sigiriya.jpg";
+import wallpaper10 from "../../images/wallpapers/wallpaper10.jpg";
 import ContactForm from "../Contact-Form";
 import WhatsApp from "../../components/WhatsApp";
 import ScrollToTopButton from "../../components/ScrollToTopButton";
@@ -76,7 +76,7 @@ export default function SevenDays() {
       <div>
         <div className="xl:h-[550px] lg:h-[400px] h-[300px]">
           <img
-            src={Sigiriya}
+            src={wallpaper10}
             className="object-cover w-full h-full"
             alt="Wallpaper"
           />
@@ -93,7 +93,6 @@ export default function SevenDays() {
             person
           </p>
         </div>
-
         {/* ===========Breadcrumbs=========== */}
         <Breadcrumbs className="justify-center">
           <a href="/" className="opacity-60">
@@ -104,11 +103,10 @@ export default function SevenDays() {
           </a>
         </Breadcrumbs>
         {/* ===========Breadcrumbs=========== */}
-
         {/* Tabs */}
         <div className="flex flex-wrap justify-center md:mt-5 mt-0">
           <button
-            className={`md:m-2 m-1 w-40 md:w-auto lg:px-14 lg:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
+            className={`md:m-2 m-1 w-40 md:w-auto lg:px-10 xl:px-14 xl:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
               activeTab === "overview" ? "bg-blue-500 text-white" : "bg-white"
             }`}
             onClick={() => setActiveTab("overview")}
@@ -116,7 +114,7 @@ export default function SevenDays() {
             Overview
           </button>
           <button
-            className={`md:m-2 m-1 w-40 md:w-auto lg:px-14 lg:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
+            className={`md:m-2 m-1 w-40 md:w-auto lg:px-10 xl:px-14 xl:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
               activeTab === "itinerary" ? "bg-blue-500 text-white" : "bg-white"
             }`}
             onClick={() => setActiveTab("itinerary")}
@@ -124,7 +122,7 @@ export default function SevenDays() {
             Itinerary
           </button>
           <button
-            className={`md:m-2 m-1 w-40 md:w-auto lg:px-14 lg:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
+            className={`md:m-2 m-1 w-40 md:w-auto lg:px-10 xl:px-14 xl:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
               activeTab === "gallery" ? "bg-blue-500 text-white" : "bg-white"
             }`}
             onClick={() => setActiveTab("gallery")}
@@ -153,7 +151,7 @@ export default function SevenDays() {
           <div>
             <div className="grid grid-cols-1 gap-y-10 my-10 2xl:px-40 xl:px-24 lg:px-20 px-5">
               {dateList.map((date, index) => (
-                <div class="flex flex-col items-center bg-white border border-gray-300 rounded-lg shadow lg:flex-row hover:bg-yellow-50 transition-colors duration-300 w-full">
+                <div class="flex flex-col items-center bg-slate-50 border border-gray-300 rounded-lg shadow lg:flex-row hover:bg-yellow-50 transition-colors duration-300 w-full">
                   <img
                     class="object-cover xl:w-[400px] lg:w-[300px] w-full lg:h-full md:h-[200px] h-[150px] rounded-t-lg lg:rounded-none lg:rounded-s-lg"
                     src={date.img}
@@ -164,19 +162,19 @@ export default function SevenDays() {
                       <p class="mb-2 lg:text-xl text-lg font-bold tracking-tight text-gray-900">
                         {date.day}
                       </p>
-                      <p class="mb-3 lg:text-base text-sm font-medium text-gray-700 italic">
+                      <p class="mb-3 xl:text-base text-sm font-medium text-gray-700 italic">
                         {date.topic}
                       </p>
                     </div>
-                    <p class="font-normal text-gray-700 lg:text-base text-sm text-justify">
+                    <p class="font-normal text-gray-700 xl:text-base text-sm text-justify">
                       {date.detail}
                     </p>
                     <div className="flex flex-col mt-5 lg:text-base text-sm">
-                      <p class="font-normal text-gray-700 space-x-5">
+                      <p class="font-normal text-gray-700 space-x-5 xl:text-base text-sm">
                         <span className="font-bold ">Accommodation: </span>{" "}
                         <span>{date.accommodation}</span>
                       </p>
-                      <p class="font-normal text-gray-700 space-x-5">
+                      <p class="font-normal text-gray-700 space-x-5 xl:text-base text-sm">
                         {" "}
                         <span className="font-bold">Activities:</span>
                         <span className="italic font-medium">
@@ -185,7 +183,7 @@ export default function SevenDays() {
                       </p>
                     </div>
                     <div className="flex md:justify-end justify-center mt-5">
-                      <button className="bg-[#54B435] md:px-8 md:py-2 px-5 py-1 rounded mx-5 text-base font-bold text-white">
+                      <button className="bg-[#54B435] lg:px-5 lg:py-1 xl:px-8 xl:py-2 md:px-8 md:py-2 px-5 py-1 rounded mx-5 text-base font-bold text-white">
                         See More
                       </button>
                     </div>
