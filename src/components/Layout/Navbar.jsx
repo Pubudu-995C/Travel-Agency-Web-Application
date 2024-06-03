@@ -30,7 +30,7 @@ export default function Navbar() {
               <span></span>
             </div>
             <a
-              href="/"
+              href="/Trips"
               className="text-black hover:text-white bg-[#F0FF42] transition-colors duration-300 hover:bg-[#54B435] font-bold md:rounded-lg rounded-md text-sm px-2 xl:px-5 py-1 xl:py-2.5 sm:mr-2 lg:mr-0"
             >
               PLAN YOUR TRIP
@@ -97,19 +97,7 @@ export default function Navbar() {
                   VEHICLES
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/"
-                  onClick={scrollToTop}
-                  className={`${
-                    isActivePage("/Gallery")
-                      ? "text-[#F0FF42]"
-                      : "text-gray-300"
-                  }  hover:text-white block py-2 pl-3 pr-4 border-b border-gray-100  lg:border-0 lg:p-0 lg:dark:hover:bg-transparent font-bold xl:text-lg`}
-                >
-                  GALLERY
-                </Link>
-              </li>
+
               <li>
                 <Link
                   to="/Destinations"
@@ -123,17 +111,7 @@ export default function Navbar() {
                   DESTINATIONS
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/"
-                  onClick={scrollToTop}
-                  className={`${
-                    isActivePage("/jobs") ? "text-[#F0FF42]" : "text-gray-300"
-                  }  hover:text-white block py-2 pl-3 pr-4 border-b border-gray-100  lg:border-0 lg:p-0 lg:dark:hover:bg-transparent font-bold xl:text-lg`}
-                >
-                  CAREERS
-                </Link>
-              </li>
+
               <li>
                 <Link
                   to="/"

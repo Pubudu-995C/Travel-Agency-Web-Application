@@ -23,6 +23,8 @@ import Accessible from "../pages/accessible";
 import ContactForm from "../pages/Contact-Form";
 // =================Gallery=================
 import Gallery from "../pages/Contact-Form";
+// =================Trips=================
+import Trips from "../pages/Trips";
 
 const RouteList = () => {
   return (
@@ -47,6 +49,8 @@ const RouteList = () => {
       <Route path="/contactForm" element={<ContactForm />} />
       {/* ===============Gallery================== */}
       <Route path="/gallery" element={<Gallery />} />
+      {/* ===============Trips================== */}
+      <Route path="/trips" element={<Trips />} />
     </Routes>
   );
 };

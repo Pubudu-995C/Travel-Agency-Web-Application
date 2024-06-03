@@ -5,6 +5,9 @@ import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 import ReactFlagsSelect from "react-flags-select";
 import { subDays } from "date-fns";
+import { ToastContainer, toast } from "react-toastify";
+import { Bounce } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function ContactForm() {
   const initialState = {
@@ -84,23 +87,54 @@ export default function ContactForm() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(data),
-        }
+        },
       );
 
       if (response.ok) {
-        alert("Trip details submitted successfully!");
+        toast.success("Check your Email Inbox", {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          transition: Bounce,
+        });
         resetForm();
       } else {
-        alert("Failed to submit trip details.");
+          toast.error("Failed to submit trip details.", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            transition: Bounce,
+          });
       }
     } catch (error) {
       console.error("Error submitting trip details:", error);
-      alert("An error occurred while submitting trip details.");
+      toast.error("An error occurred while submitting trip details.", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce,
+      });
     }
   };
 
   return (
     <div>
+      <ToastContainer />
       <div className="flex justify-center pb-10">
         <p className="font-bold text-center xl:text-4xl lg:text-3xl md:text-2xl text-xl">
           Plan Your Trip With Us
