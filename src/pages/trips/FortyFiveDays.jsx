@@ -162,7 +162,7 @@ export default function FortyFiveDays() {
             </span>
           </p>
           <p className="xl:text-2xl lg:text-lg md:text-base text-sm font-medium text-white md:mt-0 mt-2">
-            Starting from <span className="font-bold"> USD 5400</span> per
+            Starting from <span className="font-bold"> USD 6500</span> per
             person
           </p>
         </div>

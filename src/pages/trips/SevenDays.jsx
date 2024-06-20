@@ -89,7 +89,7 @@ export default function SevenDays() {
             </span>
           </p>
           <p className="xl:text-2xl lg:text-lg md:text-base text-sm font-medium text-white md:mt-0 mt-2">
-            Starting from <span className="font-bold"> USD 1200</span> per
+            Starting from <span className="font-bold"> USD 1180</span> per
             person
           </p>
         </div>

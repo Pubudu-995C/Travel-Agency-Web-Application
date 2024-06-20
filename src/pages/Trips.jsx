@@ -10,7 +10,7 @@ export default function Trips() {
       day: `(07 Days 06 Nights)`,
       town: `Negombo, Sigiriya, Dambulla, Kandy, Nuwara Eliya, Ella, Yala, Galle, Mirissa, Bentota, Collombo`,
       detail: `Experience the essence of Sri Lanka through the Classic Sri Lanka Tour, where you'll encounter a captivating blend of ancient cities, picturesque tea-covered hills, vibrant wildlife parks, breathtaking beaches, and luxurious accommodations.`,
-      price: `1200`,
+      price: `1180`,
       seeMore: `/SevenDays`,
     },
     {
@@ -28,7 +28,7 @@ export default function Trips() {
       day: `(14 Days 13 Nights)`,
       town: `Negombo, Sigiriya, Dambulla, Kandy, Nuwara Eliya, Ella, Yala, Galle, Mirissa, Bentota, Collombo`,
       detail: `Experience the essence of Sri Lanka through the Classic Sri Lanka Tour, where you'll encounter a captivating blend of ancient cities, picturesque tea-covered hills, vibrant wildlife parks, breathtaking beaches, and luxurious accommodations.`,
-      price: `2000`,
+      price: `2100`,
       seeMore: `/FourteenDays`,
     },
     {
@@ -37,7 +37,7 @@ export default function Trips() {
       day: `(30 Days 29 Nights)`,
       town: `Negombo, Sigiriya, Dambulla, Kandy, Nuwara Eliya, Ella, Galle, Mirissa, Nilaveli, Arugam Bay, Collombo`,
       detail: `Experience the essence of Sri Lanka through the Classic Sri Lanka Tour, where you'll encounter a captivating blend of ancient cities, picturesque tea-covered hills, vibrant wildlife parks, breathtaking beaches, and luxurious accommodations.`,
-      price: `4000`,
+      price: `4200`,
       seeMore: `/ThirtyDays`,
     },
     {
@@ -46,7 +46,7 @@ export default function Trips() {
       day: `(45 Days 44 Nights)`,
       town: `Negombo, Anuradhapura, Jaffna, Sigiriya, Kandy, Nuwara Eliya, Ella, Yala, Tangalle, Galle, Mirissa, Nilaveli, Arugam Bay, Collombo`,
       detail: `Experience the essence of Sri Lanka through the Classic Sri Lanka Tour, where you'll encounter a captivating blend of ancient cities, picturesque tea-covered hills, vibrant wildlife parks, breathtaking beaches, and luxurious accommodations.`,
-      price: `5400`,
+      price: `6500`,
       seeMore: `/FortyFiveDays`,
     },
     {
@@ -55,7 +55,7 @@ export default function Trips() {
       day: `(60 Days 59 Nights)`,
       town: `Negombo, Mannar, Wilpattu, Anuradhapura, Polonnaruwa, Jaffna, Sigiriya, Trincomalee, Kandy, Nuwara Eliya, Ella, Yala, Udawalawa, Pottuvil, Down South, Collombo`,
       detail: `Experience the essence of Sri Lanka through the Classic Sri Lanka Tour, where you'll encounter a captivating blend of ancient cities, picturesque tea-covered hills, vibrant wildlife parks, breathtaking beaches, and luxurious accommodations.`,
-      price: `7000`,
+      price: `8700`,
       seeMore: `/SixtyDays`,
     },
   ];

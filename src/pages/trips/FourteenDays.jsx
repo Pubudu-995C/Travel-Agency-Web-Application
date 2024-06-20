@@ -97,7 +97,7 @@ export default function FourteenDays() {
             </span>
           </p>
           <p className="xl:text-2xl lg:text-lg md:text-base text-sm font-medium text-white md:mt-0 mt-2">
-            Starting from <span className="font-bold"> USD 2000</span> per
+            Starting from <span className="font-bold"> USD 2100</span> per
             person
           </p>
         </div>
