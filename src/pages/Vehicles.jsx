@@ -5,6 +5,8 @@ import Car from "../images/wallpapers/premio.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import WhatsApp from "../components/WhatsApp";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 export default function Vehicles() {
   const settings = {
@@ -109,7 +111,7 @@ export default function Vehicles() {
         <div className="mb-10">
           <div className="2xl:px-40 xl:px-24 lg:px-20 md:px-10 px-5">
             <div className="lg:grid grid-cols-2 mt-10 bg-slate-200 items-center shadow-md">
-              <div className="">
+              <div>
                 <Slider {...settings}>
                   <img
                     src="./vehicles/rav4/rav4-5.jpg"
@@ -151,10 +153,52 @@ export default function Vehicles() {
                 </p>
               </div>
             </div>
+            <div className="lg:grid grid-cols-2 mt-10 bg-slate-200 items-center shadow-md">
+              <div className="order-2">
+                <Slider {...settings}>
+                  <img
+                    src="./vehicles/Hyundai/Hyundai-1.jpg"
+                    className="xl:h-[300px] w-full lg:h-[400px] h-[300px] object-cover"
+                    alt=""
+                  />
+                  <img
+                    src="./vehicles/Hyundai/Hyundai-7.jpg"
+                    className="xl:h-[300px] w-full lg:h-[400px] h-[300px] object-cover"
+                    alt=""
+                  />
+                  <img
+                    src="./vehicles/Hyundai/Hyundai-2.jpg"
+                    className="xl:h-[300px] w-full lg:h-[400px] h-[300px] object-cover"
+                    alt=""
+                  />
+                  <img
+                    src="./vehicles/Hyundai/Hyundai-4.jpg"
+                    className="xl:h-[300px] w-full lg:h-[400px] h-[300px] object-cover"
+                    alt=""
+                  />
+                  <img
+                    src="./vehicles/Hyundai/Hyundai-6.jpg"
+                    className="xl:h-[300px] w-full lg:h-[400px] h-[300px] object-cover"
+                    alt=""
+                  />
+                  <img
+                    src="./vehicles/Hyundai/Hyundai-5.jpg"
+                    className="xl:h-[300px] w-full lg:h-[400px] h-[300px] object-cover"
+                    alt=""
+                  />
+                </Slider>
+              </div>
+              <div className="p-5 order-1">
+                <p className="font-bold md:text-xl text-lg">HYHUNDAI</p>
+                <p className="mt-4 text-justify md:text-base text-sm"></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <Footer />
+      <WhatsApp />
+      <ScrollToTopButton />
     </div>
   );
 }

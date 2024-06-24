@@ -11,7 +11,7 @@ export default function Destinations() {
             className="object-cover w-full h-full brightness-[70%]"
             alt="Wallpaper"
           />
-          <p className="text-5xl text-center absolute mt-[250px] top-0 right-0 left-0 text-white">
+          <p className="lg:text-5xl md:text-4xl text-3xl text-center absolute xl:mt-[285px] lg:mt-[220px] mt-[180px] top-0 right-0 left-0 text-white font-semibold">
             Explore the Top Attractions on the Island
           </p>
         </div>

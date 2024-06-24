@@ -18,12 +18,6 @@ export default function Accessible() {
       renowned charitable organisation.`,
       seeMore: `/Tharaka`,
     },
-    {
-      img: `../team/person (3).png`,
-      name: ``,
-      topic: ``,
-      detail: ``,
-    },
   ];
   return (
     <div>
@@ -35,7 +29,7 @@ export default function Accessible() {
             className="object-cover w-full h-full brightness-[60%]"
             alt="Wallpaper"
           />
-          <p className="xl:text-5xl lg:text-4xl md:text-3xl text-xl text-center absolute lg:mt-[250px] mt-[200px] top-0 right-0 left-0 text-white">
+          <p className="lg:text-5xl md:text-4xl text-3xl text-center absolute xl:mt-[285px] lg:mt-[220px] mt-[180px] top-0 right-0 left-0 text-white font-semibold">
             Medical, Wellness and Accessible Tourism
           </p>
         </div>
@@ -90,7 +84,7 @@ export default function Accessible() {
                   className="flex justify-center bg-green-200 md:h-full items-center md:rounded-l-lg"
                 >
                   <img
-                    class="max-w-40 h-40 object-cover rounded-lg sm:rounded-none sm:rounded-l-lg"
+                    class="max-w-40 h-40 object-cover rounded-lg sm:rounded-none sm:rounded-l-lg md:my-0 my-3"
                     src={spec.img}
                     alt=""
                   />
@@ -107,6 +101,14 @@ export default function Accessible() {
                       {spec.detail}
                     </a>
                   </p>
+                  <div className="flex justify-end">
+                    <a
+                      href={spec.seeMore}
+                      className="font-bold bg-black text-white px-5 py-2 rounded-lg"
+                    >
+                      See More
+                    </a>
+                  </div>
                   <ul class="flex space-x-4 sm:mt-0"></ul>
                 </div>
               </div>

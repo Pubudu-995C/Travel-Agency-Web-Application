@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import WhatsApp from "../components/WhatsApp";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import Trips from "./Trips";
+import Tours from "./Tours";
 
 export default function Home() {
   const galleryImages = [
@@ -232,35 +233,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative">
+      <div className="relative mt-10">
         <img
-          src="./wallpapers/accessible.jpg"
+          src="./wallpapers/wallpaper10.jpg"
           alt=""
-          className="opacity-50 w-full lg:h-[500px] h-[400px] object-cover lg:mt-20 mt-20 md:mt-0"
+          className="opacity-40 w-full lg:h-[530px] md:h-[1300px] h-[1350px] object-cover lg:mt-20 mt-20 md:mt-0"
         />
-        <div className="absolute top-0 px-5 lg:mt-10 md:mt-0 mt-10 2xl:px-40 xl:px-24 lg:px-20">
-          <p className="text-xl font-bold md:mt-28 md:text-2xl lg:text-4xl">
-            ACCESSIBLE TOURISM
-          </p>
-          <p className="mt-2 text-sm font-medium text-justify xl:text-lg lg:text-base">
-            Travelmango is the go-to travel companion you can rely on,
-            specializing in catering to the needs of those seeking medical,
-            wellness, and accessible tourism experiences in Sri Lanka. They
-            provide a variety of services tailored to these specific markets.{" "}
-            Accessible tourism, a specialized sector of inbound travel, holds
-            vast potential yet remains largely undiscovered. Sri Lanka boasts
-            hidden gems tailored for this market, and Travelmango has delved
-            into uncovering these treasures to provide you with an exclusive
-            experience.
-          </p>
-          <a href="/Accessible">
-            <input
-              type="button"
-              value="See More"
-              className="bg-black hover:bg-[#54B435] transition-colors duration-300 mt-5 lg:py-2 lg:px-10 py-1 px-8 lg:text-xl text-base rounded-lg font-bold text-white hover:text-white cursor-pointer"
-            />
-          </a>
-        </div>
+        <Tours />
       </div>
 
       <div className="2xl:px-40 xl:px-24 lg:px-20 px-5 bg-slate-100 py-10">
@@ -293,7 +272,7 @@ export default function Home() {
             >
               {media.map((m) => (
                 <div className="px-0 md:px-5">
-                  <div class="bg-white border border-gray-200 rounded-lg shadow lg:h-[650px] md:h-[570px] h-[540px]  max-w-sm mx-auto">
+                  <div class="bg-white border border-gray-200 rounded-lg shadow lg:h-[650px] md:h-[570px] h-[540px] max-w-sm mx-auto">
                     <a
                       href={m.seeMedia}
                       target="_blank"

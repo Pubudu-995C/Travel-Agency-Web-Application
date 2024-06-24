@@ -19,12 +19,16 @@ import Home from "../pages/Home";
 import Vehicles from "../pages/Vehicles";
 import Destinations from "../pages/Destinations";
 import Accessible from "../pages/accessible";
+
+import ContactUs from "../pages/ContactUs";
 // =================Contact Form=================
 import ContactForm from "../pages/Contact-Form";
 // =================Gallery=================
 import Gallery from "../pages/Contact-Form";
 // =================Trips=================
 import Trips from "../pages/Trips";
+// =================Tours=================
+import Tours from "../pages/Tours";
 
 const RouteList = () => {
   return (
@@ -33,6 +37,7 @@ const RouteList = () => {
       <Route path="/vehicles" element={<Vehicles />} />
       <Route path="/destinations" element={<Destinations />} />
       <Route path="/Accessible" element={<Accessible />} />
+      <Route path="/ContactUs" element={<ContactUs />} />
       {/* ===============Layout================== */}
       <Route path="/navbar" element={<Navbar />} />
       <Route path="/footer" element={<Footer />} />
@@ -51,6 +56,8 @@ const RouteList = () => {
       <Route path="/gallery" element={<Gallery />} />
       {/* ===============Trips================== */}
       <Route path="/trips" element={<Trips />} />
+      {/* ===============Tours================== */}
+      <Route path="/tours" element={<Tours />} />
     </Routes>
   );
 };
