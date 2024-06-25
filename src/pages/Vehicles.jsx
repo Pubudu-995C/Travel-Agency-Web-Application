@@ -157,32 +157,32 @@ export default function Vehicles() {
               <div className="order-2">
                 <Slider {...settings}>
                   <img
-                    src="./vehicles/Hyundai/Hyundai-1.jpg"
+                    src="./vehicles/hyundai/Hyundai-1.jpg"
                     className="xl:h-[300px] w-full lg:h-[400px] h-[300px] object-cover"
                     alt=""
                   />
                   <img
-                    src="./vehicles/Hyundai/Hyundai-7.jpg"
+                    src="./vehicles/hyundai/Hyundai-7.jpg"
                     className="xl:h-[300px] w-full lg:h-[400px] h-[300px] object-cover"
                     alt=""
                   />
                   <img
-                    src="./vehicles/Hyundai/Hyundai-2.jpg"
+                    src="./vehicles/hyundai/Hyundai-2.jpg"
                     className="xl:h-[300px] w-full lg:h-[400px] h-[300px] object-cover"
                     alt=""
                   />
                   <img
-                    src="./vehicles/Hyundai/Hyundai-4.jpg"
+                    src="./vehicles/hyundai/Hyundai-4.jpg"
                     className="xl:h-[300px] w-full lg:h-[400px] h-[300px] object-cover"
                     alt=""
                   />
                   <img
-                    src="./vehicles/Hyundai/Hyundai-6.jpg"
+                    src="./vehicles/hyundai/Hyundai-6.jpg"
                     className="xl:h-[300px] w-full lg:h-[400px] h-[300px] object-cover"
                     alt=""
                   />
                   <img
-                    src="./vehicles/Hyundai/Hyundai-5.jpg"
+                    src="./vehicles/hyundai/Hyundai-5.jpg"
                     className="xl:h-[300px] w-full lg:h-[400px] h-[300px] object-cover"
                     alt=""
                   />
