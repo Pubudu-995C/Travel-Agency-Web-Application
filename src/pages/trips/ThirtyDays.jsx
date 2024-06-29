@@ -7,115 +7,116 @@ import WhatsApp from "../../components/WhatsApp";
 import ScrollToTopButton from "../../components/ScrollToTopButton";
 import { Breadcrumbs } from "@material-tailwind/react";
 import Gallery from "../Gallery";
+import { useTranslation } from "react-i18next";
 
 export default function ThirtyDays() {
+  const { t } = useTranslation("thirtydays");
   const [activeTab, setActiveTab] = useState("overview");
 
   const dateList = [
     {
-      day: `Day 1 & 2 in Negombo`,
-      topic: `Airport to Negombo`,
+      day: t("day01.day"),
+      topic: t("day01.topic"),
       img: `./trips/Negombo_Beach.jpg`,
-      detail: `Nestled along Sri Lanka's western coast, Negombo captivates with its serene Negombo Lagoon, where tranquility meets the gentle lull of waters. Just steps away lies Negombo Beach, where golden sands stretch lazily under the tropical sun. Nearby, the historic Negombo Dutch Fort stands as a testament to colonial legacy, echoing tales of a bygone era. Amidst this cultural tapestry, St. Mary's Church adds a spiritual allure with its elegant architecture. As dusk descends, retreat to a cozy hotel, where comfort awaits for an overnight stay, promising relaxation and rejuvenation amidst the charm of Negombo's coastal allure.`,
-      accommodation: `As Your Request`,
-      activities: `Negombo Lagoon - Negombo Beach - Negombo Dutch Fort - St. Mary's Church - Overnight Stay in a Hotel at Negombo`,
+      detail: t("day01.detail"),
+      accommodation: t("day01.accommodation"),
+      activities: t("day01.activities"),
     },
     {
-      day: `Day 3 & 4 in Anuradhapura`,
-      topic: `Negombo to Anuradhapura`,
+      day: t("day02.day"),
+      topic: t("day02.topic"),
       img: `./trips/Anuradhapura.jpg`,
-      detail: `Experience the ancient splendor of Anuradhapura with a journey through its revered landmarks. Start with the majestic Ruwanweli Maha Seya, emanating spiritual grandeur. Then, marvel at the sacred Jaya Sri Maha Bodhi, a symbol of enlightenment and tranquility. Visit the Thuparama Vihara, resonating with historical significance and architectural grace. Explore the Isurumuni Royal Temple, a testament to Sri Lanka's rich cultural heritage. Don't miss the serene Abhayagiri Viharaya, offering insight into Buddhist traditions. Conclude your day with a comfortable overnight stay in a hotel, immersing yourself in the city's mystical aura and preparing for more adventures in Anuradhapura.`,
-      accommodation: `As Your Request`,
-      activities: `Ruwanweli Maha Seya - Jaya Sri Maha Bodhi - Thuparama vihara - Isurumuni Royal Temple - Abhayagiri viharaya - Overnight Stay in a Hotel at Anuradhapura`,
+      detail: t("day02.detail"),
+      accommodation: t("day02.accommodation"),
+      activities: t("day02.activities"),
     },
     {
-      day: `Day 5 & 6 in Nilaveli`,
-      topic: `Anuradhapura to Nilaveli`,
+      day: t("day03.day"),
+      topic: t("day03.topic"),
       img: `./trips/Nilaveli_Beach.jpg`,
-      detail: `Experience the enchanting beauty of Sri Lanka's eastern coast with a journey that encompasses the allure of Pigeon Island's marine sanctuary, the pristine shores of Nilaveli Beach, and the spiritual resonance of Thirukoneswaram Kovil. Explore the historic charm of Fort Frederick and the laid-back vibes of Uppuveli. Dive into the azure depths through scuba diving adventures, discovering vibrant coral reefs and exotic marine life. Finally, unwind with an overnight stay in a cozy hotel nestled in the tranquil ambiance of Nilaveli, where the whispers of the ocean lull you into a state of serenity, completing a journey of blissful discovery.`,
-      accommodation: `As Your Request`,
-      activities: `Pigeon Island - Nilaveli Beach - Thirukoneswaram Kovil - Fort Frederick - Uppuveli - Scuba Diving - Overnight Stay in a Hotel at Nilaveli`,
+      detail: t("day03.detail"),
+      accommodation: t("day03.accommodation"),
+      activities: t("day03.activities"),
     },
     {
-      day: `Day 7 & 8 in Sigiriya`,
-      topic: `Nilaveli to Sigiriya`,
+      day: t("day04.day"),
+      topic: t("day04.topic"),
       img: `./trips/sigiriya.jpg`,
-      detail: `Experience the rich tapestry of Sri Lanka's cultural and natural wonders with a journey that begins at the majestic Sigiriya Rock Fortress, also known as Lion Rock, an ancient marvel perched atop a towering monolith. Delve into the wilderness of Minneriya National Park, where elephant herds roam freely amidst lush landscapes. Trek to Pidurangala Rock for panoramic views of Sigiriya and its surroundings. Continue your wildlife odyssey at Kaudulla National Park, encountering diverse flora and fauna. Immerse yourself in local life with a Sigiriya Village Tour, discovering the traditions and customs of the region. Find tranquility at Kaludiya Pokuna, an ancient forest monastery. Conclude your day with an overnight stay at a hotel in Sigiriya, where comfort meets the allure of Sri Lanka's historical heartland.`,
-      accommodation: `As Your Request`,
-      activities: `Sigiriya Rock Fortress (Lion Rock) - Minneriya National Park - Pidurangala Rock - Kaudulla National Park - 
-      Sigiriya Village Tour - Kaludiya Pokuna - Overnight Stay in a Hotel at Sigiriya`,
+      detail: t("day04.detail"),
+      accommodation: t("day04.accommodation"),
+      activities: t("day04.activities"),
     },
     {
-      day: `Day 9 in Dambulla`,
-      topic: `Sigiriya to Dambulla`,
+      day: t("day05.day"),
+      topic: t("day05.topic"),
       img: `./trips/Dambulla_Cave_Temple.jpg`,
-      detail: `Experience the majestic allure of Dambulla with a visit to the renowned Royal Cave Temple and Golden Temple. Marvel at the ancient rock cave complex, adorned with intricate Buddhist murals and over 150 statues, a testament to Sri Lanka's rich cultural heritage. After a day of exploration, unwind in comfort with an overnight stay at a hotel in Dambulla. Let the echoes of history guide your journey as you immerse yourself in the serenity of this sacred site and indulge in the warm hospitality of your accommodations, making memories to cherish for a lifetime.`,
-      accommodation: `As Your Request`,
-      activities: `Dambulla Royal Cave Temple and Golden Temple - Overnight Stay in a Hotel at Dambulla`,
+      detail: t("day05.detail"),
+      accommodation: t("day05.accommodation"),
+      activities: t("day05.activities"),
     },
     {
-      day: `Day 10, 11 & 12 in Kandy`,
-      topic: `Dambulla to Kandy`,
+      day: t("day06.day"),
+      topic: t("day06.topic"),
       img: `./trips/templeTooth.jpg`,
-      detail: `Embark on a mesmerizing journey through Kandy's cultural tapestry. Begin at the Royal Botanic Gardens, where lush greenery unveils botanical wonders. Pay respects at the solemn Commonwealth War Cemetery, a poignant reminder of history's sacrifices. Seek tranquility in the Udawatta Kele Sanctuary, a haven for nature enthusiasts. Ascend to the majestic Bahirawakanda Temple, offering panoramic views of the city. Experience spiritual reverence at the Temple of Tooth Relic, an icon of Buddhist heritage. Immerse in the rhythmic beats of Kandy's Cultural Dance Show, a vibrant celebration of tradition. Conclude your day with a blissful overnight stay in a luxurious hotel, cradled by Kandy's serene ambiance.`,
-      accommodation: `As Your Request`,
-      activities: `Royal Botanic Gardens - Commonwealth War Cemetery - Udawatta Kele Sanctuary -  Bahirawakanda Temple - Temple of Tooth Relic - Kandy Cultural Dance Show - Overnight Stay in a Hotel at Kandy`,
+      detail: t("day06.detail"),
+      accommodation: t("day06.accommodation"),
+      activities: t("day06.activities"),
     },
     {
-      day: `Day 13, 14 & 15 in Nuwara Eliya`,
-      topic: `Kandy to Nuwara Eliya`,
+      day: t("day07.day"),
+      topic: t("day07.topic"),
       img: `./trips/nuwara_eliya_post_office.jpg`,
-      detail: `Embark on an enchanting journey to Nuwara Eliya, where you'll ascend the majestic Ambuluwawa Tower, immerse yourself in the aromatic bliss of Damro Labookellie Tea Centre, and witness nature's grandeur at the cascading Ramboda Waterfalls. Explore the lush tea plantations and factories, bask in the tranquil beauty of Gregory Lake, and marvel at the architectural splendor of Nuwara Eliya Post Office. Pay reverence at the sacred Seetha Eliya Temple, trek to the breathtaking Bomburu Ella, and soak in panoramic vistas from Lipton's Seat, before retreating to a cozy hotel for an overnight stay in this hill country paradise.`,
-      accommodation: `As Your Request`,
-      activities: `Ambuluwawa Tower - Ramboda Waterfalls - Damro Labookellie Tea Centre - Gregory Lake - Nuwara Eliya Post Office - Seetha Eliya Temple - Bomburu Ella - Lipton Seat - Overnight Stay in a Hotel at Nuwara Eliya`,
+      detail: t("day07.detail"),
+      accommodation: t("day07.accommodation"),
+      activities: t("day07.activities"),
     },
     {
-      day: `Day 16, 17 & 18 in Ella`,
-      topic: `Nuwara Eliya to Ella`,
+      day: t("day08.day"),
+      topic: t("day08.topic"),
       img: `./trips/Little_Adam.jpg`,
-      detail: `Embark on a picturesque journey by train to Ella, where nature's wonders await. Marvel at the majestic Ravana Falls, cascading gracefully amidst lush greenery. Explore the iconic Nine Arch Bridge, a marvel of architecture nestled in the verdant landscape. Hike up to Little Adam's Peak for breathtaking panoramic views that stretch to the horizon. Don't miss the enchanting Ellawella Waterfalls, where tranquility reigns supreme. After a day of exploration, unwind in comfort with an overnight stay at a cozy hotel in Ella, surrounded by the serene beauty of the Sri Lankan countryside.`,
-      accommodation: `As Your Request`,
-      activities: `Little adam's peak - Ellawella Waterfalls - Nine Arches Bridge - Ravana Falls - Overnight Stay in a Hotel at Ella`,
+      detail: t("day08.detail"),
+      accommodation: t("day08.accommodation"),
+      activities: t("day08.activities"),
     },
     {
-      day: `Day 19, 20 & 21 in Arugam Bay`,
-      topic: `Ella to Arugam Bay`,
+      day: t("day09.day"),
+      topic: t("day09.topic"),
       img: `./trips/Arugam_Bay.jpg`,
-      detail: `Explore the captivating wonders of Arugam Bay Beach, where golden sands meet azure waters, offering a tranquil escape. Venture to Muhudu Maha Viharaya, an ancient Buddhist temple steeped in history and spirituality. Embark on a serene lagoon safari in Pottuvil, immersing in the pristine natural beauty. Discover the biodiversity hotspot of Kudumbigala Sanctuary, home to diverse flora and fauna. Uncover the mystique of Kudumbigala Monastery Complex, a sacred site nestled in lush greenery. Ascend Sangamankanda Lighthouse for panoramic views of the coastline. Conclude your adventure with an overnight stay at a cozy hotel, relishing the serenity of Arugam Bay.`,
-      accommodation: `As Your Request`,
-      activities: `Arugam Bay Beach - Muhudu Maha Viharaya - Lagoon Safari ,Pottuvil - Kudumbigala Sanctuary - Kudumbigala Monastery Complex - Sangamankanda Lighthouse - Overnight Stay in a Hotel at Arugam Bay`,
+      detail: t("day09.detail"),
+      accommodation: t("day09.accommodation"),
+      activities: t("day09.activities"),
     },
     {
-      day: `Day 22, 23 & 24 in Mirissa`,
-      topic: `Arugam Bay to Mirissa`,
+      day: t("day10.day"),
+      topic: t("day10.topic"),
       img: `./trips/coconut_tree_hill.jpg`,
-      detail: `Embark on an enchanting journey along the southern coast of Sri Lanka, beginning at the picturesque Coconut Tree Hill, offering panoramic views of Mirissa Bay's azure waters. Delve into the vibrant culture at the local fish market, brimming with the day's fresh catch. Venture into the vast expanse of the ocean for an unforgettable experience of whale and dolphin watching. Then, unwind on the pristine shores of Unawatuna Beach, where golden sands meet the gentle lapping waves. Conclude your day with an idyllic overnight stay in the charming town of Mirissa, where tranquility and beauty converge for an unforgettable coastal retreat.`,
-      accommodation: `As Your Request`,
-      activities: `Coconut Tree Hill - Mirissa Bay - Fish Market - Whale watching - Dolphin Watching - Unawatuna Beach - Overnight Stay in a Hotel at Mirissa`,
+      detail: t("day10.detail"),
+      accommodation: t("day10.accommodation"),
+      activities: t("day10.activities"),
     },
     {
-      day: `Day 25, 26 & 27 in Galle`,
-      topic: `Mirissa to Galle`,
+      day: t("day11.day"),
+      topic: t("day11.topic"),
       img: `./trips/Galle_Fort.jpg`,
-      detail: `Explore the rich tapestry of Galle, Sri Lanka, where history meets nature in a captivating blend. Wander through the ancient cobblestone streets of Galle Dutch Fort, a UNESCO World Heritage Site, echoing tales of colonial legacy. Ascend the towering Galle Lighthouse for panoramic vistas of the azure ocean. Immerse yourself in conservation efforts at the Sea Turtle Hatchery Centre, marveling at these gentle creatures. Find serenity at the Japanese Peace Pagoda, a symbol of tranquility amidst lush surroundings. Sink your toes into the golden sands of Unawatuna Beach and the secluded oasis of Jungle Beach. Discover biodiversity at Rumassala Sanctuary, a haven for wildlife enthusiasts. Indulge in history at the Old Dutch Hospital and Maritime Museum, weaving narratives of maritime heritage. Conclude your day with an overnight stay in a cozy hotel, completing an unforgettable journey through Galle's wonders.`,
-      accommodation: `As Your Request`,
-      activities: `Galle Dutch Fort - Lighthouse - Sea Turtle Hatchery Centre - Japanese Peace Pagoda - Unawatuna Beach - Jungle Beach - Rumassala Sanctuary - Old Dutch Hospital - Maritime Museum - Overnight Stay in a Hotel at Galle`,
+      detail: t("day11.detail"),
+      accommodation: t("day11.accommodation"),
+      activities: t("day11.activities"),
     },
     {
-      day: `Day 28 & 29 in Colombo`,
-      topic: `Galle to Colombo`,
+      day: t("day12.day"),
+      topic: t("day12.topic"),
       img: `./trips/Gangaramaya_Temple.jpg`,
-      detail: `During your visit to Colombo, you can explore a variety of significant landmarks and attractions that showcase the city's rich cultural and architectural heritage. Begin with a visit to the Colombo Red Mosque, a striking structure known for its vibrant red-and-white patterned facade. Next, admire panoramic views from the Lotus Tower, one of the tallest structures in South Asia. Continue to the serene Gangarama Temple, which offers a blend of modern architecture and cultural essence. Take a moment to reflect on Sri Lanka's history at Independence Square, a monument commemorating the country's independence from British rule. Discover the historical and spiritual significance of the Kelaniya Raja Maha Viharaya, a revered Buddhist temple. Relax and unwind at the picturesque Mount Lavinia Beach, a popular spot for both locals and tourists. After a day of exploration, enjoy an overnight stay at a comfortable hotel in Colombo, ensuring you are well-rested for the adventures ahead.`,
-      accommodation: `As Your Request`,
-      activities: `Colombo Red Mosque - Lotus Tower - Gangarama Temple - Independence Square - Kelaniya Raja Maha Viharaya - Mount Lavinia Beach - Overnight Stay in a Hotel at Colombo`,
+      detail: t("day12.detail"),
+      accommodation: t("day12.accommodation"),
+      activities: t("day12.activities"),
     },
     {
-      day: `Day 30`,
-      topic: `Colombo to Airport`,
+      day: t("day13.day"),
+      topic: t("day13.topic"),
       img: `./trips/airplane_landing.jpg`,
-      detail: ``,
-      accommodation: ``,
-      activities: ``,
+      detail: t("day13.detail"),
+      accommodation: t("day13.accommodation"),
+      activities: t("day13.activities"),
     },
   ];
 
@@ -132,14 +133,15 @@ export default function ThirtyDays() {
         </div>
         <div className="p-3 w-full md:flex justify-between bg-[#54B435] 2xl:px-40 xl:px-24 lg:px-20 px-5">
           <p className="xl:text-2xl lg:text-xl md:text-base text-sm font-semibold text-white">
-            Sri Lanka Tour 30 Days Package{" "}
+            {t("package.description")}{" "}
             <span className="lg:text-lg text-sm lg:font-bold text-[#F0FF42]">
-              (30 Days 29 Nights)
+              {t("package.nights")}
             </span>
           </p>
           <p className="xl:text-2xl lg:text-lg md:text-base text-sm font-medium text-white md:mt-0 mt-2">
-            Starting from <span className="font-bold"> USD 4200</span> per
-            person
+            {t("package.starting_from")}{" "}
+            <span className="font-bold"> {t("package.price")} </span>
+            {t("package.per_person")}
           </p>
         </div>
         {/* ===========Breadcrumbs=========== */}
@@ -148,7 +150,7 @@ export default function ThirtyDays() {
             <i class="fa-solid fa-house"></i>
           </a>
           <a href="/thirtydays" className="opacity-60 font-bold">
-            <span>THIRTY DAYS</span>
+            <span>{t("breadcrumbs")}</span>
           </a>
         </Breadcrumbs>
         {/* ===========Breadcrumbs=========== */}
@@ -160,7 +162,7 @@ export default function ThirtyDays() {
             }`}
             onClick={() => setActiveTab("overview")}
           >
-            Overview
+            {t("overview")}
           </button>
           <button
             className={`md:m-2 m-1 w-40 md:w-auto lg:px-10 xl:px-14 xl:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
@@ -168,7 +170,7 @@ export default function ThirtyDays() {
             }`}
             onClick={() => setActiveTab("itinerary")}
           >
-            Itinerary
+            {t("itinerary")}
           </button>
           <button
             className={`md:m-2 m-1 w-40 md:w-auto lg:px-10 xl:px-14 xl:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
@@ -176,7 +178,7 @@ export default function ThirtyDays() {
             }`}
             onClick={() => setActiveTab("gallery")}
           >
-            Gallery
+            {t("gallery")}
           </button>
         </div>
 
@@ -221,12 +223,15 @@ export default function ThirtyDays() {
                     </p>
                     <div className="flex flex-col mt-5 lg:text-base text-sm">
                       <p class="font-normal text-gray-700 space-x-5 xl:text-base text-sm">
-                        <span className="font-bold ">Accommodation: </span>{" "}
+                        <span className="font-bold ">
+                          {" "}
+                          {t("accommodation")}:{" "}
+                        </span>{" "}
                         <span>{date.accommodation}</span>
                       </p>
                       <p class="font-normal text-gray-700 space-x-5 xl:text-base text-sm">
                         {" "}
-                        <span className="font-bold">Activities:</span>
+                        <span className="font-bold">{t("activities")}:</span>
                         <span className="italic font-medium">
                           {date.activities}
                         </span>
@@ -234,7 +239,7 @@ export default function ThirtyDays() {
                     </div>
                     <div className="flex md:justify-end justify-center mt-5">
                       <button className="bg-[#54B435] lg:px-5 lg:py-1 xl:px-8 xl:py-2 md:px-8 md:py-2 px-5 py-1 rounded mx-5 text-base font-bold text-white">
-                        See More
+                        {t("see_more")}
                       </button>
                     </div>
                   </div>

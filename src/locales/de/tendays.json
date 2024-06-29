@@ -1,0 +1,97 @@
+{
+  "breadcrumbs": "ZEHN TAGE",
+  "overview": "Überblick",
+  "itinerary": "Route",
+  "gallery": "Galerie",
+  "day01": {
+    "day": "Tag 01",
+    "topic": "Flughafen nach Negombo",
+    "detail": "Wenn Sie landen, werden Sie von unserem Chauffeurführer, der fließend Englisch spricht, und dem Flughafenteam begrüßt und bei allem unterstützt, was Sie brauchen. Sobald Sie Ihr Hotel erreicht haben, können Sie den Rest des Tages nutzen, um sich nach Ihrem langen Flug zu entspannen und zu erholen. Es ist Ihre Zeit, die Sie in Ihrem eigenen Tempo genießen können.",
+    "accommodation": "Wie deine Anfrage",
+    "activities": "Pinnawala-Elefantenwaisenhaus – Übernachtung in einem Hotel in Sigiriya"
+  },
+
+  "accommodation": "Unterkunft",
+  "activities": "Aktivitäten",
+  "see_more": "Mehr sehen",
+
+  "package": {
+    "description": "Sri Lanka Tour 10 Tage Paket",
+    "nights": "(10 Tage 09 Nächte)",
+    "starting_from": "Ab",
+    "price": "USD 1600",
+    "per_person": "pro Person"
+  },
+
+  "day02": {
+    "day": "Tag 02",
+    "topic": "Von Negombo nach Sigiriya",
+    "detail": "Entdecken Sie die Wunder Sri Lankas bei einem Besuch des Elefantenwaisenhauses Pinnawala, wo Sie die liebevolle Pflege geretteter Elefanten miterleben können. Setzen Sie Ihr Abenteuer an der berühmten Felsenfestung Sigiriya fort, die auch als Löwenfelsen bekannt ist. Dieses uralte Wunder bietet atemberaubende Ausblicke und einen Einblick in die reiche Geschichte der Insel. Nach einem Tag voller Entdeckungen können Sie sich bei einer Übernachtung in einem komfortablen Hotel in Sigiriya entspannen. So können Sie abschalten und die ruhige Umgebung genießen, bereit für weitere Abenteuer in dieser wunderschönen Region.",
+    "accommodation": "Wie deine Anfrage",
+    "activities": "Pinnawala Elefantenwaisenhaus - Sigiriya Felsenfestung (Löwenfelsen) - Übernachtung in einem Hotel in Sigiriya"
+  },
+
+  "day03": {
+    "day": "Tag 03",
+    "topic": "Von Sigiriya nach Kandy",
+    "detail": "Der Reiseplan umfasst einen Besuch des Dambulla Royal Cave Temple und des Golden Temple, die für ihre alten buddhistischen Wandmalereien und Statuen bekannt sind. Als nächstes erkunden Sie einen Gewürzgarten und erleben den aromatischen Reiz der berühmten Gewürze Sri Lankas. In Matale besuchen Sie den lebhaften Muthumariamman-Tempel, der reiche hinduistische Traditionen präsentiert. Die Reise geht weiter zum Zahntempel in Kandy, einer heiligen Stätte, in der ein verehrter Zahn Buddhas aufbewahrt wird. Genießen Sie die farbenfrohe Kandy Cultural Dance Show, ein Spektakel aus traditionellem Tanz und Musik. Beenden Sie die Reise mit einer Übernachtung in einem komfortablen Hotel in Kandy, tauchen Sie ein in den kulturellen Charme der Stadt.",
+    "accommodation": "Wie deine Anfrage",
+    "activities": "Königlicher Höhlentempel und Goldener Tempel von Dambulla – Gewürzgarten – Muthumariamman-Tempel in Matale – Zahntempel – Kulturelle Tanzshow in Kandy – Übernachtung im Hotel in Kandy"
+  },
+
+  "day04": {
+    "day": "Tag 04",
+    "topic": "Von Kandy nach Nuwara Eliya",
+    "detail": "Beginnen Sie Ihre Reise mit den atemberaubenden Ramboda-Wasserfällen und besuchen Sie dann das Damro Labookellie Tea Centre, um frischen Ceylon-Tee zu genießen. Genießen Sie einen ruhigen Nachmittag am malerischen Gregory Lake, der sich perfekt für eine entspannende Bootsfahrt oder einen ruhigen Spaziergang eignet. Bewundern Sie die charmante Kolonialarchitektur des Nuwara Eliya Post Office, einem historischen Wahrzeichen. Beenden Sie Ihren Tag mit einer Übernachtung in einem komfortablen Hotel in Nuwara Eliya, wo die kühle Bergluft und die malerische Aussicht einen perfekten Rückzugsort bieten.",
+    "accommodation": "Wie deine Anfrage",
+    "activities": "Ramboda Falls – Damro Labookellie Tea Centre – Gregory Lake – Nuwara Eliya Post Office – Übernachtung im Hotel in Nuwara Eliya"
+  },
+
+  "day05": {
+    "day": "Tag 05",
+    "topic": "Von Nuwara Eliya nach Ella",
+    "detail": "Beginnen Sie Ihr Abenteuer in der bezaubernden Stadt Ella mit einer Wanderung auf den Little Adam's Peak, der Ihnen einen atemberaubenden Panoramablick auf üppig grüne Landschaften bietet. Bewundern Sie als Nächstes das architektonische Wunder der Nine Arches Bridge, ein Relikt aus der Kolonialzeit, umgeben von dichtem Dschungel und Teeplantagen. Weiter geht es zu den Ravana-Wasserfällen, wo kaskadenartiges Wasser eine ruhige und malerische Kulisse schafft, die sich perfekt zum Entspannen und Fotografieren eignet. Beenden Sie Ihren Tag mit einer Übernachtung in einem gemütlichen Hotel in Ella, wo Sie in die ruhige Atmosphäre eintauchen und für die Erkundungen des nächsten Tages neue Kraft tanken können.",
+    "accommodation": "Wie deine Anfrage",
+    "activities": "Little Adam’s Peak – Nine Arches Bridge – Ravana Falls – Übernachtung im Hotel in Ella"
+  },
+
+  "day06": {
+    "day": "Tag 06",
+    "topic": "Von Ella nach Yala",
+    "detail": "Entdecken Sie die natürliche Schönheit und das kulturelle Erbe Sri Lankas bei einem Besuch des Yala-Nationalparks, der für seine vielfältige Tierwelt bekannt ist, darunter Leoparden, Elefanten und eine Vielzahl von Vogelarten. Tauchen Sie nach einer aufregenden Safari im Buduruwagala-Tempel in die Geschichte ein, wo uralte Felsschnitzereien von Buddha und seinen Jüngern als Zeugnis der reichen spirituellen Vergangenheit der Insel stehen. Beenden Sie Ihren Tag mit einer Übernachtung in einem komfortablen Hotel in Yala, das eine perfekte Mischung aus Entspannung und Abenteuer inmitten der ruhigen Landschaft bietet und ein unvergessliches und erholsames Erlebnis garantiert.",
+    "accommodation": "Wie deine Anfrage",
+    "activities": "Yala Nationalpark – Buduruwagala Tempel – Übernachtung im Hotel in Yala"
+  },
+
+  "day07": {
+    "day": "Tag 07",
+    "topic": "Von Yala nach Tangalle",
+    "detail": "Tangalle, ein Küstenparadies in Sri Lanka, bietet mehrere atemberaubende Strände. Tangalle Beach bietet ruhige Ufer, die sich perfekt zum Entspannen eignen. Der nahe gelegene Hiriketiya Beach, bekannt für seine Hufeisenbucht, ist ein Paradies für Surfer und Schwimmer. Rekawa Beach, ein Schutzgebiet für Meereslebewesen, ist bekannt für seine Nistplätze für Meeresschildkröten. Silent Beach, seinem Namen getreu, bietet einen ruhigen Rückzugsort vor den Massen. Genießen Sie nach einem Tag voller Erkundungen dieser malerischen Strände eine Übernachtung in einem der charmanten Hotels von Tangalle und genießen Sie einen erholsamen Abschluss eines Tages voller natürlicher Schönheit und Ruhe an Sri Lankas Südküste.",
+    "accommodation": "Wie deine Anfrage",
+    "activities": "Tangalle Beach – Hiriketiya Beach – Rekawa Beach – Silent Beach – Übernachtung im Hotel in Tangalle"
+  },
+
+  "day08": {
+    "day": "Tag 08",
+    "topic": "Von Tangalle nach Mirissa",
+    "detail": "Coconut Tree Hill in Mirissa bietet einen atemberaubenden Panoramablick auf die Küste und ist somit ein perfekter Ort zum Fotografieren und Entspannen. Das ruhige Wasser der Mirissa Bay ist ideal zum Schwimmen und Sonnenbaden. In der Nähe präsentiert der lebhafte Fischmarkt den täglichen Fang und bietet einen authentischen Einblick in die lokale Fischerkultur. Für Abenteuerlustige sind Wal- und Delfinbeobachtungstouren ein Muss, bei denen man diese großartigen Kreaturen aus nächster Nähe sehen kann. Nach einem Tag voller Entdeckungen können Sie sich bei einer Übernachtung in einem komfortablen Hotel in Mirissa entspannen und einen Tag voller unvergesslicher Erlebnisse erholsam ausklingen lassen.",
+    "accommodation": "Wie deine Anfrage",
+    "activities": "Coconut Tree Hill – Mirissa Bay – Fischmarkt – Walbeobachtung – Delfinbeobachtung – Übernachtung im Hotel in Mirissa"
+  },
+
+  "day09": {
+    "day": "Tag 09",
+    "topic": "Von Mirissa nach Bentota",
+    "detail": "Begeben Sie sich auf eine faszinierende Reise durch die Wunder Sri Lankas. Entdecken Sie den alten Charme des niederländischen Forts Galle, wo die Geschichte durch die Kopfsteinpflasterstraßen flüstert. Wagen Sie sich zur Bentota Turtle Hatchery, einem Schutzgebiet für diese sanften Kreaturen, das sich für den Artenschutz einsetzt. Gleiten Sie entlang des bezaubernden Madu-Flusses, einer Oase der Artenvielfalt und ruhiger Landschaften. Entdecken Sie die künstlerische Oase Brief Garden, eine üppige Oase, die Natur und Kreativität vereint. Entspannen Sie an den goldenen Ufern des Bentota Beach, wo das azurblaue Wasser lockt. Beenden Sie Ihren Tag mit einer Übernachtung in einem ruhigen Hotel, eingebettet in die Küstenruhe von Bentota, während die Erinnerungen an die Abenteuer des Tages durch Ihre Träume tanzen.",
+    "accommodation": "Wie deine Anfrage",
+    "activities": "Niederländisches Fort Galle – Schildkrötenaufzuchtstation in Bentota – Madu-Flusssafari – Brief Garden – Bentota Beach – Übernachtung im Hotel in Bentota"
+  },
+
+  "day10": {
+    "day": "Tag 10",
+    "topic": "Bentota zum Flughafen",
+    "detail": "",
+    "accommodation": "",
+    "activities": ""
+  }
+}

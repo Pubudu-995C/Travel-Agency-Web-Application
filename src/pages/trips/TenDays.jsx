@@ -7,90 +7,92 @@ import WhatsApp from "../../components/WhatsApp";
 import ScrollToTopButton from "../../components/ScrollToTopButton";
 import { Breadcrumbs } from "@material-tailwind/react";
 import Gallery from "../Gallery";
+import { useTranslation } from "react-i18next";
 
 export default function TenDays() {
+  const { t } = useTranslation("tendays");
   const [activeTab, setActiveTab] = useState("overview");
 
   const dateList = [
     {
-      day: `Day 01`,
-      topic: `Airport to negombo`,
+      day: t("day01.day"),
+      topic: t("day01.topic"),
       img: `./trips/Negombo_Beach.jpg`,
-      detail: `When you land, our chauffeur guide, fluent in English, and the airport team will be there to greet you and help you with anything you need. Once you reach your hotel, take the rest of the day to relax and unwind after your long flight. It's your time to enjoy at your own pace.`,
-      accommodation: `As Your Request`,
-      activities: ``,
+      detail: t("day01.detail"),
+      accommodation: t("day01.accommodation"),
+      activities: t("day01.activities"),
     },
     {
-      day: `Day 02`,
-      topic: `Negombo to sigiriya`,
+      day: t("day02.day"),
+      topic: t("day02.topic"),
       img: `./trips/sigiriya.jpg`,
-      detail: `Explore the wonders of Sri Lanka with a visit to the Pinnawala Elephant Orphanage, where you can witness the heartwarming care of rescued elephants. Continue your adventure at the iconic Sigiriya Rock Fortress, also known as Lion Rock, an ancient marvel that offers breathtaking views and a glimpse into the island's rich history. After a day of exploration, relax with an overnight stay in a comfortable hotel at Sigiriya, allowing you to unwind and soak in the serene surroundings, ready for more adventures in this beautiful region.`,
-      accommodation: `As Your Request`,
-      activities: `Pinnawala Elephant Orphanage - Sigiriya Rock Fortress (Lion Rock) - Overnight Stay in a Hotel at Sigiriya`,
+      detail: t("day02.detail"),
+      accommodation: t("day02.accommodation"),
+      activities: t("day02.activities"),
     },
     {
-      day: `Day 03`,
-      topic: `Sigiriya to kandy`,
+      day: t("day03.day"),
+      topic: t("day03.topic"),
       img: `./trips/templeTooth.jpg`,
-      detail: `The itinerary includes a visit to the Dambulla Royal Cave Temple and Golden Temple, renowned for its ancient Buddhist murals and statues. Next, explore a Spice Garden, experiencing the aromatic allure of Sri Lanka's famed spices. In Matale, visit the vibrant Muthumariamman Temple, showcasing rich Hindu traditions. The journey continues to the Temple of the Tooth Relic in Kandy, a sacred site housing a revered tooth of Buddha. Enjoy the colorful Kandy Cultural Dance Show, a spectacle of traditional dance and music. Conclude with an overnight stay at a comfortable hotel in Kandy, immersed in the city's cultural charm.`,
-      accommodation: `As Your Request`,
-      activities: `Dambulla Royal Cave Temple and Golden Temple - Spice Garden - Matale Muthumariamman Temple - Temple of Tooth Relic - Kandy Cultural Dance Show - Overnight Stay in a Hotel at Kandy`,
+      detail: t("day03.detail"),
+      accommodation: t("day03.accommodation"),
+      activities: t("day03.activities"),
     },
     {
-      day: `Day 04`,
-      topic: `Kandy to Nuwara Eliya `,
+      day: t("day04.day"),
+      topic: t("day04.topic"),
       img: `./trips/Gregory_Lake.jpg`,
-      detail: `Begin your journey with the breathtaking Ramboda Falls, then visit the Damro Labookellie Tea Centre to savor fresh Ceylon tea. Enjoy a serene afternoon by the picturesque Gregory Lake, perfect for a relaxing boat ride or a peaceful stroll. Marvel at the charming colonial architecture of the Nuwara Eliya Post Office, a historic landmark. End your day with an overnight stay in a comfortable hotel in Nuwara Eliya, where the cool mountain air and scenic views provide a perfect retreat.`,
-      accommodation: `As Your Request`,
-      activities: `Ramboda Falls - Damro Labookellie Tea Centre - Gregory Lake - Nuwara Eliya Post Office - Overnight Stay in a Hotel at Nuwara Eliya`,
+      detail: t("day04.detail"),
+      accommodation: t("day04.accommodation"),
+      activities: t("day04.activities"),
     },
     {
-      day: `Day 05`,
-      topic: `Nuwara Eliya to Ella`,
+      day: t("day05.day"),
+      topic: t("day05.topic"),
       img: `./trips/Little_Adam.jpg`,
-      detail: `In the enchanting town of Ella, begin your adventure with a trek up Little Adam's Peak, offering breathtaking panoramic views of lush green landscapes. Next, marvel at the architectural wonder of the Nine Arches Bridge, a relic from the colonial era surrounded by dense jungle and tea plantations. Continue to Ravana Falls, where cascading waters create a serene and picturesque setting, perfect for relaxation and photography. Conclude your day with an overnight stay at a cozy hotel in Ella, allowing you to immerse yourself in the tranquil ambiance and rejuvenate for the next day's explorations.`,
-      accommodation: `As Your Request`,
-      activities: `Little adam's peak - Nine Arches Bridge - Ravana Falls - Overnight Stay in a Hotel at Ella`,
+      detail: t("day05.detail"),
+      accommodation: t("day05.accommodation"),
+      activities: t("day05.activities"),
     },
     {
-      day: `Day 06`,
-      topic: `Ella to Yala`,
+      day: t("day06.day"),
+      topic: t("day06.topic"),
       img: `./trips/yala.jpg`,
-      detail: `Explore the natural beauty and cultural heritage of Sri Lanka with a visit to Yala National Park, renowned for its diverse wildlife, including leopards, elephants, and a variety of bird species. After an exhilarating safari, immerse yourself in history at the Buduruwagala Temple, where ancient rock carvings of Buddha and his disciples stand as a testament to the island’s rich spiritual past. Conclude your day with an overnight stay at a comfortable hotel in Yala, offering a perfect blend of relaxation and adventure amidst the serene landscape, ensuring a memorable and rejuvenating experience.`,
-      accommodation: `As Your Request`,
-      activities: `Yala National Park - Buduruwagala Temple - Overnight Stay in a Hotel at Yala`,
+      detail: t("day06.detail"),
+      accommodation: t("day06.accommodation"),
+      activities: t("day06.activities"),
     },
     {
-      day: `Day 07`,
-      topic: `Yala to Tangalle`,
+      day: t("day07.day"),
+      topic: t("day07.topic"),
       img: `./trips/Hiriketiya-Beach.jpg`,
-      detail: `Tangalle, a coastal paradise in Sri Lanka, boasts several stunning beaches. Tangalle Beach offers serene shores perfect for relaxation. Nearby, Hiriketiya Beach, known for its horseshoe bay, is a haven for surfers and swimmers. Rekawa Beach, a sanctuary for marine life, is renowned for its sea turtle nesting sites. Silent Beach, true to its name, provides a tranquil escape from the crowds. After a day of exploring these picturesque beaches, enjoy an overnight stay in one of Tangalle’s charming hotels, ensuring a restful end to a day filled with the natural beauty and tranquility of Sri Lanka’s southern coastline.`,
-      accommodation: `As Your Request`,
-      activities: `Tangalle Beach - Hiriketiya Beach - Rekawa Beach - Silent Beach - Overnight Stay in a Hotel at Tangalle`,
+      detail: t("day07.detail"),
+      accommodation: t("day07.accommodation"),
+      activities: t("day07.activities"),
     },
     {
-      day: `Day 08`,
-      topic: `Tangalle to Mirissa`,
+      day: t("day08.day"),
+      topic: t("day08.topic"),
       img: `./trips/coconut_tree_hill.jpg`,
-      detail: `Coconut Tree Hill in Mirissa offers stunning panoramic views of the coastline, making it a perfect spot for photography and relaxation. Mirissa Bay's tranquil waters are ideal for swimming and sunbathing. Nearby, the vibrant fish market showcases the daily catch, providing an authentic glimpse into the local fishing culture. For adventure seekers, whale and dolphin watching tours are a must, offering a chance to see these magnificent creatures up close. After a day of exploration, unwind with an overnight stay at a comfortable hotel in Mirissa, ensuring a restful end to a day filled with unforgettable experiences.`,
-      accommodation: `As Your Request`,
-      activities: `Coconut Tree Hill - Mirissa Bay - Fish Market - Whale watching - Dolphin Watching - Overnight Stay in a Hotel at Mirissa`,
+      detail: t("day08.detail"),
+      accommodation: t("day08.accommodation"),
+      activities: t("day08.activities"),
     },
     {
-      day: `Day 09`,
-      topic: `Mirissa to Bentota`,
+      day: t("day09.day"),
+      topic: t("day09.topic"),
       img: `./trips/Galle_Fort.jpg`,
-      detail: `Embark on a captivating journey through Sri Lanka's wonders. Explore the ancient charm of Galle Dutch Fort, where history whispers through cobblestone streets. Venture to Bentota Turtle Hatchery, a sanctuary for these gentle creatures, fostering conservation efforts. Glide along the enchanting Madu River, a haven of biodiversity and serene landscapes. Discover the artistic haven of Brief Garden, a lush oasis blending nature and creativity. Relax on the golden shores of Bentota Beach, where the azure waters beckon. Conclude your day with an overnight stay in a tranquil hotel, immersed in the coastal serenity of Bentota, as memories of the day's adventures dance through your dreams.`,
-      accommodation: `As Your Request`,
-      activities: `Galle Dutch Fort - Bentota Turtle Hatchery - Madu River Safari - Brief Garden - Bentota Beach - Overnight Stay in a Hotel at Bentota`,
+      detail: t("day09.detail"),
+      accommodation: t("day09.accommodation"),
+      activities: t("day09.activities"),
     },
     {
-      day: `Day 10`,
-      topic: `Bentota to Airport`,
+      day: t("day10.day"),
+      topic: t("day10.topic"),
       img: `./trips/airplane_landing.jpg`,
-      detail: ``,
-      accommodation: ``,
-      activities: ``,
+      detail: t("day10.detail"),
+      accommodation: t("day10.accommodation"),
+      activities: t("day10.activities"),
     },
   ];
 
@@ -107,14 +109,15 @@ export default function TenDays() {
         </div>
         <div className="p-3 w-full md:flex justify-between bg-[#54B435] 2xl:px-40 xl:px-24 lg:px-20 px-5">
           <p className="xl:text-2xl lg:text-xl md:text-base text-sm font-semibold text-white">
-            Sri Lanka Tour 10 Days Package{" "}
+            {t("package.description")}{" "}
             <span className="lg:text-lg text-sm lg:font-bold text-[#F0FF42]">
-              (10 Days 09 Nights)
+              {t("package.nights")}
             </span>
           </p>
           <p className="xl:text-2xl lg:text-lg md:text-base text-sm font-medium text-white md:mt-0 mt-2">
-            Starting from <span className="font-bold"> USD 1600</span> per
-            person
+            {t("package.starting_from")}{" "}
+            <span className="font-bold"> {t("package.price")} </span>
+            {t("package.per_person")}
           </p>
         </div>
         {/* ===========Breadcrumbs=========== */}
@@ -123,7 +126,7 @@ export default function TenDays() {
             <i class="fa-solid fa-house"></i>
           </a>
           <a href="/tendays" className="opacity-60 font-bold">
-            <span>TEN DAYS</span>
+            <span>{t("breadcrumbs")}</span>
           </a>
         </Breadcrumbs>
         {/* ===========Breadcrumbs=========== */}
@@ -135,7 +138,7 @@ export default function TenDays() {
             }`}
             onClick={() => setActiveTab("overview")}
           >
-            Overview
+            {t("overview")}
           </button>
           <button
             className={`md:m-2 m-1 w-40 md:w-auto lg:px-10 xl:px-14 xl:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
@@ -143,7 +146,7 @@ export default function TenDays() {
             }`}
             onClick={() => setActiveTab("itinerary")}
           >
-            Itinerary
+            {t("itinerary")}
           </button>
           <button
             className={`md:m-2 m-1 w-40 md:w-auto lg:px-10 xl:px-14 xl:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
@@ -151,7 +154,7 @@ export default function TenDays() {
             }`}
             onClick={() => setActiveTab("gallery")}
           >
-            Gallery
+            {t("gallery")}
           </button>
         </div>
         {activeTab === "overview" && (
@@ -195,12 +198,13 @@ export default function TenDays() {
                     </p>
                     <div className="flex flex-col mt-5 lg:text-base text-sm">
                       <p class="font-normal text-gray-700 space-x-5 xl:text-base text-sm">
-                        <span className="font-bold ">Accommodation: </span>{" "}
+                        <span className="font-bold ">
+                          {t("accommodation")}:
+                        </span>
                         <span>{date.accommodation}</span>
                       </p>
                       <p class="font-normal text-gray-700 space-x-5 xl:text-base text-sm">
-                        {" "}
-                        <span className="font-bold">Activities:</span>
+                        <span className="font-bold">{t("activities")}:</span>
                         <span className="italic font-medium">
                           {date.activities}
                         </span>
@@ -208,7 +212,7 @@ export default function TenDays() {
                     </div>
                     <div className="flex md:justify-end justify-center mt-5">
                       <button className="bg-[#54B435] lg:px-5 lg:py-1 xl:px-8 xl:py-2 md:px-8 md:py-2 px-5 py-1 rounded mx-5 text-base font-bold text-white">
-                        See More
+                        {t("see_more")}
                       </button>
                     </div>
                   </div>

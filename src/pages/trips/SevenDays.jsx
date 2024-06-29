@@ -7,66 +7,68 @@ import WhatsApp from "../../components/WhatsApp";
 import ScrollToTopButton from "../../components/ScrollToTopButton";
 import { Breadcrumbs } from "@material-tailwind/react";
 import Gallery from "../Gallery";
+import { useTranslation } from "react-i18next";
 
 export default function SevenDays() {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState("overview");
 
   const dateList = [
     {
-      day: `Day 01`,
-      topic: `Airport to Sigiriya`,
+      day: t("day01.day"),
+      topic: t("day01.topic"),
       img: `./trips/pinnawala.jpg`,
-      detail: `Upon arrival, our proficient chauffeur guide, fluent in English, alongside the attentive airport team, warmly welcomes you, ensuring all your needs are met. Upon reaching your hotel, indulge in a leisurely day of relaxation, recuperating from your journey. Delight in the freedom to unwind at your own pace. Your adventure continues with an overnight stay at a hotel in Sigiriya, where the majestic Pinnawala Elephant Orphanage awaits. Immerse yourself in the tranquility of this haven, embracing the essence of Sri Lanka's natural beauty and cultural richness throughout your stay.`,
-      accommodation: `As Your Request`,
-      activities: `Pinnawala Elephant Orphanage - Overnight Stay in a Hotel at Sigiriya`,
+      detail: t("day01.detail"),
+      accommodation: t("day01.accommodation"),
+      activities: t("day01.activities"),
     },
     {
-      day: `Day 02`,
-      topic: `Sigiriya to Kandy`,
+      day: t("day02.day"),
+      topic: t("day02.topic"),
       img: `./trips/templeTooth.jpg`,
-      detail: `Embark on a cultural journey beginning at the majestic Sigiriya Rock Fortress, also known as Lion Rock, where ancient engineering meets breathtaking views. Explore the historic Dambulla Royal Cave Temple and Golden Temple, adorned with intricate frescoes and statues. In Matale, wander through a vibrant Spice Garden before visiting the colorful Muthumariamman Temple. In Kandy, marvel at the sacred Temple of the Tooth Relic, a revered Buddhist site. Experience the traditional Kandy Cultural Dance Show, a captivating display of Sri Lankan heritage. Conclude your enriching day with an overnight stay in a comfortable hotel in Kandy, surrounded by the city’s scenic beauty.`,
-      accommodation: `As Your Request`,
-      activities: `Sigiriya Rock Fortress (Lion Rock) - Dambulla Royal Cave Temple and Golden Temple - Spice Garden - Matale Muthumariamman Temple - Temple of Tooth Relic - Kandy Cultural Dance Show - Overnight Stay in a Hotel at Kandy`,
+      detail: t("day02.detail"),
+      accommodation: t("day02.accommodation"),
+      activities: t("day02.activities"),
     },
     {
-      day: `Day 03`,
-      topic: `Kandy to Ella`,
+      day: t("day03.day"),
+      topic: t("day03.topic"),
       img: `./trips/damro.jpg`,
-      detail: `On this journey, start by marveling at the stunning Ramboda Falls, a cascading wonder set amidst lush greenery. Next, visit the Damro Labookellie Tea Centre to savor the aroma of fresh Ceylon tea and tour the scenic plantations. Continue to Gregory Lake, a serene spot perfect for boating and picnicking in the heart of Nuwara Eliya. Don’t miss the historic Nuwara Eliya Post Office, an iconic red-brick building dating back to colonial times. Finally, unwind with an overnight stay at a cozy hotel in Ella, a charming town known for its breathtaking landscapes and vibrant atmosphere.`,
-      accommodation: `As Your Request`,
-      activities: `Ramboda Falls - Damro Labookellie Tea Centre - Gregory Lake - Nuwara Eliya Post Office - Overnight Stay in a Hotel at Ella`,
+      detail: t("day03.detail"),
+      accommodation: t("day03.accommodation"),
+      activities: t("day03.activities"),
     },
     {
-      day: `Day 04`,
-      topic: `Ella to Yala`,
+      day: t("day04.day"),
+      topic: t("day04.topic"),
       img: `./trips/nineArch.jpg`,
-      detail: `Explore Little Adam's Peak for breathtaking views, then marvel at the architectural wonder of the Nine Arches Bridge. Next, visit the stunning Ravana Falls, a majestic cascade steeped in legend. Embark on an exhilarating Yala Safari to encounter diverse wildlife, from leopards to elephants, in their natural habitat. Conclude your adventure with a comfortable overnight stay at a hotel in Yala, offering a perfect blend of relaxation and adventure. This journey through Sri Lanka's picturesque landscapes promises unforgettable experiences and serene moments.`,
-      accommodation: `As Your Request`,
-      activities: `Little adam's peak - Nine Arches Bridge - Ravana Falls - Yala Safari - Overnight Stay in a Hotel at Yala`,
+      detail: t("day04.detail"),
+      accommodation: t("day04.accommodation"),
+      activities: t("day04.activities"),
     },
     {
-      day: `Day 05`,
-      topic: `Yala to Mirissa`,
+      day: t("day05.day"),
+      topic: t("day05.topic"),
       img: `./trips/coconut_tree_hill.jpg`,
-      detail: `Embark on an enchanting journey along the southern coast of Sri Lanka, beginning at the picturesque Coconut Tree Hill, offering panoramic views of Mirissa Bay's azure waters. Delve into the vibrant culture at the local fish market, brimming with the day's fresh catch. Venture into the vast expanse of the ocean for an unforgettable experience of whale and dolphin watching. Then, unwind on the pristine shores of Unawatuna Beach, where golden sands meet the gentle lapping waves. Conclude your day with an idyllic overnight stay in the charming town of Mirissa, where tranquility and beauty converge for an unforgettable coastal retreat.`,
-      accommodation: `As Your Request`,
-      activities: `Coconut Tree Hill - Mirissa Bay - Fish Market - Whale watching - Dolphin Watching - Unawatuna Beach - Overnight Stay in a Hotel at Mirissa`,
+      detail: t("day05.detail"),
+      accommodation: t("day05.accommodation"),
+      activities: t("day05.activities"),
     },
     {
-      day: `Day 06`,
-      topic: `Mirissa to Bentota`,
+      day: t("day06.day"),
+      topic: t("day06.topic"),
       img: `./trips/Galle_Fort.jpg`,
-      detail: `On this trip, explore the historic Galle Fort, a UNESCO World Heritage site known for its colonial architecture and vibrant culture. Visit the Turtle Farm & Hatchery, dedicated to the conservation and protection of sea turtles. Cruise along the Madu River, a biodiverse sanctuary with lush mangroves and scenic waterways. End your adventure with an overnight stay in a charming hotel at Bentota, offering a perfect blend of relaxation and comfort amidst the beautiful coastal surroundings. Enjoy the serene ambiance and warm hospitality as you unwind after a day filled with fascinating experiences and natural wonders.`,
-      accommodation: `As Your Request`,
-      activities: `Galle Fort - Turtle Farm & Hatchery - Madu River - Overnight Stay in a Hotel at Bentota`,
+      detail: t("day06.detail"),
+      accommodation: t("day06.accommodation"),
+      activities: t("day06.activities"),
     },
     {
-      day: `Day 07`,
-      topic: `Bentota to Airport`,
+      day: t("day07.day"),
+      topic: t("day07.topic"),
       img: `./trips/airplane_landing.jpg`,
-      detail: ``,
-      accommodation: ``,
-      activities: ``,
+      detail: t("day07.detail"),
+      accommodation: t("day07.accommodation"),
+      activities: t("day07.activities"),
     },
   ];
 
@@ -83,14 +85,15 @@ export default function SevenDays() {
         </div>
         <div className="p-3 w-full md:flex justify-between bg-[#54B435] 2xl:px-40 xl:px-24 lg:px-20 px-5">
           <p className="xl:text-2xl lg:text-xl md:text-base text-sm font-semibold text-white">
-            Sri Lanka Tour 07 Days Package{" "}
+            {t("package.description")}{" "}
             <span className="lg:text-lg text-sm lg:font-bold text-[#F0FF42]">
-              (07 Days 06 Nights)
+              {t("package.nights")}
             </span>
           </p>
           <p className="xl:text-2xl lg:text-lg md:text-base text-sm font-medium text-white md:mt-0 mt-2">
-            Starting from <span className="font-bold"> USD 1180</span> per
-            person
+            {t("package.starting_from")}{" "}
+            <span className="font-bold"> {t("package.price")} </span>
+            {t("package.per_person")}
           </p>
         </div>
         {/* ===========Breadcrumbs=========== */}
@@ -99,7 +102,7 @@ export default function SevenDays() {
             <i class="fa-solid fa-house"></i>
           </a>
           <a href="/sevendays" className="opacity-60 font-bold">
-            <span>SEVEN DAYS</span>
+            <span>{t("breadcrumbs")}</span>
           </a>
         </Breadcrumbs>
         {/* ===========Breadcrumbs=========== */}
@@ -111,7 +114,7 @@ export default function SevenDays() {
             }`}
             onClick={() => setActiveTab("overview")}
           >
-            Overview
+            {t("overview")}
           </button>
           <button
             className={`md:m-2 m-1 w-40 md:w-auto lg:px-10 xl:px-14 xl:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
@@ -119,7 +122,7 @@ export default function SevenDays() {
             }`}
             onClick={() => setActiveTab("itinerary")}
           >
-            Itinerary
+            {t("itinerary")}
           </button>
           <button
             className={`md:m-2 m-1 w-40 md:w-auto lg:px-10 xl:px-14 xl:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
@@ -127,7 +130,7 @@ export default function SevenDays() {
             }`}
             onClick={() => setActiveTab("gallery")}
           >
-            Gallery
+            {t("gallery")}
           </button>
         </div>
         {activeTab === "overview" && (
@@ -171,12 +174,13 @@ export default function SevenDays() {
                     </p>
                     <div className="flex flex-col mt-5 lg:text-base text-sm">
                       <p class="font-normal text-gray-700 space-x-5 xl:text-base text-sm">
-                        <span className="font-bold ">Accommodation: </span>{" "}
+                        <span className="font-bold ">
+                          {t("accommodation")}:
+                        </span>
                         <span>{date.accommodation}</span>
                       </p>
                       <p class="font-normal text-gray-700 space-x-5 xl:text-base text-sm">
-                        {" "}
-                        <span className="font-bold">Activities:</span>
+                        <span className="font-bold">{t("activities")}:</span>
                         <span className="italic font-medium">
                           {date.activities}
                         </span>
@@ -184,7 +188,7 @@ export default function SevenDays() {
                     </div>
                     <div className="flex md:justify-end justify-center mt-5">
                       <button className="bg-[#54B435] lg:px-5 lg:py-1 xl:px-8 xl:py-2 md:px-8 md:py-2 px-5 py-1 rounded mx-5 text-base font-bold text-white">
-                        See More
+                        {t("see_more")}
                       </button>
                     </div>
                   </div>

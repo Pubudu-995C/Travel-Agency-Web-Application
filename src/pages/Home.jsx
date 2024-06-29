@@ -179,7 +179,7 @@ export default function Home() {
               <img
                 src={image}
                 alt={`Gallery Image ${index + 1}`}
-                className="brightness-[60%] w-full h-[540px] object-cover xl:mt-[70px] mt-[60px]"
+                className="brightness-[60%] w-full h-[540px] object-cover xl:mt-[70px] lg:mt-[56px] mt-[60px]"
               />
             </div>
           ))}

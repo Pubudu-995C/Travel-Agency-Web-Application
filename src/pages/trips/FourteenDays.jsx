@@ -7,74 +7,76 @@ import WhatsApp from "../../components/WhatsApp";
 import ScrollToTopButton from "../../components/ScrollToTopButton";
 import { Breadcrumbs } from "@material-tailwind/react";
 import Gallery from "../Gallery";
+import { useTranslation } from "react-i18next";
 
 export default function FourteenDays() {
+  const { t } = useTranslation("fourteendays");
   const [activeTab, setActiveTab] = useState("overview");
 
   const dateList = [
     {
-      day: `Day 01`,
-      topic: `Airport to Negombo`,
+      day: t("day01.day"),
+      topic: t("day01.topic"),
       img: `./trips/Negombo_Beach.jpg`,
-      detail: `Upon landing, you will be warmly greeted by our English-speaking chauffeur guide and the airport team, ready to assist with any needs. After reaching your hotel, take the remainder of the day to relax and unwind from your long flight, enjoying the time at your own pace. Discover the serene beauty of Negombo Lagoon and the picturesque Negombo Beach, before settling in for an overnight stay at a comfortable hotel in Negombo.`,
-      accommodation: `As Your Request`,
-      activities: `Negombo Lagoon - Negombo Beach - Overnight Stay in a Hotel at Negombo`,
+      detail: t("day01.detail"),
+      accommodation: t("day01.accommodation"),
+      activities: t("day01.activities"),
     },
     {
-      day: `Day 02 & 03`,
-      topic: `Negombo to Sigiriya`,
+      day: t("day02.day"),
+      topic: t("day02.topic"),
       img: `./trips/sigiriya.jpg`,
-      detail: `Embark on an unforgettable journey through Sri Lanka's cultural marvels. Begin with the heartwarming experience of Pinnawala Elephant Orphanage, witnessing majestic creatures in their natural habitat. Then, venture towards Sigiriya, where history and nature converge. Ascend the iconic Sigiriya Rock Fortress, marveling at its ancient splendor and panoramic vistas. Nearby, explore Pidurangala Rock, offering a unique perspective of Sigiriya. Immerse yourself in Sigiriya Village, discovering local customs and traditions. Continue the expedition with a captivating tour of Polonnaruwa City, delving into its rich heritage. Conclude the day's adventures with a peaceful overnight stay in a cozy hotel nestled in the enchanting surroundings of Sigiriya.`,
-      accommodation: `As Your Request`,
-      activities: `Pinnawala Elephant Orphanage - Sigiriya Rock Fortress (Lion Rock) - Pidurangala Rock - Sigiriya Village Tour - Polonnaruwa City Tour - Overnight Stay in a Hotel at Sigiriya`,
+      detail: t("day02.detail"),
+      accommodation: t("day02.accommodation"),
+      activities: t("day02.activities"),
     },
     {
-      day: `Day 04 & 05`,
-      topic: `Sigiriya to Kandy`,
+      day: t("day03.day"),
+      topic: t("day03.topic"),
       img: `./trips/templeTooth.jpg`,
-      detail: `Nestled in the heart of Sri Lanka, the Dambulla Royal Cave Temple and Golden Temple stand as timeless marvels, their ancient sanctuaries echoing with spiritual resonance. Nearby, the Spice Garden captivates with its aromatic allure, a sensory journey through the rich tapestry of Sri Lankan flavors. Further afield, the Matale Muthumariamman Temple beckons with its ornate architecture and devout ambiance. In Kandy, the revered Temple of the Tooth Relic holds the essence of Buddhist faith, a sacred repository of veneration. And amidst the cultural vibrancy, the Kandy Cultural Dance Show unfolds, a mesmerizing spectacle of rhythm and tradition, showcasing the island's artistic heritage in captivating splendor.`,
-      accommodation: `As Your Request`,
-      activities: `Dambulla Royal Cave Temple and Golden Temple - Spice Garden - Matale Muthumariamman Temple - Temple of Tooth Relic - Kandy Cultural Dance Show - Overnight Stay in a Hotel at Kandy`,
+      detail: t("day03.detail"),
+      accommodation: t("day03.accommodation"),
+      activities: t("day03.activities"),
     },
     {
-      day: `Day 06 & 07`,
-      topic: `Kandy to Nuwara Eliya `,
+      day: t("day04.day"),
+      topic: t("day04.topic"),
       img: `./trips/Gregory_Lake.jpg`,
-      detail: `Embark on an enchanting journey to Nuwara Eliya, where you'll ascend the majestic Ambuluwawa Tower, immerse yourself in the aromatic bliss of Damro Labookellie Tea Centre, and witness nature's grandeur at the cascading Ramboda Waterfalls. Explore the lush tea plantations and factories, bask in the tranquil beauty of Gregory Lake, and marvel at the architectural splendor of Nuwara Eliya Post Office. Pay reverence at the sacred Seetha Eliya Temple, trek to the breathtaking Bomburu Ella, and soak in panoramic vistas from Lipton's Seat, before retreating to a cozy hotel for an overnight stay in this hill country paradise.`,
-      accommodation: `As Your Request`,
-      activities: `Ambuluwawa Tower - Ramboda Waterfalls - Damro Labookellie Tea Centre - Gregory Lake - Nuwara Eliya Post Office - Seetha Eliya Temple - Bomburu Ella - Lipton Seat - Overnight Stay in a Hotel at Nuwara Eliya`,
+      detail: t("day04.detail"),
+      accommodation: t("day04.accommodation"),
+      activities: t("day04.activities"),
     },
     {
-      day: `Day 08 & 09`,
-      topic: `Nuwara Eliya to Ella`,
+      day: t("day05.day"),
+      topic: t("day05.topic"),
       img: `./trips/Little_Adam.jpg`,
-      detail: `Embark on a picturesque journey by train to Ella, where nature's wonders await. Marvel at the majestic Ravana Falls, cascading gracefully amidst lush greenery. Explore the iconic Nine Arch Bridge, a marvel of architecture nestled in the verdant landscape. Hike up to Little Adam's Peak for breathtaking panoramic views that stretch to the horizon. Don't miss the enchanting Ellawella Waterfalls, where tranquility reigns supreme. After a day of exploration, unwind in comfort with an overnight stay at a cozy hotel in Ella, surrounded by the serene beauty of the Sri Lankan countryside.`,
-      accommodation: `As Your Request`,
-      activities: `Little adam's peak - Ellawella Waterfalls - Nine Arches Bridge - Ravana Falls - Overnight Stay in a Hotel at Ella`,
+      detail: t("day05.detail"),
+      accommodation: t("day05.accommodation"),
+      activities: t("day05.activities"),
     },
     {
-      day: `Day 10 & 11`,
-      topic: `Ella to Yala`,
+      day: t("day06.day"),
+      topic: t("day06.topic"),
       img: `./trips/yala.jpg`,
-      detail: `Embark on an exhilarating journey through Sri Lanka's scenic wonders with a visit to the awe-inspiring Diyaluma Waterfalls, where cascading waters create a mesmerizing spectacle. Explore the ancient marvels of Buduruwagala Temple, steeped in history and spiritual significance. Continue your adventure with a thrilling Yala or Udawalawe Evening Jeep Safari, immersing yourself in the untamed beauty of nature as you encounter diverse wildlife in their natural habitat. Conclude your day with a serene overnight stay at a hotel nestled amidst the wilderness of Yala or Udawalawe, offering comfort and tranquility amidst the captivating surroundings.`,
-      accommodation: `As Your Request`,
-      activities: `Diyaluma Waterfalls - Proceed to Yala / Udawalawe Jeep Safari - Buduruwagala Temple - Overnight Stay in a Hotel at Yala/ Udawalawe`,
+      detail: t("day06.detail"),
+      accommodation: t("day06.accommodation"),
+      activities: t("day06.activities"),
     },
     {
-      day: `Day 12 & 13`,
-      topic: `Yala to Mirissa`,
+      day: t("day07.day"),
+      topic: t("day07.topic"),
       img: `./trips/coconut_tree_hill.jpg`,
-      detail: `Embark on an enchanting journey along the southern coast of Sri Lanka, beginning at the picturesque Coconut Tree Hill, offering panoramic views of Mirissa Bay's azure waters. Delve into the vibrant culture at the local fish market, brimming with the day's fresh catch. Venture into the vast expanse of the ocean for an unforgettable experience of whale and dolphin watching. Then, unwind on the pristine shores of Unawatuna Beach, where golden sands meet the gentle lapping waves. Conclude your day with an idyllic overnight stay in the charming town of Mirissa, where tranquility and beauty converge for an unforgettable coastal retreat.`,
-      accommodation: `As Your Request`,
-      activities: `Coconut Tree Hill - Mirissa Bay - Fish Market - Whale watching - Dolphin Watching - Unawatuna Beach - Overnight Stay in a Hotel at Mirissa`,
+      detail: t("day07.detail"),
+      accommodation: t("day07.accommodation"),
+      activities: t("day07.activities"),
     },
     {
-      day: `Day 14`,
-      topic: `Mirissa to Airport`,
+      day: t("day08.day"),
+      topic: t("day08.topic"),
       img: `./trips/airplane_landing.jpg`,
-      detail: ``,
-      accommodation: ``,
-      activities: ``,
+      detail: t("day08.detail"),
+      accommodation: t("day08.accommodation"),
+      activities: t("day08.activities"),
     },
   ];
 
@@ -91,14 +93,15 @@ export default function FourteenDays() {
         </div>
         <div className="p-3 w-full md:flex justify-between bg-[#54B435] 2xl:px-40 xl:px-24 lg:px-20 px-5">
           <p className="xl:text-2xl lg:text-xl md:text-base text-sm font-semibold text-white">
-            Sri Lanka Tour 14 Days Package{" "}
+            {t("package.description")}{" "}
             <span className="lg:text-lg text-sm lg:font-bold text-[#F0FF42]">
-              (14 Days 13 Nights)
+              {t("package.nights")}
             </span>
           </p>
           <p className="xl:text-2xl lg:text-lg md:text-base text-sm font-medium text-white md:mt-0 mt-2">
-            Starting from <span className="font-bold"> USD 2100</span> per
-            person
+            {t("package.starting_from")}{" "}
+            <span className="font-bold"> {t("package.price")} </span>
+            {t("package.per_person")}
           </p>
         </div>
         {/* ===========Breadcrumbs=========== */}
@@ -107,7 +110,7 @@ export default function FourteenDays() {
             <i class="fa-solid fa-house"></i>
           </a>
           <a href="/fourteendays" className="opacity-60 font-bold">
-            <span>FOURTEEN DAYS</span>
+            <span>{t("breadcrumbs")}</span>
           </a>
         </Breadcrumbs>
         {/* ===========Breadcrumbs=========== */}
@@ -119,7 +122,7 @@ export default function FourteenDays() {
             }`}
             onClick={() => setActiveTab("overview")}
           >
-            Overview
+            {t("overview")}
           </button>
           <button
             className={`md:m-2 m-1 w-40 md:w-auto lg:px-10 xl:px-14 xl:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
@@ -127,7 +130,7 @@ export default function FourteenDays() {
             }`}
             onClick={() => setActiveTab("itinerary")}
           >
-            Itinerary
+            {t("itinerary")}
           </button>
           <button
             className={`md:m-2 m-1 w-40 md:w-auto lg:px-10 xl:px-14 xl:py-2 py-1 px-8 border-2 lg:text-base text-sm ${
@@ -135,7 +138,7 @@ export default function FourteenDays() {
             }`}
             onClick={() => setActiveTab("gallery")}
           >
-            Gallery
+            {t("gallery")}
           </button>
         </div>
         {activeTab === "overview" && (
@@ -179,12 +182,13 @@ export default function FourteenDays() {
                     </p>
                     <div className="flex flex-col mt-5 lg:text-base text-sm">
                       <p class="font-normal text-gray-700 space-x-5 xl:text-base text-sm">
-                        <span className="font-bold ">Accommodation: </span>{" "}
+                        <span className="font-bold ">
+                          {t("accommodation")}:
+                        </span>{" "}
                         <span>{date.accommodation}</span>
                       </p>
                       <p class="font-normal text-gray-700 space-x-5 xl:text-base text-sm">
-                        {" "}
-                        <span className="font-bold">Activities:</span>
+                        <span className="font-bold">{t("activities")}:</span>
                         <span className="italic font-medium">
                           {date.activities}
                         </span>
@@ -192,7 +196,7 @@ export default function FourteenDays() {
                     </div>
                     <div className="flex md:justify-end justify-center mt-5">
                       <button className="bg-[#54B435] lg:px-5 lg:py-1 xl:px-8 xl:py-2 md:px-8 md:py-2 px-5 py-1 rounded mx-5 text-base font-bold text-white">
-                        See More
+                        {t("see_more")}
                       </button>
                     </div>
                   </div>

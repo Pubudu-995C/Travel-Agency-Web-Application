@@ -1,0 +1,97 @@
+{
+  "breadcrumbs": "TEN DAYS",
+  "overview": "Overview",
+  "itinerary": "Itinerary",
+  "gallery": "Gallery",
+  "day01": {
+    "day": "Day 01",
+    "topic": "Airport to Negombo",
+    "detail": "When you land, our chauffeur guide, fluent in English, and the airport team will be there to greet you and help you with anything you need. Once you reach your hotel, take the rest of the day to relax and unwind after your long flight. It's your time to enjoy at your own pace.",
+    "accommodation": "As Your Request",
+    "activities": "Pinnawala Elephant Orphanage - Overnight Stay in a Hotel at Sigiriya"
+  },
+
+  "accommodation": "Accommodation",
+  "activities": "Activities",
+  "see_more": "See More",
+
+  "package": {
+    "description": "Sri Lanka Tour 10 Days Package",
+    "nights": "(10 Days 09 Nights)",
+    "starting_from": "Starting from",
+    "price": "USD 1600",
+    "per_person": "per person"
+  },
+
+  "day02": {
+    "day": "Day 02",
+    "topic": "Negombo to Sigiriya",
+    "detail": "Explore the wonders of Sri Lanka with a visit to the Pinnawala Elephant Orphanage, where you can witness the heartwarming care of rescued elephants. Continue your adventure at the iconic Sigiriya Rock Fortress, also known as Lion Rock, an ancient marvel that offers breathtaking views and a glimpse into the island's rich history. After a day of exploration, relax with an overnight stay in a comfortable hotel at Sigiriya, allowing you to unwind and soak in the serene surroundings, ready for more adventures in this beautiful region.",
+    "accommodation": "As Your Request",
+    "activities": "Pinnawala Elephant Orphanage - Sigiriya Rock Fortress (Lion Rock) - Overnight Stay in a Hotel at Sigiriya"
+  },
+
+  "day03": {
+    "day": "Day 03",
+    "topic": "Sigiriya to Kandy",
+    "detail": "The itinerary includes a visit to the Dambulla Royal Cave Temple and Golden Temple, renowned for its ancient Buddhist murals and statues. Next, explore a Spice Garden, experiencing the aromatic allure of Sri Lanka's famed spices. In Matale, visit the vibrant Muthumariamman Temple, showcasing rich Hindu traditions. The journey continues to the Temple of the Tooth Relic in Kandy, a sacred site housing a revered tooth of Buddha. Enjoy the colorful Kandy Cultural Dance Show, a spectacle of traditional dance and music. Conclude with an overnight stay at a comfortable hotel in Kandy, immersed in the city's cultural charm.",
+    "accommodation": "As Your Request",
+    "activities": "Dambulla Royal Cave Temple and Golden Temple - Spice Garden - Matale Muthumariamman Temple - Temple of Tooth Relic - Kandy Cultural Dance Show - Overnight Stay in a Hotel at Kandy"
+  },
+
+  "day04": {
+    "day": "Day 04",
+    "topic": "Kandy to Nuwara Eliya",
+    "detail": "Begin your journey with the breathtaking Ramboda Falls, then visit the Damro Labookellie Tea Centre to savor fresh Ceylon tea. Enjoy a serene afternoon by the picturesque Gregory Lake, perfect for a relaxing boat ride or a peaceful stroll. Marvel at the charming colonial architecture of the Nuwara Eliya Post Office, a historic landmark. End your day with an overnight stay in a comfortable hotel in Nuwara Eliya, where the cool mountain air and scenic views provide a perfect retreat.",
+    "accommodation": "As Your Request",
+    "activities": "Ramboda Falls - Damro Labookellie Tea Centre - Gregory Lake - Nuwara Eliya Post Office - Overnight Stay in a Hotel at Nuwara Eliya"
+  },
+
+  "day05": {
+    "day": "Day 05",
+    "topic": "Nuwara Eliya to Ella",
+    "detail": "In the enchanting town of Ella, begin your adventure with a trek up Little Adam's Peak, offering breathtaking panoramic views of lush green landscapes. Next, marvel at the architectural wonder of the Nine Arches Bridge, a relic from the colonial era surrounded by dense jungle and tea plantations. Continue to Ravana Falls, where cascading waters create a serene and picturesque setting, perfect for relaxation and photography. Conclude your day with an overnight stay at a cozy hotel in Ella, allowing you to immerse yourself in the tranquil ambiance and rejuvenate for the next day's explorations.",
+    "accommodation": "As Your Request",
+    "activities": "Little adam's peak - Nine Arches Bridge - Ravana Falls - Overnight Stay in a Hotel at Ella"
+  },
+
+  "day06": {
+    "day": "Day 06",
+    "topic": "Ella to Yala",
+    "detail": "Explore the natural beauty and cultural heritage of Sri Lanka with a visit to Yala National Park, renowned for its diverse wildlife, including leopards, elephants, and a variety of bird species. After an exhilarating safari, immerse yourself in history at the Buduruwagala Temple, where ancient rock carvings of Buddha and his disciples stand as a testament to the island’s rich spiritual past. Conclude your day with an overnight stay at a comfortable hotel in Yala, offering a perfect blend of relaxation and adventure amidst the serene landscape, ensuring a memorable and rejuvenating experience.",
+    "accommodation": "As Your Request",
+    "activities": "Yala National Park - Buduruwagala Temple - Overnight Stay in a Hotel at Yala"
+  },
+
+  "day07": {
+    "day": "Day 07",
+    "topic": "Yala to Tangalle",
+    "detail": "Tangalle, a coastal paradise in Sri Lanka, boasts several stunning beaches. Tangalle Beach offers serene shores perfect for relaxation. Nearby, Hiriketiya Beach, known for its horseshoe bay, is a haven for surfers and swimmers. Rekawa Beach, a sanctuary for marine life, is renowned for its sea turtle nesting sites. Silent Beach, true to its name, provides a tranquil escape from the crowds. After a day of exploring these picturesque beaches, enjoy an overnight stay in one of Tangalle’s charming hotels, ensuring a restful end to a day filled with the natural beauty and tranquility of Sri Lanka’s southern coastline.",
+    "accommodation": "As Your Request",
+    "activities": "Tangalle Beach - Hiriketiya Beach - Rekawa Beach - Silent Beach - Overnight Stay in a Hotel at Tangalle"
+  },
+
+  "day08": {
+    "day": "Day 08",
+    "topic": "Tangalle to Mirissa",
+    "detail": "Coconut Tree Hill in Mirissa offers stunning panoramic views of the coastline, making it a perfect spot for photography and relaxation. Mirissa Bay's tranquil waters are ideal for swimming and sunbathing. Nearby, the vibrant fish market showcases the daily catch, providing an authentic glimpse into the local fishing culture. For adventure seekers, whale and dolphin watching tours are a must, offering a chance to see these magnificent creatures up close. After a day of exploration, unwind with an overnight stay at a comfortable hotel in Mirissa, ensuring a restful end to a day filled with unforgettable experiences.",
+    "accommodation": "As Your Request",
+    "activities": "Coconut Tree Hill - Mirissa Bay - Fish Market - Whale watching - Dolphin Watching - Overnight Stay in a Hotel at Mirissa"
+  },
+
+  "day09": {
+    "day": "Day 09",
+    "topic": "Mirissa to Bentota",
+    "detail": "Embark on a captivating journey through Sri Lanka's wonders. Explore the ancient charm of Galle Dutch Fort, where history whispers through cobblestone streets. Venture to Bentota Turtle Hatchery, a sanctuary for these gentle creatures, fostering conservation efforts. Glide along the enchanting Madu River, a haven of biodiversity and serene landscapes. Discover the artistic haven of Brief Garden, a lush oasis blending nature and creativity. Relax on the golden shores of Bentota Beach, where the azure waters beckon. Conclude your day with an overnight stay in a tranquil hotel, immersed in the coastal serenity of Bentota, as memories of the day's adventures dance through your dreams.",
+    "accommodation": "As Your Request",
+    "activities": "Galle Dutch Fort - Bentota Turtle Hatchery - Madu River Safari - Brief Garden - Bentota Beach - Overnight Stay in a Hotel at Bentota"
+  },
+
+  "day10": {
+    "day": "Day 10",
+    "topic": "Bentota to Airport",
+    "detail": "",
+    "accommodation": "",
+    "activities": ""
+  }
+}

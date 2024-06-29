@@ -1,0 +1,81 @@
+{
+  "breadcrumbs": "VIERZEHN TAGE",
+  "overview": "Überblick",
+  "itinerary": "Route",
+  "gallery": "Galerie",
+  "day01": {
+    "day": "Tag 01",
+    "topic": "Flughafen nach Negombo",
+    "detail": "Nach der Landung werden Sie von unserem englischsprachigen Chauffeur und dem Flughafenteam herzlich begrüßt, das Ihnen bei allen Anliegen behilflich ist. Nachdem Sie Ihr Hotel erreicht haben, können Sie sich den Rest des Tages entspannen und von Ihrem langen Flug erholen und die Zeit in Ihrem eigenen Tempo genießen. Entdecken Sie die ruhige Schönheit der Lagune von Negombo und des malerischen Strandes von Negombo, bevor Sie sich für eine Übernachtung in einem komfortablen Hotel in Negombo niederlassen.",
+    "accommodation": "Wie deine Anfrage",
+    "activities": "Negombo Lagune – Negombo Strand – Übernachtung im Hotel in Negombo"
+  },
+
+  "accommodation": "Unterkunft",
+  "activities": "Aktivitäten",
+  "see_more": "Mehr sehen",
+
+  "package": {
+    "description": "Sri Lanka Tour 10 Tage Paket",
+    "nights": "(14 Tage 13 Nächte)",
+    "starting_from": "Ab",
+    "price": "USD 2100",
+    "per_person": "pro Person"
+  },
+
+  "day02": {
+    "day": "Tag 02 und 03",
+    "topic": "Von Negombo nach Sigiriya",
+    "detail": "Begeben Sie sich auf eine unvergessliche Reise durch Sri Lankas kulturelle Wunder. Beginnen Sie mit dem herzerwärmenden Erlebnis des Elefantenwaisenhauses Pinnawala und erleben Sie majestätische Kreaturen in ihrem natürlichen Lebensraum. Dann wagen Sie sich nach Sigiriya, wo Geschichte und Natur aufeinandertreffen. Erklimmen Sie die berühmte Felsenfestung Sigiriya und bestaunen Sie ihre alte Pracht und den Panoramablick. Erkunden Sie in der Nähe den Pidurangala-Felsen, der eine einzigartige Perspektive auf Sigiriya bietet. Tauchen Sie ein in das Dorf Sigiriya und entdecken Sie lokale Bräuche und Traditionen. Setzen Sie die Expedition mit einer faszinierenden Tour durch die Stadt Polonnaruwa fort und tauchen Sie ein in ihr reiches Erbe. Beenden Sie die Abenteuer des Tages mit einer ruhigen Übernachtung in einem gemütlichen Hotel in der bezaubernden Umgebung von Sigiriya.",
+    "accommodation": "Wie deine Anfrage",
+    "activities": "Pinnawala Elefantenwaisenhaus - Sigiriya Felsenfestung (Löwenfelsen) - Pidurangala Felsen - Sigiriya Dorftour - Polonnaruwa Stadttour - Übernachtung in einem Hotel in Sigiriya"
+  },
+
+  "day03": {
+    "day": "Tag 04 und 05",
+    "topic": "Von Sigiriya nach Kandy",
+    "detail": "Im Herzen Sri Lankas gelegen, sind der Dambulla Royal Cave Temple und der Golden Temple zeitlose Wunder, deren alte Heiligtümer von spiritueller Resonanz zeugen. In der Nähe besticht der Spice Garden mit seinem aromatischen Reiz, eine Sinnesreise durch die reiche Vielfalt der Aromen Sri Lankas. Etwas weiter entfernt lockt der Matale Muthumariamman Temple mit seiner kunstvollen Architektur und seiner frommen Atmosphäre. In Kandy birgt der verehrte Zahntempel die Essenz des buddhistischen Glaubens, ein heiliger Aufbewahrungsort der Verehrung. Und inmitten der kulturellen Lebendigkeit entfaltet sich die Kandy Cultural Dance Show, ein faszinierendes Spektakel aus Rhythmus und Tradition, das das künstlerische Erbe der Insel in fesselnder Pracht präsentiert.",
+    "accommodation": "Wie deine Anfrage",
+    "activities": "Königlicher Höhlentempel und Goldener Tempel von Dambulla – Gewürzgarten – Muthumariamman-Tempel in Matale – Zahntempel – Kulturelle Tanzshow in Kandy – Übernachtung im Hotel in Kandy"
+  },
+
+  "day04": {
+    "day": "Tag 06 und 07",
+    "topic": "Von Kandy nach Nuwara Eliya",
+    "detail": "Begeben Sie sich auf eine bezaubernde Reise nach Nuwara Eliya, wo Sie den majestätischen Ambuluwawa-Turm besteigen, in die aromatische Wonne des Damro Labookellie Tea Centre eintauchen und die Erhabenheit der Natur an den kaskadenartigen Ramboda-Wasserfällen erleben. Erkunden Sie die üppigen Teeplantagen und -fabriken, genießen Sie die ruhige Schönheit des Gregory Lake und bestaunen Sie die architektonische Pracht des Postamts von Nuwara Eliya. Verehren Sie den heiligen Seetha-Eliya-Tempel, wandern Sie zum atemberaubenden Bomburu Ella und genießen Sie den Panoramablick von Lipton's Seat, bevor Sie sich für eine Übernachtung in diesem Bergparadies in ein gemütliches Hotel zurückziehen.",
+    "accommodation": "Wie deine Anfrage",
+    "activities": "Ambuluwawa-Turm – Ramboda-Wasserfälle – Damro Labookellie Tea Centre – Gregory Lake – Nuwara Eliya Postamt – Seetha Eliya Tempel – Bomburu Ella – Lipton Seat – Übernachtung im Hotel in Nuwara Eliya"
+  },
+
+  "day05": {
+    "day": "Tag 08 und 09",
+    "topic": "Von Nuwara Eliya nach Ella",
+    "detail": "Begeben Sie sich auf eine malerische Zugfahrt nach Ella, wo Sie die Wunder der Natur erwarten. Bewundern Sie die majestätischen Ravana-Wasserfälle, die anmutig inmitten üppiger Vegetation herabstürzen. Erkunden Sie die berühmte Neun-Bogen-Brücke, ein architektonisches Wunderwerk inmitten der grünen Landschaft. Wandern Sie hinauf zum Little Adam’s Peak und genießen Sie den atemberaubenden Panoramablick bis zum Horizont. Verpassen Sie nicht die bezaubernden Ellawella-Wasserfälle, wo Ruhe und Stille herrschen. Entspannen Sie sich nach einem Tag voller Entdeckungen bei einer Übernachtung in einem gemütlichen Hotel in Ella, umgeben von der ruhigen Schönheit der Landschaft Sri Lankas.",
+    "accommodation": "Wie deine Anfrage",
+    "activities": "Little Adam's Peak – Ellawella-Wasserfälle – Nine Arches Bridge – Ravana-Wasserfälle – Übernachtung im Hotel in Ella"
+  },
+
+  "day06": {
+    "day": "Tag 10 und 11",
+    "topic": "Von Ella nach Yala",
+    "detail": "Begeben Sie sich auf eine aufregende Reise durch Sri Lankas landschaftliche Wunder und besuchen Sie die beeindruckenden Diyaluma-Wasserfälle, wo herabstürzendes Wasser ein faszinierendes Schauspiel bietet. Erkunden Sie die alten Wunder des Buduruwagala-Tempels, der voller Geschichte und spiritueller Bedeutung steckt. Setzen Sie Ihr Abenteuer mit einer aufregenden abendlichen Jeepsafari in Yala oder Udawalawe fort und tauchen Sie ein in die ungezähmte Schönheit der Natur, während Sie vielfältige Wildtiere in ihrem natürlichen Lebensraum treffen. Beenden Sie Ihren Tag mit einer ruhigen Übernachtung in einem Hotel inmitten der Wildnis von Yala oder Udawalawe, das Komfort und Ruhe inmitten der bezaubernden Umgebung bietet.",
+    "accommodation": "Wie deine Anfrage",
+    "activities": "Diyaluma-Wasserfälle – Weiterfahrt nach Yala/Udawalawe, Jeep-Safari – Buduruwagala-Tempel – Übernachtung im Hotel in Yala/Udawalawe"
+  },
+
+  "day07": {
+    "day": "Tag 12 und 13",
+    "topic": "Von Yala nach Mirissa",
+    "detail": "Begeben Sie sich auf eine bezaubernde Reise entlang der Südküste Sri Lankas. Beginnen Sie am malerischen Coconut Tree Hill und genießen Sie den Panoramablick auf das azurblaue Wasser der Mirissa Bay. Tauchen Sie ein in die lebendige Kultur des lokalen Fischmarkts, der voll ist mit dem frischen Fang des Tages. Wagen Sie sich in die Weiten des Ozeans und erleben Sie eine unvergessliche Wal- und Delfinbeobachtung. Entspannen Sie anschließend an den unberührten Ufern des Unawatuna Beach, wo goldener Sand auf sanft plätschernde Wellen trifft. Beenden Sie Ihren Tag mit einer idyllischen Übernachtung in der charmanten Stadt Mirissa, wo Ruhe und Schönheit zu einem unvergesslichen Küstenurlaub zusammenkommen.",
+    "accommodation": "Wie deine Anfrage",
+    "activities": "Coconut Tree Hill – Mirissa Bay – Fischmarkt – Walbeobachtung – Delfinbeobachtung – Unawatuna Beach – Übernachtung im Hotel in Mirissa"
+  },
+
+  "day08": {
+    "day": "Tag 14",
+    "topic": "Mirissa zum Flughafen",
+    "detail": "",
+    "accommodation": "",
+    "activities": ""
+  }
+}
